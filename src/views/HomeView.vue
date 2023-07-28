@@ -3,17 +3,20 @@
     <HeaderMenu />
     <BackgroundIntro />
     <WhoWeAre />
+    <Pneus />
   </main>
 </template>
 
 <script>
-import WhoWeAre from "../components/WhoWeAre.vue";
-import BackgroundIntro from "../components/BackgroundIntro.vue";
 import HeaderMenu from "../components/HeaderMenu.vue";
+import BackgroundIntro from "../components/BackgroundIntro.vue";
+import WhoWeAre from "../components/WhoWeAre.vue";
+import Pneus from "../components/Pneus.vue";
 
 export default {
   components: {
     WhoWeAre,
+    Pneus,
     BackgroundIntro,
     HeaderMenu,
 },
