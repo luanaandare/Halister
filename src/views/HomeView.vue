@@ -1,18 +1,20 @@
 <template>
   <main>
     <HeaderMenu />
-    <div id="placeholder">placeholder image</div>
+    <BackgroundIntro />
     <WhoWeAre />
   </main>
 </template>
 
 <script>
 import WhoWeAre from "../components/WhoWeAre.vue";
+import BackgroundIntro from "../components/BackgroundIntro.vue";
 import HeaderMenu from "../components/HeaderMenu.vue";
 
 export default {
   components: {
     WhoWeAre,
+    BackgroundIntro,
     HeaderMenu,
 },
 };
