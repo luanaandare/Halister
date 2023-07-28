@@ -19,11 +19,12 @@
       </svg>
     </div>
     <nav class="menu">
-      <h2>PNEUS</h2>
-      <h2>PEÇAS</h2>
-      <h2>SERVIÇOS</h2>
-      <h2>QUEM SOMOS</h2>
-      <h2>CONTATO</h2>
+      <a href="#we">QUEM SOMOS</a>
+      <a href="#pneus">PNEUS</a>
+      <a>PEÇAS</a>
+      <a>SERVIÇOS</a>
+      <a>QUEM SOMOS</a>
+      <a>CONTATO</a>
     </nav>
     <div class="contato">
       <p>(12) 3322-2768</p>
@@ -54,7 +55,7 @@ svg {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 47.5%;
   height: 6.5rem;
 
   display: flex;
@@ -85,19 +86,23 @@ svg {
   text-decoration: none;
 }
 
-.contato a:hover {
-  background-color: white;
+a:hover {
+  background-color: rgba(0, 0, 0, 0);
 }
-.menu h2 {
+
+.menu a,
+.menu a:visited,
+.menu a:active {
   color: var(--color-background);
   font-family: "BebasNeue";
   font-size: 2rem;
+  text-decoration: none;
 
   cursor: pointer;
   transition: 0.2s;
 }
 
-nav h2:hover {
+.menu a:hover {
   transform: scale(1.05);
   color: black;
 }
