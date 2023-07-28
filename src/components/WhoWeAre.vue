@@ -1,5 +1,5 @@
 <template>
-  <TitleWrapper titulo="QUEM SOMOS" />
+  <TitleWrapper string="QUEM SOMOS" color1="#F2C60F" color2="#626262" />
   <div class="section">
     <div class="column">
       <h4>A empresa</h4>
