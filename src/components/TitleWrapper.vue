@@ -1,31 +1,41 @@
 <template>
   <div class="wrapper">
     <svg
-      height="170.40000915527344"
-      width="491.5"
+      preserveAspectRatio=none
+      viewBox="0 0 100 100"
+      width="390"
+      height="170"
     >
       <path 
-        fill="#F2C60F"
-        d="M 12.287500000000001,4.260000228881836 L 368.625,8.520000457763672 380.9125,42.60000228881836 356.3375,110.76000595092773 12.287500000000001,170.40000915527344 z"
+        :fill=color1
+        d="
+          M 3.15,4.69 
+          L 96.43,4.69 99.58,23.94 93.28,64.31 3.15,98.59
+          z"
       />
       <path
-        fill="#626262"
-        d="M 0,0 L 356.3375,0 368.625,34.08000183105469 344.04999999999995,102.24000549316406 0,161.88000869750977 z"
+        :fill=color2
+        d="
+          M 0,0 
+          L 93.28,0 96.43,19.25 90.13,59.62 0,93.9
+          z"
       />
     </svg>
-    <span>{{ titulo }}</span>
+    <span>{{ string }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['titulo'],
+  props: ['string', 'color1', 'color2'],
 };
 </script>
 
 <style scoped>
 .wrapper {
   position: relative;
+  top: 5rem;
+  margin-bottom: 5rem;
   height: 10.7rem;
   width: 100%;
 }
@@ -39,7 +49,7 @@ span {
   font-size: 3rem;
   color: white;
 
-  padding: 0.75rem 1rem 1.5rem 1rem;
+  padding: 2rem 1rem 1.5rem 3rem;
   position: absolute;
 }
 </style>
