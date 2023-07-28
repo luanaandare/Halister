@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 @media (hover: hover) {
@@ -14,4 +15,9 @@
 @font-face {
   font-family: "BebasNeue";
   src: url("../assets/fonts/BebasNeue.ttf");
+}
+
+@font-face {
+  font-family: "SourceSans";
+  src: url("../assets/fonts/SourceSans.ttf");
 }
