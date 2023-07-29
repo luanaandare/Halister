@@ -3,6 +3,7 @@
     <img id="logo" src="../assets/images/h-light.png" />
     <div class="menuStyling">
       <svg
+        class="svgMenu"
         preserveAspectRatio=none
         viewBox="0 0 100 30"
         style="transition: none 0s ease 0s;"
@@ -21,7 +22,7 @@
     <nav class="menu">
       <a href="#we">QUEM SOMOS</a>
       <a href="#pneus">PNEUS</a>
-      <a>PEÇAS</a>
+      <a href="#parts">PEÇAS</a>
       <a>SERVIÇOS</a>
       <a>QUEM SOMOS</a>
       <a>CONTATO</a>
@@ -46,7 +47,7 @@
   height: 7rem;
 }
 
-svg {
+.svgMenu {
   width: 100%;
   height: 7rem;
 }
