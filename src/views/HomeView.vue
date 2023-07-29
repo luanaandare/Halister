@@ -4,21 +4,27 @@
     <BackgroundIntro />
     <WhoWeAre />
     <Pneus />
+    <Parts />
+    <Services />
   </main>
 </template>
 
 <script>
 import HeaderMenu from "../components/HeaderMenu.vue";
-import BackgroundIntro from "../components/BackgroundIntro.vue";
-import WhoWeAre from "../components/WhoWeAre.vue";
-import Pneus from "../components/Pneus.vue";
+import BackgroundIntro from "../components/websiteSections/BackgroundIntro.vue";
+import WhoWeAre from "../components/websiteSections/WhoWeAre.vue";
+import Pneus from "../components/websiteSections/Pneus.vue";
+import Parts from "../components/websiteSections/Parts.vue";
+import Services from "../components/websiteSections/Services.vue";
 
 export default {
   components: {
+    HeaderMenu,
+    BackgroundIntro,
     WhoWeAre,
     Pneus,
-    BackgroundIntro,
-    HeaderMenu,
+    Parts,
+    Services,
 },
 };
 </script>
