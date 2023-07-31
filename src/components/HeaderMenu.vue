@@ -20,12 +20,39 @@
       </svg>
     </div>
     <nav class="menu">
-      <a href="#we">QUEM SOMOS</a>
-      <a href="#pneus">PNEUS</a>
-      <a href="#parts">PEÇAS</a>
-      <a href="#services">SERVIÇOS</a>
-      <a href="#brands">MARCAS</a>
-      <a>CONTATO</a>
+      <a
+        href="#we"
+        title="Quem nós somos"
+      >
+        QUEM SOMOS
+      </a>
+      <a
+        href="#pneus"
+        title="Pneus"
+      >
+        PNEUS
+      </a>
+      <a
+        href="#parts"
+        title="Peças"
+      >
+        PEÇAS
+      </a>
+      <a
+        href="#services"
+        title="Serviços"
+      >
+        SERVIÇOS
+      </a>
+      <a
+        href="#brands"
+        title="As marcas que trabalhamos"
+      >
+        MARCAS
+      </a>
+      <a>
+        CONTATO
+      </a>
     </nav>
     <div class="contato">
       <p>(12) 3322-2768</p>
