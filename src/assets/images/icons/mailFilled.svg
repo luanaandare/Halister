@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="email.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1040"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="0.472"
+     inkscape:cx="250"
+     inkscape:cy="250"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;}.cls-2{fill:#ffc11f;}</style>
+  </defs>
+  <title
+     id="title6">icon_email</title>
+  <g
+     id="email"
+     transform="matrix(2.1291224,0,0,2.1291224,-281.22126,-271.35394)">
+    <polygon
+       class="cls-2"
+       points="286.09,239.91 363.52,310.19 363.52,172.42 "
+       id="polygon11"
+       style="fill:#ffc11f" />
+    <path
+       class="cls-2"
+       d="m 136.53,169.6 a 1.89,1.89 0 0 0 -0.05,0.23 V 309.19 L 213.82,239 Z"
+       id="path13"
+       inkscape:connector-curvature="0"
+       style="fill:#ffc11f" />
+    <path
+       class="cls-2"
+       d="m 264.13,242.5 92.17,-80.32 a 4.86,4.86 0 0 0 -0.55,-0.11 H 146.8 l 89.37,80.23 a 21.13,21.13 0 0 0 27.96,0.2 z"
+       id="path15"
+       inkscape:connector-curvature="0"
+       style="fill:#ffc11f" />
+    <path
+       class="cls-2"
+       d="m 272.33,251.9 a 33.63,33.63 0 0 1 -44.49,-0.32 l -4.7,-4.22 -79.71,72.35 a 7.45,7.45 0 0 0 0.82,0.17 h 211.39 l -79,-71.72 z"
+       id="path17"
+       inkscape:connector-curvature="0"
+       style="fill:#ffc11f" />
+  </g>
+</svg>
