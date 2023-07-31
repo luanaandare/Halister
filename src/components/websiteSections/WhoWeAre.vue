@@ -22,9 +22,9 @@
       <div class="biColumn">
         <h4>Frota própria</h4>
         <div class="imageDisplay">
-          <div>foto1</div>
-          <div>foto2</div>
-          <div>foto3</div>
+          <img class="front" src="../../assets/images/frota/frota1.jpeg" />
+          <img class="mid" src="../../assets/images/frota/frota2.jpeg" />
+          <img class="rear" src="../../assets/images/frota/frota3.jpeg" />
         </div>
       </div>
     </div>
@@ -188,6 +188,32 @@ export default {
 .imageDisplay {
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
+}
+
+.front,
+.mid,
+.rear {
+  position: absolute;
+  width: 22rem;
+}
+
+.front {
+  z-index: 100;
+}
+
+.mid {
+  top: 2rem;
+  left: 3rem;
+  filter: blur(2px);
+  z-index: 99;
+}
+
+.rear {
+  top: 4rem;
+  left: 6rem;
+  filter: blur(4px);
+  z-index: 98;
 }
 
 .svgPageWe {
