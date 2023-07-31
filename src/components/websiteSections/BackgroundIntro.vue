@@ -5,10 +5,16 @@
 </template>
 
 <style scoped>
-.backgroundImage {
+.backgroundImage{
   width: 100%;
   height: 38rem;
-  background-color: var(--color-background-mute);
+  background-image: linear-gradient(
+        to right,
+        rgba(6, 7, 14, 0.7) 40%,
+        rgba(6, 7, 14, 0.2)
+      ),
+      url("../../assets/images/bg-home.png");
+  background-size: cover;
 }
 
 h1 {

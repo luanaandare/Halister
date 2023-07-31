@@ -58,7 +58,13 @@ export default {
 #parts {
   position: relative;
   height: 50rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(
+        to right,
+        rgba(45, 45, 45, 0.9) 40%,
+        rgba(45, 45, 45, 0.9)
+      ),
+      url("../../assets/images/bg-parts.png"); 
+  background-size: cover;
 }
 
 .paragraphContainer {
