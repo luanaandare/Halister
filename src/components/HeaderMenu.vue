@@ -23,8 +23,8 @@
       <a href="#we">QUEM SOMOS</a>
       <a href="#pneus">PNEUS</a>
       <a href="#parts">PEÇAS</a>
-      <a>SERVIÇOS</a>
-      <a>QUEM SOMOS</a>
+      <a href="#services">SERVIÇOS</a>
+      <a href="#brands">MARCAS</a>
       <a>CONTATO</a>
     </nav>
     <div class="contato">
