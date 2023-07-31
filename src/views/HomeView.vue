@@ -7,16 +7,19 @@
     <Parts />
     <Services />
     <Brands />
+    <Contact />
+    <FooterMenu />
     <Transition name="fade">
       <a
-        v-show="scrollpx > 700"
+        v-show="scrollpx > 700 && scrollpx < 5700"
         href="#home"
         class="hoveringButton alignLeft"
         title="Voltar para o topo da página"
-      > Voltar </a>
+      ><font-awesome-icon :icon="['fas', 'chevron-up']" /></a>
     </Transition>
     <Transition name="fade">
       <a
+        v-show="scrollpx < 5700"
         href="https://wa.me/5511984574754?text=Olá%2C%20estive%20no%20seu%20site%20e%20tenho%20interesse%20em%20conhecer%20melhor%20vocês!"
         class="hoveringButton alignRight"
         title="Contate-nos no whatsapp!"
@@ -34,6 +37,8 @@ import Pneus from "../components/websiteSections/Pneus.vue";
 import Parts from "../components/websiteSections/Parts.vue";
 import Services from "../components/websiteSections/Services.vue";
 import Brands from "../components/websiteSections/Brands.vue";
+import Contact from "../components/websiteSections/Contact.vue";
+import FooterMenu from "../components/FooterMenu.vue";
 
 export default {
   components: {
@@ -44,6 +49,8 @@ export default {
     Parts,
     Services,
     Brands,
+    Contact,
+    FooterMenu,
   },
   data() {
     const scrollpx = ref(0);
