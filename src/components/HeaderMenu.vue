@@ -40,7 +40,7 @@
       </a>
       <a
         href="#services"
-        title="Serviços"
+        title="Sobre os nossos serviços"
       >
         SERVIÇOS
       </a>
@@ -50,7 +50,10 @@
       >
         MARCAS
       </a>
-      <a>
+      <a
+        href="#brands"
+        title="Fale conosco"
+      >
         CONTATO
       </a>
     </nav>
