@@ -99,7 +99,7 @@ export default {
 
 .svgPageParts {
   width: 100%;
-  height: 5rem;
+  height: 8rem;
   position: absolute;
   bottom: 0;
 }
