@@ -15,11 +15,13 @@
         title="Voltar para o topo da página"
       > Voltar </a>
     </Transition>
-    <a
-      href="https://wa.me/5511984574754?text=Olá%2C%20estive%20no%20seu%20site%20e%20tenho%20interesse%20em%20conhecer%20melhor%20vocês!"
-      class="hoveringButton alignRight"
-      title="Contate-nos no whatsapp!"
-    ><img src="../assets/images/icons/wpp.png"></a>
+    <Transition name="fade">
+      <a
+        href="https://wa.me/5511984574754?text=Olá%2C%20estive%20no%20seu%20site%20e%20tenho%20interesse%20em%20conhecer%20melhor%20vocês!"
+        class="hoveringButton alignRight"
+        title="Contate-nos no whatsapp!"
+      ><img src="../assets/images/icons/wpp.png"></a>
+    </Transition>
   </main>
 </template>
 
