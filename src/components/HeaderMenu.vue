@@ -55,8 +55,17 @@
       </a>
     </nav>
     <div class="contato">
-      <p>(12) 3322-2768</p>
-      <a href="mailto:contato@halister.com.br">contato@halister.com.br</a>
+      <div>
+        <img class="contatoIcon" src="../assets/images/icons/phone.svg" />
+        <p>(12) 3322-2768</p>
+      </div>
+      <div>
+        <img  class="contatoIcon" src="../assets/images/icons/mail.svg" />
+        <a href="mailto:contato@halister.com.br">
+          contato@halister.com.br
+        </a>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -107,11 +116,22 @@
   align-items: flex-end;
 }
 
+.contato div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .contato p,
 .contato a {
   font-family: BebasNeue;
   color: rgba(0, 0, 0, 0.64);
   text-decoration: none;
+}
+
+.contatoIcon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.75rem;
 }
 
 a:hover {
@@ -135,7 +155,7 @@ a:hover {
   color: black;
 }
 
-img {
+#logo {
   height: 5.5rem;
   padding: 0.75rem 0 0.75rem 6rem;
 }
