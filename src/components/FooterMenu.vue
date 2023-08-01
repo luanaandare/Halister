@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div class="col">
-      <h4>NOSSA SEDE <img src="../assets/images/icons/location.svg" /></h4>
+      <h4>NOSSA SEDE <font-awesome-icon :icon="['fas', 'location-dot']" /></h4>
 
       <p>Rua Cidade de Bagé, 161</p>
       <p>Palmeiras de São José</p>
@@ -11,19 +11,19 @@
     <div class="col">
       <h4>CONTATO</h4>
       <span class="row">
-        <img class="icon" src="../assets/images/icons/phoneFilled.svg" />
+        <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
         (12) 3322-2768
       </span>
       <span class="row">
-        <img class="icon" src="../assets/images/icons/phoneFilled.svg" />
+        <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
         (12) 3206-2860
       </span>
       <span class="row">
-        <img class="icon" src="../assets/images/icons/wppFilled.svg" />
+        <font-awesome-icon :icon="['fab', 'whatsapp']" class="icon" />
         (11) 98457-4754
       </span>
       <span class="row">
-        <img class="icon" src="../assets/images/icons/mailFilled.svg" />
+        <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
         contato@halister.com.br
       </span>
     </div>
@@ -85,12 +85,9 @@ h4 img {
   justify-content: center;
 }
 
-.row img {
-  margin-right: 0.75rem;
-}
-
-.icon {
-  width: 1rem;
+.row .icon {
+  margin-right: 0.5rem;
+  color: #f2c60f;
 }
 
 .logoCol {

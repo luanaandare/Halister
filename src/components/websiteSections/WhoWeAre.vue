@@ -6,13 +6,13 @@
         <h4>A empresa</h4>
         <p>
           Nossa empresa foi fundada em 2004 por profissionais com larga
-          experiencia no seguimento de Veículos Industriais, e já atua a
-          16 anos no mercado, inicialmente no seguimento de Locação de
-          Empilhadeiras e Veículos Especiais, mais devido as necessidades
-          dos clientes fechamos parcerias e direcionamos nossa linha
-          principal para o mercado de distribuição e reposição das principais
-          marcas de Pneus, Peças e Serviços para Empilhadeiras e Veículos
-          Industriais.
+          experiencia no seguimento de Veículos Industriais, e já atua há
+          {{currentDate() - 2004 }} anos no mercado, inicialmente no
+          seguimento de Locação de Empilhadeiras e Veículos Especiais,
+          mais devido as necessidades dos clientes fechamos parcerias e
+          direcionamos nossa linha principal para o mercado de distribuição
+          e reposição das principais marcas de Pneus, Peças e Serviços
+          para Empilhadeiras e Veículos Industriais.
         </p>
         <p>
           Possuímos Equipe de Vendas especializada para atendimento diferenciado
@@ -109,6 +109,13 @@ export default {
   components: {
     TitleWrapper,
   },
+  methods: {
+    currentDate() {
+      const current = new Date();
+      const date = `${current.getFullYear()}`;
+      return date;
+    }
+  }
 };
 </script>
 

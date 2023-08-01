@@ -28,13 +28,13 @@
       </a>
       <a
         href="#pneus"
-        title="Pneus"
+        title="Sobre os nossos pneus"
       >
         PNEUS
       </a>
       <a
         href="#parts"
-        title="Peças"
+        title="Sobre as peças que utilizamos"
       >
         PEÇAS
       </a>
@@ -51,24 +51,21 @@
         MARCAS
       </a>
       <a
-        href="#brands"
+        href="#contact"
         title="Fale conosco"
       >
         CONTATO
       </a>
     </nav>
     <div class="contato">
-      <div>
-        <img class="contatoIcon" src="../assets/images/icons/phone.svg" />
-        <p>(12) 3322-2768</p>
-      </div>
-      <div>
-        <img  class="contatoIcon" src="../assets/images/icons/mail.svg" />
-        <a href="mailto:contato@halister.com.br">
-          contato@halister.com.br
-        </a>
-      </div>
-      
+      <p>
+        <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
+        (12) 3322-2768
+      </p>
+      <a href="mailto:contato@halister.com.br">
+        <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
+        contato@halister.com.br
+      </a>
     </div>
   </div>
 </template>
@@ -117,11 +114,6 @@
   text-align: right;
   justify-content: space-evenly;
   align-items: flex-end;
-}
-
-.contato div {
-  display: flex;
-  flex-flow: row nowrap;
 }
 
 .contato p,
