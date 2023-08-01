@@ -205,14 +205,14 @@ export default {
 .mid {
   top: 2rem;
   left: 3rem;
-  filter: blur(2px);
+  filter: opacity(0.7);
   z-index: 99;
 }
 
 .rear {
   top: 4rem;
   left: 6rem;
-  filter: blur(4px);
+  filter: opacity(0.5);
   z-index: 98;
 }
 
