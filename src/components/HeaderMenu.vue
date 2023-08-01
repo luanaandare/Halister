@@ -79,12 +79,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 58%;
+  width: 50rem;
   height: 7rem;
 }
 
 .svgMenu {
-  width: 100%;
+  width: 50rem;
   height: 7rem;
 }
 
@@ -92,7 +92,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 47.5%;
+  width: 45rem;
   height: 6.5rem;
 
   display: flex;
@@ -106,7 +106,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 28%;
+  width: 30rem;
   height: 2rem;
   background-color: white;
   display: flex;
@@ -121,6 +121,11 @@
   font-family: BebasNeue;
   color: rgba(0, 0, 0, 0.64);
   text-decoration: none;
+}
+
+p .icon,
+a .icon {
+  color: #f2c60f;
 }
 
 .contatoIcon {
