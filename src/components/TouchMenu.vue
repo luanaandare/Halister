@@ -45,18 +45,18 @@
           SERVIÇOS
         </a>
         <a
+          href="#rent"
+          title="Locação de equipamentos"
+          @click="toggleMenu = !toggleMenu"
+        >
+          LOCAÇÃO
+        </a>
+        <a
           href="#brands"
           title="As marcas que trabalhamos"
           @click="toggleMenu = !toggleMenu"
         >
           MARCAS
-        </a>
-        <a
-          href="#locacao"
-          title="Locação de equipamentos"
-          @click="toggleMenu = !toggleMenu"
-        >
-          LOCAÇÃO
         </a>
         <a
           href="#contact"

@@ -45,6 +45,12 @@
         SERVIÇOS
       </a>
       <a
+        href="#rent"
+        title="Locação de equipamentos"
+      >
+        LOCAÇÃO
+      </a>
+      <a
         href="#brands"
         title="As marcas que trabalhamos"
       >

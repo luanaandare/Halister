@@ -7,6 +7,7 @@
     <Pneus />
     <Parts />
     <Services />
+    <!--<Rent />-->
     <Brands />
     <Contact />
     <FooterMenu />
@@ -38,6 +39,7 @@ import WhoWeAre from "../components/websiteSections/WhoWeAre.vue";
 import Pneus from "../components/websiteSections/Pneus.vue";
 import Parts from "../components/websiteSections/Parts.vue";
 import Services from "../components/websiteSections/Services.vue";
+import Rent from "../components/websiteSections/Rent.vue";
 import Brands from "../components/websiteSections/Brands.vue";
 import Contact from "../components/websiteSections/Contact.vue";
 import FooterMenu from "../components/FooterMenu.vue";
@@ -51,6 +53,7 @@ export default {
     Pneus,
     Parts,
     Services,
+    Rent,
     Brands,
     Contact,
     FooterMenu,
