@@ -103,7 +103,7 @@ export default {
 }
 
 .svgPageParts {
-  width: clamp(62.5rem, 100vw, 120rem);
+  width: 100vw;
   height: 8rem;
   position: absolute;
   bottom: 0;

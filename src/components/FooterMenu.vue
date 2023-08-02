@@ -41,15 +41,15 @@
 
 <style scoped>
 #footer {
-  margin-left: clamp(1rem, -7.4rem + 13.4vw, 8.6rem); /* 1rem -> 5rem */
-  width: clamp(62.5rem, 100vw, 120rem);
+  margin-left: clamp(1rem, -7.4rem + 13.4vw, 8.6rem); /* 1rem -> 8.6rem */
+  width: 100vw;
   display: flex;
   flex-flow: row nowrap;
 }
 
 .col {
-  width: clamp(8rem, 4.35rem + 7vw, 12rem); /* 8rem -> 12rem */
-  margin: clamp(0.5rem, -1.13rem + 2.7vw, 2rem); /* 0.5rem -> 2rem */
+  width: clamp(8rem, -0.4rem + 13vw, 15.2rem); /* 8rem -> 15.2rem */
+  margin: clamp(0.5rem, -2.65rem + 5vw, 3.35rem); /* 0.5rem -> 3.35rem */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -59,7 +59,7 @@
 h4 {
   margin-top: 1rem;
   font-family:"BebasNeue";
-  font-size: clamp(1rem, 0.57rem + 0.7vw, 1.4rem); /* 1rem -> 1.4rem */
+  font-size: clamp(1rem, 0.16rem + 1.3vw, 1.72rem); /* 1rem -> 1.72rem */
   color: #f2c60f;
 }
 
@@ -71,7 +71,7 @@ h4 img {
 .col span {
   font-family: "SourceSans";
   color: #fff;
-  font-size: clamp(0.7rem, 0.6rem + 0.1vw, 0.8rem); /* 0.7rem -> 0.8rem */
+  font-size: clamp(0.7rem, 0.49rem + 0.3vw, 0.85rem); /* 0.7rem -> 0.85rem */
 }
 
 .smaller {
@@ -98,8 +98,8 @@ h4 img {
 }
 
 .logoCol img {
-  width: 7rem; /* 7rem -> 10rem */
-  margin-left: 3rem; /* 3rem -> 5rem */ 
+  width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
+  margin-left: clamp(3rem, -1.2rem + 6.7vw, 5rem); /* 3rem -> 5rem */ 
 }
 
 h3 {
