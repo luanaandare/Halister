@@ -29,15 +29,50 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  #brands {
+    height: 28rem; /* 40rem -> 50rem */
+  }
+
+  .section {
+    width: 18rem; /* 50rem -> 60rem */
+    margin-left: 0.5rem;
+  }
+  
+  .logoContainer {
+    margin: 0.5rem;
+  }
+  
+  
+  .logo {
+    width: 3.5rem; /* 6rem -> 8rem */
+  }
+}
+
+@media screen and (width > 1000px) {
+  #brands {
+    height: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
+  }
+
+  .section {
+    width: clamp(50rem, 39.13rem + 17vw, 60rem); /* 50rem -> 60rem */
+    margin-left: clamp(6.25rem, -22.63rem + 46vw, 32.5rem); /* 6.25rem -> 32.5rem */
+  }
+  
+  .logoContainer {
+    margin: 1rem;
+  }
+  
+  .logo {
+    width: clamp(6rem, 3.83rem + 3.5vw, 8rem); /* 6rem -> 8rem */
+  }
+}
+
 #brands {
-  position: relative;
   background-color: #fff;
-  height: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
 }
 
 .section {
-  width: clamp(50rem, 39.13rem + 17vw, 60rem); /* 50rem -> 60rem */
-  margin-left: clamp(6.25rem, -22.63rem + 46vw, 32.5rem); /* 6.25rem -> 32.5rem */
 
   display: flex;
   flex-flow: row wrap;
@@ -47,11 +82,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
-}
-
-.logo {
-  width: clamp(6rem, 3.83rem + 3.5vw, 8rem); /* 6rem -> 8rem */
 }
 
 </style>

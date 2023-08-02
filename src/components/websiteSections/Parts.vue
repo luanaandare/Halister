@@ -55,9 +55,59 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  #parts {
+    height: 30rem;
+  }
+
+  .paragraphContainer {
+    position: relative;
+    font-size: 0.7rem; /* 0.8rem -> 1.25rem */
+    line-height: 0.9rem; /* 1.25 -> 1.5rem */
+
+    width: 17rem;
+    margin: 2rem 1rem;
+
+    text-align: justify;
+  }
+  
+  .section {
+    height: 10rem;
+    width: 18rem;
+    margin-left: 1rem;
+  }
+  .svgPageParts {
+    height: 3rem;
+  }
+}
+
+@media screen and (width > 1000px) {
+  #parts {
+    height: clamp(45rem, 39.57rem + 8.7vw, 50rem); /* 45rem -> 50rem */
+  }
+
+  .paragraphContainer {
+    position: absolute;
+    top: 6rem;
+    right: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
+    font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.9rem -> 1.25rem */
+    line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25 -> 1.5rem */
+
+    width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
+  }
+  
+  .section {
+    top: 23rem;
+    height: 15rem;
+    margin-left: 10rem;
+  }
+  .svgPageParts {
+    height: 8rem;
+  }
+}
+
 #parts {
   position: relative;
-  height: clamp(45rem, 39.57rem + 8.7vw, 50rem); /* 45rem -> 50rem */
   background-image: linear-gradient(
         to right,
         rgba(45, 45, 45, 0.9) 40%,
@@ -68,15 +118,8 @@ export default {
 }
 
 .paragraphContainer {
-  position: absolute;
-  top: 6rem;
-  right: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
   font-family: "SourceSans";
-  font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.9rem -> 1.25rem */
-  line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25 -> 1.5rem */
   color: #fff;
-
-  width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
 }
 
 .yellow {
@@ -85,13 +128,10 @@ export default {
 
 .section {
   position: absolute;
-  top: 23rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
-  height: 15rem;
-  margin-left: 10rem;
 }
 
 .upper {
@@ -104,7 +144,6 @@ export default {
 
 .svgPageParts {
   width: 100vw;
-  height: 8rem;
   position: absolute;
   bottom: 0;
 }

@@ -44,10 +44,39 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  .imageContainer {
+    width: 3.75rem; /* 7rem -> 10rem */
+    height: 3.75rem; /* 7rem -> 10rem */
+  }
+
+  .frame {
+    width: 7.5rem; /* 14rem -> 20rem */
+  }
+
+  .svgFrame {
+    width: 5.625rem; /* 10.5rem -> 15rem */
+    height: 5.625rem; /* 10.5rem -> 15rem */
+  }
+}
+
+@media screen and (width > 1000px) {
+  .imageContainer {
+    width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
+    height: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
+  }
+
+  .frame {
+    width: clamp(14rem, 1.4rem + 20vw, 20rem); /* 14rem -> 20rem */
+  }
+
+  .svgFrame {
+    width: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
+    height: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
+  }
+}
 
 .imageContainer {
-  width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
-  height: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -62,7 +91,6 @@ export default {
 
 .frame {
   position: relative;
-  width: clamp(14rem, 1.4rem + 20vw, 20rem); /* 14rem -> 20rem */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -71,7 +99,5 @@ export default {
 
 .svgFrame {
   position: absolute;
-  width: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
-  height: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
 }
 </style>

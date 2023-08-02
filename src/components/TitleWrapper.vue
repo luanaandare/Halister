@@ -32,12 +32,40 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  .wrapper {
+    top: 1rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+  }
+  
+  svg {
+    height: 3rem;
+    width: 8rem;
+  }
+
+  span {
+    font-size: 1rem;
+    padding: 0.25rem 0 0 0.5rem;
+  }
+}
+
+@media screen and (width > 1000px) {
+  .wrapper {
+    top: 5rem;
+    margin-bottom: 5rem;
+    height: 10.7rem;
+  }
+
+  span {
+    font-size: 3rem;
+    padding: 2rem 1rem 1.5rem 3rem;
+  }
+
+}
 .wrapper {
   position: relative;
-  top: 5rem;
-  margin-bottom: 5rem;
-  height: 10.7rem;
-  width: 62.5rem;
+  
 }
 
 svg {
@@ -46,9 +74,7 @@ svg {
 
 span {
   font-family: BebasNeue;
-  font-size: 3rem;
-
-  padding: 2rem 1rem 1.5rem 3rem;
+  
   position: absolute;
   cursor: default;
 }

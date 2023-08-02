@@ -120,6 +120,146 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  .section {
+    margin-top: 1rem;
+    position: relative;
+    flex-flow: column nowrap;
+  }
+
+  .biColumn,
+  .triColumn {
+    width: 19rem; /* 25rem -> 40rem */
+    margin: 0 0.5rem 0 0;
+  }
+  
+  .biColumn h4 {
+    font-size: 1rem; /* 1.5rem -> 2rem */
+    margin: 1rem 0 0 1rem;
+  }
+
+  .biColumn p {
+    text-align: justify;
+    font-size: 0.7rem;
+
+    line-height: 0.9rem; /* 1.25rem -> 1.5rem  */
+    margin: 0 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textContainer {
+    margin: 2rem;
+  }
+
+  .textContainer p,
+  .textContainer span {
+    font-size: 0.7rem; /* 0.8rem -> 1rem */
+
+    line-height: 0.9rem;
+    text-align: justify;
+  }
+
+  .triColumn img {
+    height: 3rem; /* 4rem -> 6rem */
+    margin: clamp(1.5rem, -0.13rem + 2.6vw, 3rem); /* 1.5rem -> 3rem */
+  }
+  
+  .imageDisplay {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    width: 18rem;
+    margin: 1rem;
+  }
+
+  .imageDisplay img {
+    width: 5rem;
+    margin: 0.2rem;
+    height: auto;
+  }
+
+}
+
+@media screen and (width > 1000px) {
+  .section {
+    flex-flow: row nowrap;
+  }
+
+  .biColumn {
+    width: clamp(25rem, 8.7rem + 26vw, 40rem); /* 25rem -> 40rem */
+    margin: 5rem 2rem;
+  }
+
+  .biColumn h4,
+  .triColumn h4 {
+    font-size: clamp(1.5rem, 0.96rem + 0.85vw, 2rem); /* 1.5rem -> 2rem */
+    padding: 0 clamp(0.75rem, -0.065rem + 1.3vw, 1.5rem); /* 0 0.75rem -> 0 1.5rem */
+  }
+
+  .biColumn p {
+    font-size: clamp(0.9rem, 0.52rem+ 0.6vw, 1.25rem);
+
+    line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25rem -> 1.5rem  */
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .triColumn {
+    width: clamp(18rem, 13.11rem + 8vw, 22.5rem); /* 18rem -> 22.5rem */
+    margin: clamp(0.5rem, -0.04rem + 0.8vw, 1rem); /* 0.5rem -> 1rem */
+  }
+
+  .textContainer {
+    height: clamp(20rem, 14.57rem + 8.7vw, 25rem); /* 20rem -> 25rem */
+  }
+  
+  .textContainer p,
+  .textContainer span {
+    font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
+
+    line-height: 1.5rem;
+    padding: 0 clamp(1.5rem, -0.13rem + 2.6vw); /* 0 1.5rem -> 0 3rem */
+    text-align: center;
+  }
+
+  .triColumn img {
+    height: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
+    margin: clamp(1.5rem, -0.13rem + 2.6vw, 3rem); /* 1.5rem -> 3rem */
+  }
+
+  .imageDisplay {
+    display: flex;
+    position: relative;
+  }
+
+  .imageDisplay img {
+    width: 20rem;
+  }
+
+  .front,
+  .mid,
+  .rear {
+    position: absolute;
+  }
+
+  .front {
+    z-index: 100;
+  }
+
+  .mid {
+    top: 1.5rem;
+    left: 2rem;
+    z-index: 99;
+    opacity: 0.6;
+  }
+
+  .rear {
+    top: 3rem;
+    left: 4rem;
+    z-index: 98;
+    opacity: 0.4;
+  }
+}
 
 #we {
   position: relative;
@@ -127,46 +267,26 @@ export default {
 
 .section {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
-}
-
-.biColumn {
-  width: clamp(25rem, 8.7rem + 26vw, 40rem); /* 25rem -> 40rem */
-  margin: 5rem 2rem;
 }
 
 .biColumn h4,
 .triColumn h4 {
   font-family: BebasNeue;
-  font-size: clamp(1.5rem, 0.96rem + 0.85vw, 2rem); /* 1.5rem -> 2rem */
   color: var(--color-heading);
-  padding: 0 clamp(0.75rem, -0.065rem + 1.3vw, 1.5rem); /* 0 0.75rem -> 0 1.5rem */
 
   cursor: default;
 }
 
 .biColumn p {
   font-family: "SourceSans", sans-serif;
-  font-size: clamp(0.9rem, 0.52rem+ 0.6vw, 1.25rem);
   color: var(--color-heading);
-
-  line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25rem -> 1.5rem  */
-  padding: 0 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .triColumn {
-  width: clamp(18rem, 13.11rem + 8vw, 22.5rem); /* 18rem -> 22.5rem */
-  margin: clamp(0.5rem, -0.04rem + 0.8vw, 1rem); /* 0.5rem -> 1rem */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-}
-
-.triColumn img {
-  height: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
-  margin: clamp(1.5rem, -0.13rem + 2.6vw); /* 1.5rem -> 3rem */
 }
 
 .textContainer {
@@ -174,58 +294,17 @@ export default {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  height: clamp(20rem, 14.57rem + 8.7vw, 25rem); /* 20rem -> 25rem */
 }
 
 .textContainer p,
 .textContainer span {
   font-family: "SourceSans", sans-serif;
-  font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
   color: var(--color-heading);
-
-  line-height: 1.5rem;
-  padding: 0 clamp(1.5rem, -0.13rem + 2.6vw); /* 0 1.5rem -> 0 3rem */
-  text-align: center;
 }
 
 .textContainer span {
   font-weight: 700;
 }
-
-.imageDisplay {
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-}
-
-.imageDisplay img {
-  width: 20rem;
-}
-
-.front,
-.mid,
-.rear {
-  position: absolute;
-}
-
-.front {
-  z-index: 100;
-}
-
-.mid {
-  top: 1.5rem;
-  left: 2rem;
-  z-index: 99;
-  opacity: 0.6;
-}
-
-.rear {
-  top: 3rem;
-  left: 4rem;
-  z-index: 98;
-  opacity: 0.4;
-}
-
 
 .svgPageWe {
   position: absolute;

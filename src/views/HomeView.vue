@@ -1,6 +1,7 @@
 <template>
   <main id="home">
-    <HeaderMenu />
+    <HeaderMenu class="desktop" />
+    <TouchMenu class="mobile" />
     <BackgroundIntro />
     <WhoWeAre />
     <Pneus />
@@ -13,7 +14,7 @@
       <a
         v-show="scrollpx > 0.29 * iw + 270 && scrollpx < 0.97 * iw + 3661"
         href="#home"
-        class="hoveringButton alignLeft"
+        class="hoveringButton alignLeft desktop"
         title="Voltar para o topo da página"
       ><font-awesome-icon :icon="['fas', 'chevron-up']" /></a>
     </Transition>
@@ -21,7 +22,7 @@
       <a
         v-show="scrollpx < 0.97 * iw + 3661"
         href="https://wa.me/5511984574754?text=Olá%2C%20estive%20no%20seu%20site%20e%20tenho%20interesse%20em%20conhecer%20melhor%20vocês!"
-        class="hoveringButton alignRight"
+        class="hoveringButton alignRight desktop"
         title="Contate-nos no whatsapp!"
       ><img src="../assets/images/icons/wpp.png"></a>
     </Transition>
@@ -31,6 +32,7 @@
 <script>
 import { ref } from 'vue';
 import HeaderMenu from "../components/HeaderMenu.vue";
+import TouchMenu from "../components/TouchMenu.vue";
 import BackgroundIntro from "../components/websiteSections/BackgroundIntro.vue";
 import WhoWeAre from "../components/websiteSections/WhoWeAre.vue";
 import Pneus from "../components/websiteSections/Pneus.vue";
@@ -43,6 +45,7 @@ import FooterMenu from "../components/FooterMenu.vue";
 export default {
   components: {
     HeaderMenu,
+    TouchMenu,
     BackgroundIntro,
     WhoWeAre,
     Pneus,
@@ -80,6 +83,26 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+  
+}
+
+@media screen and (width > 1000px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block !important;
+  }
+}
 .hoveringButton {
   position: fixed;
   bottom: 3rem;

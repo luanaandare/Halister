@@ -2,35 +2,40 @@
   <div id="footer">
     <div class="col">
       <h4>NOSSA SEDE <font-awesome-icon :icon="['fas', 'location-dot']" /></h4>
-
-      <p>Rua Cidade de Bagé, 161</p>
-      <p>Palmeiras de São José</p>
-      <p>São José dos Campos</p>
-      <p>SP - 12237-831</p>
+      <div class="subContainer">
+        <p>Rua Cidade de Bagé, 161</p>
+        <p>Palmeiras de São José</p>
+        <p>São José dos Campos</p>
+        <p>SP - 12237-831</p>
+      </div>
     </div>
     <div class="col">
       <h4>CONTATO</h4>
-      <span class="row">
-        <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
-        (12) 3322-2768
-      </span>
-      <span class="row">
-        <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
-        (12) 3206-2860
-      </span>
-      <span class="row">
-        <font-awesome-icon :icon="['fab', 'whatsapp']" class="icon" />
-        (11) 98457-4754
-      </span>
-      <span class="row">
-        <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
-        contato@halister.com.br
-      </span>
+      <div class="subContainer">
+        <span class="row">
+          <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
+          (12) 3322-2768
+        </span>
+        <span class="row">
+          <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
+          (12) 3206-2860
+        </span>
+        <span class="row">
+          <font-awesome-icon :icon="['fab', 'whatsapp']" class="icon" />
+          (11) 98457-4754
+        </span>
+        <span class="row">
+          <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
+          contato@halister.com.br
+        </span>
+      </div>
     </div>
     <div class="col">
       <h4>FUNCIONAMENTO</h4>
-      <p>8:30 ~ 17:30</p>
-      <p class="smaller">Atendimento via Whatsapp</p>
+      <div class="subContainer">
+        <p>8:30 ~ 17:30</p>
+        <p class="smaller">Atendimento via Whatsapp</p>
+      </div>
     </div>
     <div class="logoCol">
       <img src="../assets/images/h-light-vert.png" />
@@ -40,24 +45,70 @@
 </template>
 
 <style scoped>
+@media screen and (width < 999px) {
+  #footer {
+    flex-flow: column nowrap;
+    margin: 1rem 0;
+  }
+
+  .col {
+    flex-flow: row nowrap;
+    width: 17rem;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #f2c60f;
+    margin-bottom: 1rem;
+  }
+
+  .subContainer {
+    align-items: flex-end;
+
+  }
+}
+
+@media screen and (width > 1000px) {
+  #footer {
+    flex-flow: row nowrap;
+  }
+
+  .col {
+    flex-flow: column nowrap;
+    width: clamp(8rem, -0.4rem + 13vw, 15.2rem); /* 8rem -> 15.2rem */
+    margin: clamp(0.5rem, -2.65rem + 5vw, 3.35rem); /* 0.5rem -> 3.35rem */
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .subContainer {
+    align-items: center;
+  }
+
+  h4 {
+    margin-top: 1rem;
+  }
+
+  .logoCol img {
+    margin-left: clamp(3rem, -1.2rem + 6.7vw, 5rem); /* 3rem -> 5rem */ 
+  }
+}
 #footer {
   margin-left: clamp(1rem, -7.4rem + 13.4vw, 8.6rem); /* 1rem -> 8.6rem */
   width: 100vw;
   display: flex;
-  flex-flow: row nowrap;
 }
 
 .col {
-  width: clamp(8rem, -0.4rem + 13vw, 15.2rem); /* 8rem -> 15.2rem */
-  margin: clamp(0.5rem, -2.65rem + 5vw, 3.35rem); /* 0.5rem -> 3.35rem */
+  display: flex;
+}
+
+.subContainer {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: flex-start;
 }
 
 h4 {
-  margin-top: 1rem;
   font-family:"BebasNeue";
   font-size: clamp(1rem, 0.16rem + 1.3vw, 1.72rem); /* 1rem -> 1.72rem */
   color: #f2c60f;
@@ -99,7 +150,6 @@ h4 img {
 
 .logoCol img {
   width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
-  margin-left: clamp(3rem, -1.2rem + 6.7vw, 5rem); /* 3rem -> 5rem */ 
 }
 
 h3 {

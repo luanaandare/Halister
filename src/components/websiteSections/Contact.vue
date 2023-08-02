@@ -26,10 +26,89 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (width < 999px) {
+  #contact {
+    height: 20rem;
+  }
+
+  .inputContainer {
+    margin-top: 1rem;
+    width: 15rem;
+  }
+  
+  .halfColForm {
+    height: 1.5rem;
+    width: 7rem;
+  }
+
+  .fullColForm {
+    height: 6rem;
+    width: 14.5rem;
+    resize: none;
+  }
+  
+  .halfColForm,
+  .fullColForm {
+    margin: 0.125rem 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 0px;
+    
+    font-size: 0.8rem;
+  }
+  
+  .halfColForm::placeholder,
+  .fullColForm::placeholder {
+    font-size: 0.8rem;
+  }
+  
+  .submit {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (width > 1000px) {
+  #contact {
+    height: 44rem;
+  }
+
+  .inputContainer {
+    width: 40rem;
+  }
+  
+  .halfColForm {
+    height: 3rem;
+    width: 19rem;
+  }
+
+  .fullColForm {
+    height: 10rem;
+    width: 39rem;
+    resize: none;
+  }
+  
+  .halfColForm,
+  .fullColForm {
+    margin: 0.75rem 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0px;
+    
+    font-size: 1rem;
+  }
+  
+  .halfColForm::placeholder,
+  .fullColForm::placeholder {
+    font-size: 1rem;
+  }
+  
+  .submit {
+    font-size: 1.25rem;
+  }
+}
 #contact {
   position: relative;
-  height: 44rem;
-  width: 100%;
+  width: 100vw;
   background-color: #f2c60f;
 }
 
@@ -47,7 +126,6 @@ export default {
 }
 
 .inputContainer {
-  width: 40rem;
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -56,43 +134,27 @@ export default {
 .halfColForm,
 .fullColForm {
   font-family: "SourceSans";
-  margin: 0.75rem 0.5rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 0px;
-  
-  font-size: 1rem;
-}
-
-.halfColForm {
-  height: 3rem;
-  width: 19rem;
 }
 
 .fullColForm {
-  height: 10rem;
-  width: 39rem;
   resize: none;
 }
 
 .halfColForm::placeholder,
 .fullColForm::placeholder {
   font-family: "SourceSans";
-  font-size: 1rem;
   color: rgba(0, 0, 0, 0.4);
 }
 
 .submit {
   font-family: "BebasNeue";
-  font-size: 1.25rem;
   background-color: #f2c60f;
   border: solid 2px black;
 
-  padding: 0.25rem 1rem;
-  margin: 1rem;
-
   cursor: pointer;
   transition: 0.2s;
+  padding: 0.25rem 1rem;
+  margin: 1rem;
 }
 
 .submit:hover {
