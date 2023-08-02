@@ -6,8 +6,8 @@
 
 <style scoped>
 .backgroundImage{
-  width: 100%;
-  height: 38rem;
+  width: clamp(62.5rem, 100vw, 120rem); /* 62.5rem -> 120rem */ 
+  height: clamp(30.2rem, 13.81rem + 26vw, 45rem); /* 30.2rem -> 38rem */
   background-image: linear-gradient(
         to right,
         rgba(6, 7, 14, 0.7) 40%,
@@ -15,19 +15,21 @@
       ),
       url("../../assets/images/bg-home.png");
   background-size: cover;
+  background-position: right;
 }
 
 h1 {
   position: relative;
   top: 5rem;
   left: 3rem;
-  width: 60%;
+  width: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
   padding: 1.5rem 1rem;
   
   color: white;
   font-family: BebasNeue;
-  line-height: 6rem;
-  font-size: 4.75rem;
+  line-height: 4.5rem; /* 4.5rem -> 6rem */
+  font-size: 4rem; /* 4rem -> 4.75rem */
+  cursor: default;
 }
 
 </style>

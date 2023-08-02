@@ -22,9 +22,9 @@
       <div class="biColumn">
         <h4>Frota própria</h4>
         <div class="imageDisplay">
-          <img class="front" src="../../assets/images/frota/frota1.jpeg" />
-          <img class="mid" src="../../assets/images/frota/frota2.jpeg" />
-          <img class="rear" src="../../assets/images/frota/frota3.jpeg" />
+          <img src="../../assets/images/frota/frota1.jpeg" />
+          <img src="../../assets/images/frota/frota2.jpeg" />
+          <img src="../../assets/images/frota/frota3.jpeg" />
         </div>
       </div>
     </div>
@@ -132,40 +132,41 @@ export default {
 }
 
 .biColumn {
-  width: 45%;
+  width: clamp(25rem, 8.7rem + 26vw, 40rem); /* 25rem -> 40rem */
   margin: 2rem;
 }
 
 .biColumn h4,
 .triColumn h4 {
   font-family: BebasNeue;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 0.96rem + 0.85vw, 2rem); /* 1.5rem -> 2rem */
   color: var(--color-heading);
-  padding: 0 1.5rem;
+  padding: 0 clamp(0.75rem, -0.065rem + 1.3vw, 1.5rem); /* 0 0.75rem -> 0 1.5rem */
+
+  cursor: default;
 }
 
 .biColumn p {
   font-family: "SourceSans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: clamp(0.9rem, 0.52rem+ 0.6vw, 1.25rem);
   color: var(--color-heading);
 
-  line-height: 1.5rem;
-  padding: 0 3rem;
+  line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25rem -> 1.5rem  */
+  padding: 0 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .triColumn {
-  width: 25%;
-  margin: 1rem;
+  width: clamp(18rem, 13.11rem + 8vw, 22.5rem); /* 18rem -> 22.5rem */
+  margin: clamp(0.5rem, -0.04rem + 0.8vw, 1rem); /* 0.5rem -> 1rem */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
 .triColumn img {
-  height: 6rem;
-  margin: 3rem;
+  height: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
+  margin: clamp(1.5rem, -0.13rem + 2.6vw); /* 1.5rem -> 3rem */
 }
 
 .textContainer {
@@ -173,18 +174,17 @@ export default {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  height: 25rem;
+  height: clamp(20rem, 14.57rem + 8.7vw, 25rem); /* 20rem -> 25rem */
 }
 
 .textContainer p,
 .textContainer span {
   font-family: "SourceSans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
   color: var(--color-heading);
 
   line-height: 1.5rem;
-  padding: 0 3rem;
+  padding: 0 clamp(1.5rem, -0.13rem + 2.6vw); /* 0 1.5rem -> 0 3rem */
   text-align: center;
 }
 
@@ -194,39 +194,18 @@ export default {
 
 .imageDisplay {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   position: relative;
 }
 
-.front,
-.mid,
-.rear {
-  position: absolute;
-  width: 22rem;
-}
-
-.front {
-  z-index: 100;
-}
-
-.mid {
-  top: 2rem;
-  left: 3rem;
-  filter: opacity(0.7);
-  z-index: 99;
-}
-
-.rear {
-  top: 4rem;
-  left: 6rem;
-  filter: opacity(0.5);
-  z-index: 98;
+.imageDisplay img {
+  width: 10rem;
 }
 
 .svgPageWe {
   position: absolute;
   bottom: 0;
-  height: 170px;
-  width: 100%;
+  height: clamp(8rem, 4.74rem + 5.2vw, 11rem); /* 8rem -> 11rem */
+  width: clamp(62.5rem, 100vw, 120rem); /* 62.5rem -> 120rem */
 }
 </style>

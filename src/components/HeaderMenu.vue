@@ -1,5 +1,5 @@
 <template>
-  <div id="head">
+  <div id="header">
     <img id="logo" src="../assets/images/h-light.png" />
     <div class="menuStyling">
       <svg
@@ -71,7 +71,7 @@
 </template>
 
 <style scoped>
-#head {
+#header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
@@ -79,21 +79,21 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50rem;
-  height: 7rem;
+  width: clamp(40rem, 29.13rem + 17vw, 50rem); /*40rem -> 50rem */
+  height: clamp(6rem, 4.93rem + 1.7vw, 6rem); /* 6rem -> 7rem */
 }
 
 .svgMenu {
-  width: 50rem;
-  height: 7rem;
+  width: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
+  height: clamp(6rem, 4.93rem + 1.7vw, 6rem); /* 6rem -> 7rem */
 }
 
 .menu {
   position: absolute;
   top: 0;
   right: 0;
-  width: 45rem;
-  height: 6.5rem;
+  width: clamp(35rem, 24.13rem + 17vw, 45rem); /* 35rem -> 45rem */
+  height: clamp(5.5rem, 4.41rem + 1.7vw, 6.5rem); /*5.5rem -> 6.5rem */
 
   display: flex;
   flex-flow: row nowrap;
@@ -106,8 +106,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 30rem;
-  height: 2rem;
+  width: clamp(20rem, 9.13rem + 17vw, 30rem); /* 20rem -> 30rem */
+  height: clamp(1.5rem, 0.96rem + 0.85vw, 2rem); /* 1.5rem -> 2rem */
   background-color: white;
   display: flex;
   flex-flow: row nowrap;
@@ -121,6 +121,7 @@
   font-family: BebasNeue;
   color: rgba(0, 0, 0, 0.64);
   text-decoration: none;
+  font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
 }
 
 p .icon,
@@ -143,7 +144,7 @@ a:hover {
 .menu a:active {
   color: var(--color-background);
   font-family: "BebasNeue";
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 0.75rem + 1vw, 2rem); /* 1.4rem -> 2rem */
   text-decoration: none;
 
   cursor: pointer;
@@ -156,7 +157,7 @@ a:hover {
 }
 
 #logo {
-  height: 5.5rem;
-  padding: 0.75rem 0 0.75rem 6rem;
+  height: clamp(4.5rem, 3.41rem + 1.7vw, 5.5rem); /* 4.5rem -> 5.5rem */
+  padding: 0.75rem 0 0.75rem clamp(3rem, 0.26rem + 5.2vw, 6rem); /* 0.75rem 0 0.75rem 3rem -> 0.75rem 0 0.75rem 6rem */
 }
 </style>
