@@ -3,7 +3,8 @@
     <div class="imageContainer">
       <img :src="getImageUrl(image)" />
     </div>
-    <svg class="svgFrame"
+    <svg
+      class="svgFrame"
       preserveAspectRatio=none
       viewBox="0 0 100 100"
       style="transition: none 0s ease 0s;"
@@ -45,8 +46,8 @@ export default {
 <style scoped>
 
 .imageContainer {
-  width: 7rem; /* 7rem -> 10rem */
-  height: 7rem; /* 7rem -> 10rem */
+  width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
+  height: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -61,7 +62,7 @@ export default {
 
 .frame {
   position: relative;
-  width: 14rem; /* 14rem -> 20rem */
+  width: clamp(14rem, 1.4rem + 20vw, 20rem); /* 14rem -> 20rem */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -70,7 +71,7 @@ export default {
 
 .svgFrame {
   position: absolute;
-  width: 10.5rem; /* 10.5rem -> 15rem */
-  height: 10.55rem; /* 10.5rem -> 15rem */
+  width: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
+  height: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
 }
 </style>
