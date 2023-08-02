@@ -32,12 +32,12 @@ export default {
 #brands {
   position: relative;
   background-color: #fff;
-  height: 50rem;
+  height: 40rem; /* 40rem -> 50rem */
 }
 
 .section {
-  width: 60rem;
-  margin-left: 15rem;
+  width: 50rem; /* 50rem -> 60rem */
+  margin-left: 6.25rem; /* 6.25rem -> 15rem */
 
   display: flex;
   flex-flow: row wrap;
@@ -51,7 +51,7 @@ export default {
 }
 
 .logo {
-  width: 8rem;
+  width: 6rem; /* 6rem -> 8rem */
 }
 
 </style>

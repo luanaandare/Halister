@@ -37,7 +37,7 @@ export default {
   top: 5rem;
   margin-bottom: 5rem;
   height: 10.7rem;
-  width: 100%;
+  width: 62.5rem;
 }
 
 svg {
@@ -50,5 +50,6 @@ span {
 
   padding: 2rem 1rem 1.5rem 3rem;
   position: absolute;
+  cursor: default;
 }
 </style>

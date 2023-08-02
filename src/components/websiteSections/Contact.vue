@@ -70,7 +70,7 @@ export default {
 }
 
 .fullColForm {
-  height: 6rem;
+  height: 10rem;
   width: 39rem;
   resize: none;
 }

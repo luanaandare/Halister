@@ -57,7 +57,7 @@ export default {
 <style scoped>
 #parts {
   position: relative;
-  height: 50rem;
+  height: 45rem; /* 45rem -> 50rem */
   background-image: linear-gradient(
         to right,
         rgba(45, 45, 45, 0.9) 40%,
@@ -70,14 +70,13 @@ export default {
 .paragraphContainer {
   position: absolute;
   top: 6rem;
-  right: 10rem;
+  right: 4rem; /* 4rem -> 6rem */
   font-family: "SourceSans";
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: var(--color-heading);
-  font-weight: 400;
+  font-size: 0.9rem; /* 0.8rem -> 1.25rem */
+  line-height: 1.25rem; /* 1.25 -> 1.5rem */
+  color: #fff;
 
-  width: 55%;
+  width: 30rem; /* 30rem -> 50rem */
 }
 
 .yellow {
@@ -92,7 +91,7 @@ export default {
   align-items: center;
   justify-content: flex-start;
   height: 15rem;
-  margin-left: 10%;
+  margin-left: 10rem;
 }
 
 .upper {
@@ -104,7 +103,7 @@ export default {
 }
 
 .svgPageParts {
-  width: 100%;
+  width: 62.5rem;
   height: 8rem;
   position: absolute;
   bottom: 0;

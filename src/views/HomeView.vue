@@ -11,7 +11,7 @@
     <FooterMenu />
     <Transition name="fade">
       <a
-        v-show="scrollpx > 700 && scrollpx < 5700"
+        v-show="scrollpx > 0.29 * iw + 270 && scrollpx < 1.86 * iw + 2956"
         href="#home"
         class="hoveringButton alignLeft"
         title="Voltar para o topo da página"
@@ -19,7 +19,7 @@
     </Transition>
     <Transition name="fade">
       <a
-        v-show="scrollpx < 5700"
+        v-show="scrollpx < 1.86 * iw + 2956"
         href="https://wa.me/5511984574754?text=Olá%2C%20estive%20no%20seu%20site%20e%20tenho%20interesse%20em%20conhecer%20melhor%20vocês!"
         class="hoveringButton alignRight"
         title="Contate-nos no whatsapp!"
@@ -54,34 +54,32 @@ export default {
   },
   data() {
     const scrollpx = ref(0);
+    const iw = ref(0);
 
-    return { scrollpx }
+    return { scrollpx, iw }
   },
   destroyed() {
     window.removeEventListener('scroll', this.actionScroll);
+    window.removeEventListener("resize", this.resizeCheck);
   },
   created() {
+    this.actionScroll();
+    this.resizeCheck();
     window.addEventListener('scroll', this.actionScroll);
+    window.addEventListener("resize", this.resizeCheck);
   },
   methods:{
     actionScroll (event) {
       this.scrollpx = window.scrollY;
     },
+    resizeCheck (event) {
+      this. iw = window.innerWidth;
+    }
   },
 };
 </script>
 
 <style scoped>
-#placeholder {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10rem;
-  background-color: var(--color-background-mute);
-}
-
 .hoveringButton {
   position: fixed;
   bottom: 3rem;

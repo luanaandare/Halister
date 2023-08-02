@@ -107,20 +107,19 @@ export default {
 <style scoped>
 #pneus {
   position: relative;
-  width: 100%;
+  width: 62.5rem;
 }
 
 .paragraphContainer {
   position: absolute;
   top: 6rem;
-  right: 10rem;
+  right: 4rem; /* 4rem -> 6rem */
   font-family: "SourceSans";
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 0.9rem; /* 0.8rem -> 1.25rem */
+  line-height: 1.25rem; /* 1.25 -> 1.5rem */
   color: var(--color-background);
-  font-weight: 500;
 
-  width: 55%;
+  width: 30rem; /* 30rem -> 50rem */
 }
 
 .bold {
@@ -141,8 +140,8 @@ export default {
   display: flex;
   flex-flow: column nowrap;
 
-  height: 34rem;
-  margin: 5rem 2rem;
+  height: 30.3rem; /* 30.3rem -> 34rem */
+  margin: 2rem 1rem; /* 2rem 1rem -> 5rem 2rem */
   justify-content: flex-start;
   align-items: center;
 }
@@ -151,41 +150,41 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem; /* 8rem -> 10rem */
+  height: 8rem; /* 8rem -> 10rem */
 }
 
 .logo {
-  width: 10rem;
+  width: 8rem;
 }
 
 .tireContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 20rem;
+  width: 8rem; /* 5rem -> 10rem */
+  height: 16rem; /* 10rem -> 20rem */
 }
 
 .tire {
-  height: 15rem;
+  height: 12rem; /* 7.5rem -> 15rem*/
 }
 
 h4 {
   font-family: BebasNeue;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.2rem; /* 1.2rem -> 2rem */
+  line-height: 1.5rem; /* 1.5rem -> 2rem */
   color: var(--color-background);
   text-align: center;
   
-  max-width: 10rem;
+  max-width: 8rem; /* 8rem -> 10rem */
 }
 
 .svgPagePneus {
   position: absolute;
   background-color: #fff;
-  width: 100%;
-  height: 59.7rem;
+  width: 62.5rem; /* 62.5rem -> 120rem */
+  height: 50rem; /* 50rem -> 59.7rem */
   top: 0;
   z-index: -1;
 }

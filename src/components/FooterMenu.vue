@@ -41,15 +41,15 @@
 
 <style scoped>
 #footer {
-  margin-left: 7.5%;
-  width: 92.5%;
+  margin-left: 1rem; /* 1rem -> 5rem */
+  width: 92.5rem;
   display: flex;
   flex-flow: row nowrap;
 }
 
 .col {
-  width: 12rem;
-  margin: 2rem;
+  width: 12rem; /* 8rem -> 12rem */
+  margin: 0.5rem; /* 0.5rem -> 2rem */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -59,7 +59,7 @@
 h4 {
   margin-top: 1rem;
   font-family:"BebasNeue";
-  font-size: 1.4rem;
+  font-size: 1rem; /* 1rem -> 1.4rem */
   color: #f2c60f;
 }
 
@@ -71,6 +71,7 @@ h4 img {
 .col span {
   font-family: "SourceSans";
   color: #fff;
+  font-size: 0.7rem; /* 0.7rem -> 0.8rem */
 }
 
 .smaller {
@@ -97,16 +98,17 @@ h4 img {
 }
 
 .logoCol img {
-  width: 10rem;
-  margin-left: 5rem;
+  width: 7rem; /* 7rem -> 10rem */
+  margin-left: 3rem; /* 3rem -> 5rem */ 
 }
 
 h3 {
-  width: 12rem;
+  width: 10rem; /* 10rem -> 12rem */
   text-align: start;
-  margin-left: 2rem;
+  margin-left: 1rem; /* 1rem -> 2rem */
   padding: 0.5rem;
   border-left: solid 1px white;
+  font-size: 1rem; /* 1rem -> 1.2rem */
 
   cursor: default;
 }

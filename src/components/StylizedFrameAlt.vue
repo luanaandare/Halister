@@ -45,8 +45,8 @@ export default {
 <style scoped>
 
 .imageContainer {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -61,7 +61,7 @@ export default {
 
 .frame {
   position: relative;
-  width: 20rem;
+  width: 14rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -70,7 +70,7 @@ export default {
 
 svg {
   position: absolute;
-  width: 15rem;
-  height: 15rem;
+  width: 10.5rem;
+  height: 10.5rem;
 }
 </style>
