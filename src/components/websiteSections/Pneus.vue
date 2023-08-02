@@ -107,19 +107,19 @@ export default {
 <style scoped>
 #pneus {
   position: relative;
-  width: 62.5rem;
+  width: clamp(62.5rem, 100vw, 120rem);
 }
 
 .paragraphContainer {
   position: absolute;
   top: 6rem;
-  right: 4rem; /* 4rem -> 6rem */
+  right: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
   font-family: "SourceSans";
-  font-size: 0.9rem; /* 0.8rem -> 1.25rem */
-  line-height: 1.25rem; /* 1.25 -> 1.5rem */
+  font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.8rem -> 1.25rem */
+  line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25 -> 1.5rem */
   color: var(--color-background);
 
-  width: 30rem; /* 30rem -> 50rem */
+  width: clamp(30rem, 8.26rem + 35vw, 50rem); /* 30rem -> 50rem */
 }
 
 .bold {
@@ -140,8 +140,8 @@ export default {
   display: flex;
   flex-flow: column nowrap;
 
-  height: 30.3rem; /* 30.3rem -> 34rem */
-  margin: 2rem 1rem; /* 2rem 1rem -> 5rem 2rem */
+  height: clamp(30.3rem, 26.28rem + 6vw, 34rem); /* 30.3rem -> 34rem */
+  margin: clamp(2rem, -1.26rem + 5vw, 5rem) clamp(1rem, -0.1rem + 1.7vw, 2rem); /* 2rem 1rem -> 5rem 2rem */
   justify-content: flex-start;
   align-items: center;
 }
@@ -150,8 +150,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8rem; /* 8rem -> 10rem */
-  height: 8rem; /* 8rem -> 10rem */
+  width: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
+  height: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
 }
 
 .logo {
@@ -163,28 +163,28 @@ export default {
   justify-content: center;
   align-items: center;
   width: 8rem; /* 5rem -> 10rem */
-  height: 16rem; /* 10rem -> 20rem */
+  height: 16rem; /* 16rem -> 20rem */
 }
 
 .tire {
-  height: 12rem; /* 7.5rem -> 15rem*/
+  height: 12rem; /* 12rem -> 15rem*/
 }
 
 h4 {
   font-family: BebasNeue;
-  font-size: 1.2rem; /* 1.2rem -> 2rem */
+  font-size: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.2rem -> 2rem */
   line-height: 1.5rem; /* 1.5rem -> 2rem */
   color: var(--color-background);
   text-align: center;
   
-  max-width: 8rem; /* 8rem -> 10rem */
+  max-width: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
 }
 
 .svgPagePneus {
   position: absolute;
   background-color: #fff;
-  width: 62.5rem; /* 62.5rem -> 120rem */
-  height: 50rem; /* 50rem -> 59.7rem */
+  width: clamp(62.5rem, 100vw, 120rem); /* 62.5rem -> 120rem */
+  height: clamp(50rem, 39.46rem + 16.8vw, 59.7rem); /* 50rem -> 59.7rem */
   top: 0;
   z-index: -1;
 }

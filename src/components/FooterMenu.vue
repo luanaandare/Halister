@@ -41,15 +41,15 @@
 
 <style scoped>
 #footer {
-  margin-left: 1rem; /* 1rem -> 5rem */
-  width: 92.5rem;
+  margin-left: clamp(1rem, -7.4rem + 13.4vw, 8.6rem); /* 1rem -> 5rem */
+  width: clamp(62.5rem, 100vw, 120rem);
   display: flex;
   flex-flow: row nowrap;
 }
 
 .col {
-  width: 12rem; /* 8rem -> 12rem */
-  margin: 0.5rem; /* 0.5rem -> 2rem */
+  width: clamp(8rem, 4.35rem + 7vw, 12rem); /* 8rem -> 12rem */
+  margin: clamp(0.5rem, -1.13rem + 2.7vw, 2rem); /* 0.5rem -> 2rem */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -59,7 +59,7 @@
 h4 {
   margin-top: 1rem;
   font-family:"BebasNeue";
-  font-size: 1rem; /* 1rem -> 1.4rem */
+  font-size: clamp(1rem, 0.57rem + 0.7vw, 1.4rem); /* 1rem -> 1.4rem */
   color: #f2c60f;
 }
 
@@ -71,7 +71,7 @@ h4 img {
 .col span {
   font-family: "SourceSans";
   color: #fff;
-  font-size: 0.7rem; /* 0.7rem -> 0.8rem */
+  font-size: clamp(0.7rem, 0.6rem + 0.1vw, 0.8rem); /* 0.7rem -> 0.8rem */
 }
 
 .smaller {
@@ -103,12 +103,12 @@ h4 img {
 }
 
 h3 {
-  width: 10rem; /* 10rem -> 12rem */
+  width: clamp(10rem, 3.74rem + 5.2vw, 12rem); /* 10rem -> 12rem */
   text-align: start;
-  margin-left: 1rem; /* 1rem -> 2rem */
+  margin-left: clamp(1rem, -0.1rem + 1.7vw, 2rem); /* 1rem -> 2rem */
   padding: 0.5rem;
   border-left: solid 1px white;
-  font-size: 1rem; /* 1rem -> 1.2rem */
+  font-size: clamp(1rem, 0.78rem + 0.3vw, 1.2rem); /* 1rem -> 1.2rem */
 
   cursor: default;
 }

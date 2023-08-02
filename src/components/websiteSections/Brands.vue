@@ -32,12 +32,12 @@ export default {
 #brands {
   position: relative;
   background-color: #fff;
-  height: 40rem; /* 40rem -> 50rem */
+  height: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
 }
 
 .section {
-  width: 50rem; /* 50rem -> 60rem */
-  margin-left: 6.25rem; /* 6.25rem -> 15rem */
+  width: clamp(50rem, 39.13rem + 17vw, 60rem); /* 50rem -> 60rem */
+  margin-left: clamp(6.25rem, -22.63rem + 46vw, 32.5rem); /* 6.25rem -> 32.5rem */
 
   display: flex;
   flex-flow: row wrap;
@@ -51,7 +51,7 @@ export default {
 }
 
 .logo {
-  width: 6rem; /* 6rem -> 8rem */
+  width: clamp(6rem, 3.83rem + 3.5vw, 8rem); /* 6rem -> 8rem */
 }
 
 </style>

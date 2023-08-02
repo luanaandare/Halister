@@ -92,8 +92,8 @@ export default {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  width: 55rem;
-  margin-left: 3rem; /* 3rem -> 6rem */
+  width: clamp(62.5rem, 100vw, 120rem);
+  margin-left: clamp(3rem, -0,26rem + 5.2vw, 6rem); /* 3rem -> 6rem */
 }
 
 .row {
@@ -106,8 +106,8 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
-  width: 30rem; /* 30rem -> 50rem */
-  height: 10rem; /* 10rem -> 15rem */
+  width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
+  height: clamp(10rem, 4.57rem + 8.7vw, 15rem); /* 10rem -> 15rem */
   color: var(--color-background);
 }
 
@@ -120,18 +120,18 @@ export default {
 }
 
 .paragraphTitle {
-  font-size: 1.2rem; /* 1.2rem -> 1.5rem */
+  font-size: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.2rem -> 1.5rem */
   font-family: BebasNeue;
 }
 
 .paragraph {
-  font-size: 0.8rem; /* 0.8rem -> 1rem */
+  font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
   font-family: SourceSans;
 }
 
 .imageContainer {
-  margin: 0 2rem; /* 0 2rem -> 0 5rem */
-  height: 10rem; /* 10rem -> 15rem */
+  margin: 0 clamp(2rem, -1.26rem + 5.2vw, 5rem); /* 0 2rem -> 0 5rem */
+  height: clamp(10rem, 4.57rem + 8.7vw, 15rem); /* 10rem -> 15rem */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -139,15 +139,15 @@ export default {
 
 .imageContainer img {
   width: auto;
-  height: 9rem; /* 9rem -> 12.5rem */
+  height: clamp(9rem, 5.2rem + 6vw, 12.5rem); /* 9rem -> 12.5rem */
 }
 
 .svgPageServices   {
   position: absolute;
   top: 0;
   z-index: -1;
-  width: 62.5rem;
-  height: 55rem; /* 55rem -> 70rem */
+  width: clamp(62.5rem, 100vw, 120rem);
+  height: clamp(55rem, 38.70rem + 26vw, 70rem); /* 55rem -> 70rem */
 
   background-color: #f2c60f;
 }
