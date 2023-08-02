@@ -115,6 +115,7 @@ export default {
       ),
       url("../../assets/images/bg-parts.png"); 
   background-size: cover;
+  background-position: right;
 }
 
 .paragraphContainer {
