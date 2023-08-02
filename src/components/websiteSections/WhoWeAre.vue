@@ -22,9 +22,9 @@
       <div class="biColumn">
         <h4>Frota própria</h4>
         <div class="imageDisplay">
-          <img src="../../assets/images/frota/frota1.jpeg" />
-          <img src="../../assets/images/frota/frota2.jpeg" />
-          <img src="../../assets/images/frota/frota3.jpeg" />
+          <img class="front" src="../../assets/images/frota/frota1.jpeg" />
+          <img class="mid" src="../../assets/images/frota/frota2.jpeg" />
+          <img class="rear" src="../../assets/images/frota/frota3.jpeg" />
         </div>
       </div>
     </div>
@@ -133,7 +133,7 @@ export default {
 
 .biColumn {
   width: clamp(25rem, 8.7rem + 26vw, 40rem); /* 25rem -> 40rem */
-  margin: 2rem;
+  margin: 5rem 2rem;
 }
 
 .biColumn h4,
@@ -199,8 +199,33 @@ export default {
 }
 
 .imageDisplay img {
-  width: 10rem;
+  width: 20rem;
 }
+
+.front,
+.mid,
+.rear {
+  position: absolute;
+}
+
+.front {
+  z-index: 100;
+}
+
+.mid {
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 99;
+  opacity: 0.6;
+}
+
+.rear {
+  top: 3rem;
+  left: 4rem;
+  z-index: 98;
+  opacity: 0.4;
+}
+
 
 .svgPageWe {
   position: absolute;
