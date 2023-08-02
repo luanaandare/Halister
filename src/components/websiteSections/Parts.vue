@@ -57,7 +57,7 @@ export default {
 <style scoped>
 #parts {
   position: relative;
-  height: 45rem; /* 45rem -> 50rem */
+  height: clamp(45rem, 39.57rem + 8.7vw, 50rem); /* 45rem -> 50rem */
   background-image: linear-gradient(
         to right,
         rgba(45, 45, 45, 0.9) 40%,
@@ -70,13 +70,13 @@ export default {
 .paragraphContainer {
   position: absolute;
   top: 6rem;
-  right: 4rem; /* 4rem -> 6rem */
+  right: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
   font-family: "SourceSans";
-  font-size: 0.9rem; /* 0.8rem -> 1.25rem */
-  line-height: 1.25rem; /* 1.25 -> 1.5rem */
+  font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.9rem -> 1.25rem */
+  line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25 -> 1.5rem */
   color: #fff;
 
-  width: 30rem; /* 30rem -> 50rem */
+  width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
 }
 
 .yellow {
