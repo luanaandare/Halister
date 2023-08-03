@@ -3,14 +3,14 @@
     <HeaderMenu class="desktop" />
     <TouchMenu class="mobile" />
     <BackgroundIntro />
-    <WhoWeAre />
-    <Pneus />
-    <Parts />
-    <Services />
-    <!--<Rent />-->
-    <Brands />
-    <Contact />
-    <FooterMenu />
+    <WePage />
+    <TiresPage />
+    <PartsPage />
+    <ServicesPage />
+    <!--<RentPage />
+    <BrandsPage />
+    <ContactPage />
+    <FooterMenu />-->
     <Transition name="fade">
       <a
         v-if="scrollpx > 0.29 * iw + 270 && scrollpx < 0.97 * iw + 3661"
@@ -35,13 +35,13 @@ import { ref } from 'vue';
 import HeaderMenu from "../components/HeaderMenu.vue";
 import TouchMenu from "../components/TouchMenu.vue";
 import BackgroundIntro from "../components/websiteSections/BackgroundIntro.vue";
-import WhoWeAre from "../components/websiteSections/WhoWeAre.vue";
-import Pneus from "../components/websiteSections/Pneus.vue";
-import Parts from "../components/websiteSections/Parts.vue";
-import Services from "../components/websiteSections/Services.vue";
-import Rent from "../components/websiteSections/Rent.vue";
-import Brands from "../components/websiteSections/Brands.vue";
-import Contact from "../components/websiteSections/Contact.vue";
+import WePage from "../components/websiteSections/WePage.vue";
+import TiresPage from "../components/websiteSections/TiresPage.vue";
+import PartsPage from "../components/websiteSections/PartsPage.vue";
+import ServicesPage from "../components/websiteSections/ServicesPage.vue";
+import RentPage from "../components/websiteSections/RentPage.vue";
+import BrandsPage from "../components/websiteSections/BrandsPage.vue";
+import ContactPage from "../components/websiteSections/ContactPage.vue";
 import FooterMenu from "../components/FooterMenu.vue";
 
 export default {
@@ -49,13 +49,13 @@ export default {
     HeaderMenu,
     TouchMenu,
     BackgroundIntro,
-    WhoWeAre,
-    Pneus,
-    Parts,
-    Services,
-    Rent,
-    Brands,
-    Contact,
+    WePage,
+    TiresPage,
+    PartsPage,
+    ServicesPage,
+    RentPage,
+    BrandsPage,
+    ContactPage,
     FooterMenu,
   },
   data() {

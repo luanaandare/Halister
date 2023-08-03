@@ -1,5 +1,5 @@
 <template>
-  <div id="pneus">
+  <div id="tires">
     <TitleWrapper string="PNEUS" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#f2c60f" />
     <div class="paragraphContainer">
       <p>
@@ -105,16 +105,21 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   .paragraphContainer {
     position: relative;
-    font-size: 0.7rem; /* 0.8rem -> 1.25rem */
-    line-height: 0.9rem; /* 1.25 -> 1.5rem */
+    font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
+    line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
 
-    width: 17rem;
-    margin: 2rem 1rem;
+    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
+    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
     text-align: justify;
+  }
+
+  .paragraphContainer p {
+    margin: 0 clamp(1rem, 0.76rem + 1.2vw, 1.5rem); /* 0 1rem -> 0 1.5rem */
   }
 
   .section {
@@ -122,21 +127,22 @@ export default {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    width: 18.5rem;
+    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
+    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
   }
 
   .column {
   position: relative;
-  width: 8rem;
-  height: 5rem;
+  width: clamp(8rem, 3.68rem + 20vw, 16.8rem); /* 8rem -> 16.8rem */
+  height: clamp(5rem, 2.41rem + 13vw, 10.5rem); /* 5rem -> 10.5rem */
   margin: 0.5rem 0;
   }
 
   .logoContainer {
     position: absolute;
-    top: 0.5rem;
-    width: 4rem; /* 8rem -> 10rem */
-    height: 2rem;
+    top: clamp(0.5rem, 0.24rem + 1.3vw, 1.05rem); /* 0.5rem -> 1.05rem */
+    width: clamp(4rem, 1.93rem + 10vw, 8.4rem); /* 4rem -> 8.4rem */
+    height: clamp(2rem, 0.96rem + 5vw, 4.2rem); /* 2rem -> 4.2rem */
   }
 
   .base .logoContainer{
@@ -148,13 +154,13 @@ export default {
   }
 
   .logo {
-    width: 3rem;
+    width: clamp(3rem, 1.44rem + 7.65vw, 6.3rem); /* 3rem -> 6.3rem */
   }
 
   .tireContainer {
     position: absolute;
-    width: 4rem; /* 5rem -> 10rem */
-    height: 5rem; /* 16rem -> 20rem */
+    width: clamp(4rem, 1.93rem + 10vw, 8.4rem); /* 4rem -> 8.4rem */
+    height: clamp(5rem, 2.41rem + 13vw, 10.5rem); /* 5rem -> 10.5rem */
   }
 
   .base .tireContainer {
@@ -165,17 +171,17 @@ export default {
     right: 0;
   }
   .tire {
-    height: 5rem; /* 12rem -> 15rem*/
+    height: clamp(5rem, 2.41rem + 13vw, 10.5rem); /* 5rem -> 10.5rem */
   }
   
   h4 {
     text-align: center;
     position: absolute;
-    bottom: 0.5rem;
-    font-size: 0.7rem; /* 1.2rem -> 2rem */
-    line-height: 0.9rem; /* 1.5rem -> 2rem */
+    bottom: clamp(0.5rem, 0.24rem + 1.3vw, 1.05rem); /* 0.5rem -> 1.05rem */
+    font-size: clamp(0.7rem, 0.34rem + 1.8vw, 1.47rem); /* 0.7rem -> 1.47rem */
+    line-height: clamp(0.9rem, 0.44rem + 2.3vw, 1.89rem); /* 0.9rem -> 1.89rem */
     
-    width: 4rem; /* 8rem -> 10rem */
+    width: clamp(4rem, 1.93rem + 10vw, 8.4rem); /* 4rem -> 8.4rem */
   }
 
   .base h4 {
@@ -186,12 +192,12 @@ export default {
     left: 0;
   }
   .svgPagePneus {
-    width: 20rem; /* 62.5rem -> 120rem */
-    height: 38rem; /* 50rem -> 59.7rem */
+    width: 100vw; /* 62.5rem -> 120rem */
+    height: clamp(38rem, 25.3rem + 63.5vw, 65rem); /* 38rem -> 65rem */
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   .paragraphContainer {
     position: absolute;
     top: 6rem;
@@ -247,7 +253,7 @@ export default {
   }
 }
 
-#pneus {
+#tires {
   position: relative;
   width: 100vw;
 }

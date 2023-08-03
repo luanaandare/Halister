@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="touchMenu">
+    <div class="tMenu">
       <img id="logo" src="../assets/images/h-light.png" />
       <div class="toggleContainer" @click="toggleMenu = !toggleMenu">
         <font-awesome-icon
@@ -24,7 +24,7 @@
           QUEM SOMOS
         </a>
         <a
-          href="#pneus"
+          href="#tires"
           title="Sobre os nossos pneus"
           @click="toggleMenu = !toggleMenu"
         >
@@ -86,7 +86,7 @@ export default {
 </script>
 
 <style scoped>
-.touchMenu {
+.tMenu {
   position: fixed;
   top: 0;
   left: 0;

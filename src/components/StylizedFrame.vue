@@ -44,23 +44,23 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   .imageContainer {
-    width: 3.75rem; /* 7rem -> 10rem */
-    height: 3.75rem; /* 7rem -> 10rem */
+    width: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
+    height: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
   }
 
   .frame {
-    width: 7.5rem; /* 14rem -> 20rem */
+    width: clamp(7.5rem, 4.44rem + 15.2vw, 14rem); /* 7.5rem -> 20rem */
   }
 
   .svgFrame {
-    width: 5.625rem; /* 10.5rem -> 15rem */
-    height: 5.625rem; /* 10.5rem -> 15rem */
+    width: clamp(5.625rem, 3.33rem + 11.4vw, 10.5rem); /* 5.625rem -> 15rem */
+    height: clamp(5.625rem, 3.33rem + 11.4vw, 10.5rem); /* 5.625rem -> 15rem */
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   .imageContainer {
     width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
     height: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */

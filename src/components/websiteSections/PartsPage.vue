@@ -55,33 +55,39 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   #parts {
-    height: 30rem;
+    height: clamp(30rem, 22.9rem + 35vw, 45rem); /* 30rem -> 45rem */
   }
 
   .paragraphContainer {
     position: relative;
-    font-size: 0.7rem; /* 0.8rem -> 1.25rem */
-    line-height: 0.9rem; /* 1.25 -> 1.5rem */
-
-    width: 17rem;
-    margin: 2rem 1rem;
+    font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
+    line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
+    
+    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
+    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
     text-align: justify;
+  }
+
+  .paragraphContainer p {
+    margin: 0 clamp(1rem, 0.76rem + 1.2vw, 1.5rem); /* 0 1rem -> 0 1.5rem */
   }
   
   .section {
     height: 10rem;
-    width: 18rem;
-    margin-left: 1rem;
+    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 19rem -> 40rem */
+    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    margin-top: 2rem;
   }
   .svgPageParts {
-    height: 3rem;
+    height: clamp(3rem, 1.58rem + 7vw, 6rem);
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   #parts {
     height: clamp(45rem, 39.57rem + 8.7vw, 50rem); /* 45rem -> 50rem */
   }

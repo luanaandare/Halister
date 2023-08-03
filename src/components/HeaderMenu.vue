@@ -27,7 +27,7 @@
         QUEM SOMOS
       </a>
       <a
-        href="#pneus"
+        href="#tires"
         title="Sobre os nossos pneus"
       >
         PNEUS

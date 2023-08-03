@@ -32,7 +32,7 @@ export default {
 <style scoped>
 @media screen and (width < 1000px) {
   .wrapper {
-    top: 1rem;
+    top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
     margin-bottom: 1rem;
     height: clamp(3rem, -0.59rem + 18vw, 10.625rem);
   }

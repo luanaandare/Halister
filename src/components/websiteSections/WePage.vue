@@ -122,7 +122,7 @@ export default {
 <style scoped>
 @media screen and (width < 1000px) {
   .section {
-    margin-top: 1rem;
+    margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
     position: relative;
     flex-flow: column nowrap;
   }
