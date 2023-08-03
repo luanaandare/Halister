@@ -120,7 +120,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   .section {
     margin-top: 1rem;
     position: relative;
@@ -129,22 +129,23 @@ export default {
 
   .biColumn,
   .triColumn {
-    width: 19rem; /* 25rem -> 40rem */
-    margin: 0 0.5rem 0 0;
+    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
+    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
   }
   
-  .biColumn h4 {
-    font-size: 1rem; /* 1.5rem -> 2rem */
-    margin: 1rem 0 0 1rem;
+  .biColumn h4,
+  .triColumn h4 {
+    font-size: clamp(1rem, 0.53rem + 2.3vw, 2rem); /* 1rem -> 2rem */
+    margin: 0 clamp(1rem, 0.76rem + 1.2vw, 1.5rem); /* 0 1rem -> 0 1.5rem */
   }
 
   .biColumn p {
     text-align: justify;
-    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
 
-    line-height: 0.9rem; /* 1.25rem -> 1.5rem  */
-    margin: 0 1rem;
-    margin-bottom: 0.5rem;
+    line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
+    margin: 0 clamp(1rem, 0.76rem + 1.2vw, 1.5rem); /* 0 1rem -> 0 1.5rem */
+    margin-bottom: clamp(0.5rem, 0.3rem + 2.4vw, 1.5rem); /* 0.5rem -> 1.5rem */
   }
   
   .textContainer {
@@ -153,14 +154,14 @@ export default {
 
   .textContainer p,
   .textContainer span {
-    font-size: 0.7rem; /* 0.8rem -> 1rem */
+    font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
 
-    line-height: 0.9rem;
+    line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
     text-align: justify;
   }
 
   .triColumn img {
-    height: 3rem; /* 4rem -> 6rem */
+    height: clamp(3rem, 1.59rem + 7vw, 6rem); /* 4rem -> 6rem */
     margin: clamp(1.5rem, -0.13rem + 2.6vw, 3rem); /* 1.5rem -> 3rem */
   }
   
@@ -178,9 +179,12 @@ export default {
     height: auto;
   }
 
+  .svgPageWe {
+    height: clamp(4rem, 2.12rem + 9.4vw, 8rem); /* 8rem -> 11rem */
+  }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   .section {
     flex-flow: row nowrap;
   }
@@ -259,6 +263,10 @@ export default {
     z-index: 98;
     opacity: 0.4;
   }
+  
+  .svgPageWe {
+    height: clamp(8rem, 4.74rem + 5.2vw, 11rem); /* 8rem -> 11rem */
+  }
 }
 
 #we {
@@ -309,7 +317,6 @@ export default {
 .svgPageWe {
   position: absolute;
   bottom: 0;
-  height: clamp(8rem, 4.74rem + 5.2vw, 11rem); /* 8rem -> 11rem */
-  width: clamp(62.5rem, 100vw, 120rem); /* 62.5rem -> 120rem */
+  width: 100vw;
 }
 </style>

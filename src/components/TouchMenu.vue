@@ -150,6 +150,7 @@ export default {
 .toggle {
   height: 1.5rem;
   padding: 0.75rem 1rem 0.75rem 0;
+  color: var(--color-text-light);
 }
 
 </style>

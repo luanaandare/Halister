@@ -5,7 +5,7 @@
 </template>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   .backgroundImage {
     background-image: linear-gradient(
         to right,
@@ -13,24 +13,24 @@
         rgba(6, 7, 14, 0.2)
       ),
       url("../../assets/images/bg-home-mob.png");
-    width: 20rem; /* 30rem ->  */ 
-    height: 15rem; /* 15rem ->  */
+    width: 100vw;
+    height: 75vw;
     
     position: relative;
     margin-top: 4.5rem;
   }
 
   h1 {
-    top: 3rem;
-    width: 14rem; /* 14rem -> rem */
+    top: clamp(3rem, 2.06rem + 4.7vw, 5rem); /* 3rem -> 5rem */
+    width: clamp(14rem, 1.76rem + 61vw, 40rem); /* 14rem -> 40rem */
     padding: 1.5rem 1rem;
     
-    line-height: 1.5rem; /* 1.5rem ->  rem */
-    font-size: 1.2rem; /* 1.2rem ->  rem */
+    line-height: clamp(1.5rem, 0.09rem + 7vw, 4.5rem); /* 1.5rem -> 4.5 rem */
+    font-size: clamp(1.2rem, -0.12rem + 6.5vw, 4rem); /* 1.2rem -> 4 rem */
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   .backgroundImage {
     background-image: linear-gradient(
         to right,

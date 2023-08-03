@@ -3,8 +3,6 @@
     <svg
       preserveAspectRatio=none
       viewBox="0 0 100 100"
-      width="390"
-      height="170"
     >
       <path 
         :fill=shadeColor
@@ -32,29 +30,38 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   .wrapper {
     top: 1rem;
     margin-bottom: 1rem;
-    height: 3rem;
+    height: clamp(3rem, -0.59rem + 18vw, 10.625rem);
   }
   
   svg {
-    height: 3rem;
-    width: 8rem;
+    height: clamp(3rem, -0.59rem + 18vw, 10.625rem);
+    width: clamp(8rem, 0.306rem + 38vw, 24.35rem);
   }
 
   span {
-    font-size: 1rem;
-    padding: 0.25rem 0 0 0.5rem;
+    font-size: clamp(1rem, 0.06rem + 4.7vw, 3rem);
+    padding:
+      clamp(0.25rem, -0.57rem + 4vw, 2rem)
+      clamp(0rem, -0.47rem + 2vw, 1rem)
+      clamp(0rem, -0.71rem + 3.5vw, 1.5rem)
+      clamp(0.5rem, -0.69rem + 6vw, 3rem);
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   .wrapper {
     top: 5rem;
     margin-bottom: 5rem;
     height: 10.7rem;
+  }
+
+  svg {
+    height: 10.625rem;
+    width: 24.35rem;
   }
 
   span {
