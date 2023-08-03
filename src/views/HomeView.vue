@@ -13,7 +13,7 @@
     <FooterMenu />
     <Transition name="fade">
       <a
-        v-show="scrollpx > 0.29 * iw + 270 && scrollpx < 0.97 * iw + 3661"
+        v-if="scrollpx > 0.29 * iw + 270 && scrollpx < 0.97 * iw + 3661"
         href="#home"
         class="hoveringButton alignLeft desktop"
         title="Voltar para o topo da página"
@@ -21,7 +21,7 @@
     </Transition>
     <Transition name="fade">
       <a
-        v-show="scrollpx < 0.97 * iw + 3661"
+        v-if="scrollpx < 0.97 * iw + 3661"
         href="https://wa.me/5511984574754?text=Olá%2C%20estive%20no%20seu%20site%20e%20tenho%20interesse%20em%20conhecer%20melhor%20vocês!"
         class="hoveringButton alignRight desktop"
         title="Contate-nos no whatsapp!"
@@ -90,20 +90,11 @@ export default {
   .desktop {
     display: none !important;
   }
-
-  .mobile {
-    display: block !important;
-  }
-  
 }
 
 @media screen and (width > 1000px) {
   .mobile {
     display: none !important;
-  }
-
-  .desktop {
-    display: block !important;
   }
 }
 .hoveringButton {

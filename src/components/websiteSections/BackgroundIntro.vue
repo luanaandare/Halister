@@ -60,7 +60,7 @@
 
 h1 {
   position: relative;
-  color: white;
+  color: var(--color-text-light);
   font-family: BebasNeue;
   cursor: default;
 }

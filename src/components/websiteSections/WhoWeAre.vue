@@ -273,14 +273,14 @@ export default {
 .biColumn h4,
 .triColumn h4 {
   font-family: BebasNeue;
-  color: var(--color-heading);
+  color: var(--color-text-light);
 
   cursor: default;
 }
 
 .biColumn p {
   font-family: "SourceSans", sans-serif;
-  color: var(--color-heading);
+  color: var(--color-text-light);
 }
 
 .triColumn {
@@ -299,7 +299,7 @@ export default {
 .textContainer p,
 .textContainer span {
   font-family: "SourceSans", sans-serif;
-  color: var(--color-heading);
+  color: var(--color-text-light);
 }
 
 .textContainer span {

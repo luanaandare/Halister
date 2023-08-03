@@ -1,6 +1,11 @@
 <template>
   <div id="brands">
-    <TitleWrapper string="TRABALHAMOS COM" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#f2c60f" />
+    <TitleWrapper
+      string="TRABALHAMOS COM"
+      fontColor="#ffffff"
+      backColor="#2d2d2d"
+      shadeColor="#f2c60f"
+    />
     <div class="section">
       <div
         class="logoContainer"

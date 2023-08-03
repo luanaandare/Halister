@@ -159,6 +159,8 @@ h3 {
   padding: 0.5rem;
   border-left: solid 1px white;
   font-size: clamp(1rem, 0.78rem + 0.3vw, 1.2rem); /* 1rem -> 1.2rem */
+  
+  color: var(--color-text-light);
 
   cursor: default;
 }

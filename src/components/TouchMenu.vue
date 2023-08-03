@@ -115,6 +115,7 @@ export default {
   align-items: flex-end;
 
   background-color: var(--color-background);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .menu a,
@@ -124,7 +125,7 @@ export default {
   text-decoration: none;
   color: #fff;
   background-color: var(--color-background);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .negativeSpace {
