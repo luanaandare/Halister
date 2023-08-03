@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   #rent {
     height: 20rem;
     width: 100vw;
@@ -25,10 +25,11 @@ export default {
   
   .placeholder {
     font-size: 1rem;
+    color: var(--color-text-light);
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   #rent {
     height: 50rem;
   }

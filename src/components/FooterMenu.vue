@@ -45,7 +45,7 @@
 </template>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   #footer {
     flex-flow: column nowrap;
     margin: 1rem 0;
@@ -53,7 +53,7 @@
 
   .col {
     flex-flow: row nowrap;
-    width: 17rem;
+    width: clamp(17rem, -2.29rem + 96.4vw, 58rem); /* 17rem -> 58rem */
     margin: 0.5rem;
     align-items: center;
     justify-content: space-between;
@@ -61,13 +61,27 @@
     margin-bottom: 1rem;
   }
 
+  h4 {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 0.53rem + 2.3vw, 2rem); /* 1rem -> 2rem */
+  }
+
+  .col p,
+  .col span {
+    font-size: clamp(0.7rem, 0.47rem + 1.2vw, 1.2rem); /* 0.7rem -> 1.2rem */
+  }
+
   .subContainer {
     align-items: flex-end;
 
   }
+  .logoCol {
+    width: clamp(17rem, -2.29rem + 96.4vw, 58rem); /* 17rem -> 58rem */
+    justify-content: center;
+  }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   #footer {
     flex-flow: row nowrap;
   }
@@ -86,6 +100,12 @@
 
   h4 {
     margin-top: 1rem;
+    font-size: clamp(1rem, 0.16rem + 1.3vw, 1.72rem); /* 1rem -> 1.72rem */
+  }
+
+  .col p,
+  .col span {
+    font-size: clamp(0.7rem, 0.49rem + 0.3vw, 0.85rem); /* 0.7rem -> 0.85rem */
   }
 
   .logoCol img {
@@ -110,7 +130,6 @@
 
 h4 {
   font-family:"BebasNeue";
-  font-size: clamp(1rem, 0.16rem + 1.3vw, 1.72rem); /* 1rem -> 1.72rem */
   color: #f2c60f;
 }
 
@@ -122,7 +141,6 @@ h4 img {
 .col span {
   font-family: "SourceSans";
   color: #fff;
-  font-size: clamp(0.7rem, 0.49rem + 0.3vw, 0.85rem); /* 0.7rem -> 0.85rem */
 }
 
 .smaller {

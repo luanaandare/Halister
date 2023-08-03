@@ -26,48 +26,50 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   #contact {
-    height: 20rem;
+    height: clamp(20rem, 8.7rem + 56.5vw, 44rem); /* 20rem -> 44rem */
   }
 
   .inputContainer {
-    margin-top: 1rem;
-    width: 15rem;
+    margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
+    width: clamp(15rem, 3.24rem + 58.8vw, 40rem); /* 15rem -> 40rem */
   }
   
   .halfColForm {
-    height: 1.5rem;
-    width: 7rem;
+    height: clamp(1.5rem, 0.8rem + 3.5vw, 3rem); /* 1.5rem -> 3rem */
+    width: clamp(7rem, 1.3rem + 28.2vw, 19rem); /* 7rem -> 19rem */
   }
 
   .fullColForm {
-    height: 6rem;
-    width: 14.5rem;
+    height: clamp(6rem, 4.12rem + 9.4vw, 10rem); /* 6rem -> 10rem*/
+    width: clamp(14.5rem, 2.97rem + 57.6vw, 39rem); /* 14.5rem -> 39rem */
     resize: none;
   }
   
   .halfColForm,
   .fullColForm {
-    margin: 0.125rem 0.25rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+    margin:
+      clamp(0.125rem, 0.17rem + 1.4vw, 0.75rem)
+      clamp(0.25rem, 0.13rem + 0.6vw, 0.5rem); /* 0.125rem 0.25rem -> 0.75rem 0.5rem */
+    padding: clamp(0.5rem, 0.26rem + 1.1vw, 1rem); /* 0.5rem -> 1rem */
+    border-radius: clamp(0.25rem, 0.13rem + 0.6vw, 0.5rem); /* 0.25rem -> 0.5rem */
     border: 0px;
     
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 0.7rem + 0.47vw, 1rem); /* 0.8rem -> 1rem */
   }
   
   .halfColForm::placeholder,
   .fullColForm::placeholder {
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 0.7rem + 0.47vw, 1rem); /* 0.8rem -> 1rem */
   }
   
   .submit {
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.89rem + 0.5vw, 1.25rem); /* 1rem -> 1.25rem */
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   #contact {
     height: 44rem;
   }

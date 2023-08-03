@@ -7,10 +7,10 @@
     <TiresPage />
     <PartsPage />
     <ServicesPage />
-    <!--<RentPage />
+    <RentPage />
     <BrandsPage />
     <ContactPage />
-    <FooterMenu />-->
+    <FooterMenu />
     <Transition name="fade">
       <a
         v-if="scrollpx > 0.29 * iw + 270 && scrollpx < 0.97 * iw + 3661"

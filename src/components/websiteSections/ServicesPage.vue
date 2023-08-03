@@ -83,39 +83,39 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
 
   .paragraphContainer {
-    width: 10rem; /* 30rem -> 50rem */
-    height: 8rem; /* 10rem -> 15rem */
+    width: clamp(10rem, 0.59rem + 47vw, 30rem); /* 10rem -> 30rem */
+    height: clamp(8rem, 7.06rem + 4.7vw, 10rem); /* 8rem -> 10rem */
   }
   
   .paragraphTitle {
-    font-size: 0.8rem; /* 1.2rem -> 1.5rem */
+    font-size: clamp(0.8rem, 0.59rem + 1.1vw, 1.25rem); /* 0.8rem -> 1.25rem */
   }
 
   .paragraph {
-    font-size: 0.5rem; /* 0.8rem -> 1rem */
+    font-size: clamp(0.5rem, 0.36rem + 0.7vw, 0.8rem); /* 0.5rem -> 0.8rem */
   }
 
   
   .imageContainer {
-    margin: 0 0.5rem; /* 0 2rem -> 0 5rem */
-    height: 8rem; /* 10rem -> 15rem */
+    margin: 0 clamp(0.5rem, -0.21rem + 3.5vw, 2rem); /* 0 0.5rem -> 0 2rem */
+    height: clamp(8rem, 7.06rem + 4.7vw, 10rem); /* 8rem -> 10rem */
   }
   
   .imageContainer img {
     width: auto;
-    height: 5rem; /* 9rem -> 12.5rem */
+    height: clamp(5rem, 3.12rem + 9.4vw, 9rem); /* 5rem -> 9rem */
   }
 
   .svgPageServices   {
     width: 100vw;
-    height: 35rem; /* 55rem -> 70rem */
+    height: clamp(35rem, 25.59rem + 47vw, 55rem); /* 35rem -> 55rem */
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
 
   .section {
     margin-left: clamp(3rem, -0,26rem + 5.2vw, 6rem); /* 3rem -> 6rem */

@@ -57,7 +57,7 @@ export default {
 <style scoped>
 @media screen and (width < 1000px) {
   #parts {
-    height: clamp(30rem, 22.9rem + 35vw, 45rem); /* 30rem -> 45rem */
+    height: clamp(30rem, 20.59rem + 47vw, 50rem); /* 30rem -> 50rem */
   }
 
   .paragraphContainer {

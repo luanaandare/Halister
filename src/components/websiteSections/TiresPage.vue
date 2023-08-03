@@ -193,7 +193,7 @@ export default {
   }
   .svgPagePneus {
     width: 100vw; /* 62.5rem -> 120rem */
-    height: clamp(38rem, 25.3rem + 63.5vw, 65rem); /* 38rem -> 65rem */
+    height: clamp(38rem, 22.94rem + 75vw, 70rem); /* 38rem -> 65rem */
   }
 }
 

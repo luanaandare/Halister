@@ -34,14 +34,15 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 999px) {
+@media screen and (width < 1000px) {
   #brands {
-    height: 28rem; /* 40rem -> 50rem */
+    height: clamp(28rem, 22.35rem + 28.2vw, 40rem); /* 28rem -> 40rem */
   }
 
   .section {
-    width: 18rem; /* 50rem -> 60rem */
-    margin-left: 0.5rem;
+    width: clamp(18rem, 2.9rem + 75.2vw, 50rem); /* 18rem -> 50rem */
+    margin-left: clamp(0.5rem, -2.2rem + 13.5vw, 6.25rem); /* 0.5rem -> 6.25rem */
+    margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
   }
   
   .logoContainer {
@@ -50,11 +51,11 @@ export default {
   
   
   .logo {
-    width: 3.5rem; /* 6rem -> 8rem */
+    width: clamp(3.5rem, 2.3rem + 5.89vw, 6rem); /* 3.5rem -> 6rem */
   }
 }
 
-@media screen and (width > 1000px) {
+@media screen and (width >= 1000px) {
   #brands {
     height: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
   }
