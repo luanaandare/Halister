@@ -86,13 +86,13 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   .desktop {
     display: none !important;
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   .mobile {
     display: none !important;
   }
