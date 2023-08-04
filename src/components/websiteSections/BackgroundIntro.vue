@@ -16,8 +16,8 @@
     width: 100vw;
     height: 75vw;
     
-    left:0;
-    top: 4.5rem;
+    position: relative;
+    margin-top: 4.5rem;
   }
 
   h1 {
@@ -53,8 +53,6 @@
   }
 }
 .backgroundImage{
-  position: relative;
-  left: 0;
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
