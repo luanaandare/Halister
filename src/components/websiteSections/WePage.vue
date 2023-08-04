@@ -275,6 +275,7 @@ export default {
 
 #we {
   position: relative;
+  left: 0;
 }
 
 .section {
