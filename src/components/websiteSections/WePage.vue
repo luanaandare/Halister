@@ -120,7 +120,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   #we {
     scroll-margin-top: 4.5rem;
   }
@@ -188,7 +188,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   .section {
     flex-flow: row nowrap;
   }

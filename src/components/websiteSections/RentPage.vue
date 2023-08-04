@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   #rent {
     height: 20rem;
     width: 100vw;
@@ -110,7 +110,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   #rent {
     height: 50rem;
   }

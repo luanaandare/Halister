@@ -45,7 +45,7 @@
 </template>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   #footer {
     flex-flow: column nowrap;
     margin: 1rem 0;
@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   #footer {
     flex-flow: row nowrap;
   }

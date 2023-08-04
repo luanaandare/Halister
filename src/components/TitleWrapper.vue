@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   .wrapper {
     top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
     margin-bottom: 1rem;
@@ -52,7 +52,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   .wrapper {
     top: 5rem;
     margin-bottom: 5rem;

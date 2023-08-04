@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   #parts {
     height: clamp(30rem, 20.59rem + 47vw, 50rem); /* 30rem -> 50rem */
     
@@ -89,7 +89,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   #parts {
     height: clamp(45rem, 39.57rem + 8.7vw, 50rem); /* 45rem -> 50rem */
   }

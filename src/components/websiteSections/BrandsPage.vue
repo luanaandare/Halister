@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   #brands {
     height: clamp(28rem, 22.35rem + 28.2vw, 40rem); /* 28rem -> 40rem */
     scroll-margin-top: 4.5rem;
@@ -56,7 +56,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   #brands {
     height: clamp(40rem, 29.13rem + 17vw, 50rem); /* 40rem -> 50rem */
   }

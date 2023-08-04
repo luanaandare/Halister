@@ -5,7 +5,7 @@
 </template>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   .backgroundImage {
     background-image: linear-gradient(
         to right,
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   .backgroundImage {
     background-image: linear-gradient(
         to right,

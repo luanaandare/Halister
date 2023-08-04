@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   
   #contact {
     height: clamp(20rem, 8.7rem + 56.5vw, 44rem); /* 20rem -> 44rem */
@@ -71,7 +71,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   #contact {
     height: 44rem;
   }

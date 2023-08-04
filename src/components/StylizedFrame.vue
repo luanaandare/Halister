@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (width < 1000px) {
+@media (width < 1000px) {
   .imageContainer {
     width: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
     height: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
@@ -60,7 +60,7 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   .imageContainer {
     width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
     height: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
