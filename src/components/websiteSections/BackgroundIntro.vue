@@ -38,7 +38,7 @@
         rgba(6, 7, 14, 0.2)
       ),
       url("../../assets/images/bg-home.png");
-    width: clamp(62.5rem, 100vw, 120rem); /* 62.5rem -> 120rem */ 
+    width: 100vw;
     height: clamp(30.2rem, 13.81rem + 26vw, 45rem); /* 30.2rem -> 38rem */
   }
 

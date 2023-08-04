@@ -88,15 +88,19 @@ export default {
 <style scoped>
 @media (width < 1000px) {
   .desktop {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (width >= 1000px) {
   .mobile {
-    display: none !important;
+    display: none;
   }
 }
+#home {
+  position: relative;
+}
+
 .hoveringButton {
   position: fixed;
   bottom: 3rem;

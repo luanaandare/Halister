@@ -79,6 +79,7 @@
 <style scoped>
 #header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  position: relative;
 }
 
 .menuStyling {

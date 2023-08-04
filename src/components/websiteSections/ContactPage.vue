@@ -110,6 +110,7 @@ export default {
     font-size: 1.25rem;
   }
 }
+
 #contact {
   position: relative;
   width: 100vw;
