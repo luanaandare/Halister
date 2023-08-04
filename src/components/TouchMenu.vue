@@ -15,57 +15,59 @@
         />
       </div>
     </div>
-    <nav class="menu" v-if="toggleMenu == true">
-        <a
-          href="#we"
-          title="Quem nós somos"
-          @click="toggleMenu = !toggleMenu"
-        >
-          QUEM SOMOS
-        </a>
-        <a
-          href="#tires"
-          title="Sobre os nossos pneus"
-          @click="toggleMenu = !toggleMenu"
-        >
-          PNEUS
-        </a>
-        <a
-          href="#parts"
-          title="Sobre as peças que utilizamos"
-          @click="toggleMenu = !toggleMenu"
-        >
-          PEÇAS
-        </a>
-        <a
-          href="#services"
-          title="Sobre os nossos serviços"
-          @click="toggleMenu = !toggleMenu"
-        >
-          SERVIÇOS
-        </a>
-        <a
-          href="#rent"
-          title="Locação de equipamentos"
-          @click="toggleMenu = !toggleMenu"
-        >
-          LOCAÇÃO
-        </a>
-        <a
-          href="#brands"
-          title="As marcas que trabalhamos"
-          @click="toggleMenu = !toggleMenu"
-        >
-          MARCAS
-        </a>
-        <a
-          href="#contact"
-          title="Fale conosco"
-          @click="toggleMenu = !toggleMenu"
-        >
-          CONTATO
-        </a>
-      </nav>
+    <Transition name="fade">
+      <nav class="menu" v-if="toggleMenu == true">
+          <a
+            href="#we"
+            title="Quem nós somos"
+            @click="toggleMenu = !toggleMenu"
+          >
+            QUEM SOMOS
+          </a>
+          <a
+            href="#tires"
+            title="Sobre os nossos pneus"
+            @click="toggleMenu = !toggleMenu"
+          >
+            PNEUS
+          </a>
+          <a
+            href="#parts"
+            title="Sobre as peças que utilizamos"
+            @click="toggleMenu = !toggleMenu"
+          >
+            PEÇAS
+          </a>
+          <a
+            href="#services"
+            title="Sobre os nossos serviços"
+            @click="toggleMenu = !toggleMenu"
+          >
+            SERVIÇOS
+          </a>
+          <a
+            href="#rent"
+            title="Locação de equipamentos"
+            @click="toggleMenu = !toggleMenu"
+          >
+            LOCAÇÃO
+          </a>
+          <a
+            href="#brands"
+            title="As marcas que trabalhamos"
+            @click="toggleMenu = !toggleMenu"
+          >
+            MARCAS
+          </a>
+          <a
+            href="#contact"
+            title="Fale conosco"
+            @click="toggleMenu = !toggleMenu"
+          >
+            CONTATO
+          </a>
+        </nav>
+    </Transition>
       <div
         class="negativeSpace"
         v-if="toggleMenu == true"
@@ -153,4 +155,13 @@ export default {
   color: var(--color-text-light);
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
