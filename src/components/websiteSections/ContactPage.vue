@@ -26,6 +26,61 @@ export default {
 </script>
 
 <style scoped>
+#contact {
+  position: relative;
+  width: 100vw;
+  background-color: #f2c60f;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.halfColForm,
+.fullColForm {
+  font-family: "SourceSans";
+}
+
+.fullColForm {
+  resize: none;
+}
+
+.halfColForm::placeholder,
+.fullColForm::placeholder {
+  font-family: "SourceSans";
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.submit {
+  font-family: "BebasNeue";
+  background-color: #f2c60f;
+  border: solid 2px black;
+
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 0.25rem 1rem;
+  margin: 1rem;
+}
+
+.submit:hover {
+  background-color: #d49a0e;
+}
+
 @media (width < 1000px) {
   
   #contact {
@@ -111,59 +166,5 @@ export default {
   }
 }
 
-#contact {
-  position: relative;
-  width: 100vw;
-  background-color: #f2c60f;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contactForm {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.inputContainer {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.halfColForm,
-.fullColForm {
-  font-family: "SourceSans";
-}
-
-.fullColForm {
-  resize: none;
-}
-
-.halfColForm::placeholder,
-.fullColForm::placeholder {
-  font-family: "SourceSans";
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.submit {
-  font-family: "BebasNeue";
-  background-color: #f2c60f;
-  border: solid 2px black;
-
-  cursor: pointer;
-  transition: 0.2s;
-  padding: 0.25rem 1rem;
-  margin: 1rem;
-}
-
-.submit:hover {
-  background-color: #d49a0e;
-}
 
 </style>

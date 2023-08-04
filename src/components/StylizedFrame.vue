@@ -44,6 +44,31 @@ export default {
 </script>
 
 <style scoped>
+.imageContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 100;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.frame {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.svgFrame {
+  position: absolute;
+}
+
 @media (width < 1000px) {
   .imageContainer {
     width: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
@@ -76,28 +101,4 @@ export default {
   }
 }
 
-.imageContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 100;
-}
-
-.imageContainer img {
-  width: 100%;
-}
-
-.frame {
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.svgFrame {
-  position: absolute;
-}
 </style>

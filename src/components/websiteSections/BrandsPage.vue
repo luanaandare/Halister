@@ -34,6 +34,23 @@ export default {
 </script>
 
 <style scoped>
+#brands {
+  position: relative;
+  background-color: #fff;
+}
+
+.section {
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (width < 1000px) {
   #brands {
     height: clamp(28rem, 22.35rem + 28.2vw, 40rem); /* 28rem -> 40rem */
@@ -75,20 +92,4 @@ export default {
   }
 }
 
-#brands {
-  position: relative;
-  background-color: #fff;
-}
-
-.section {
-
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.logoContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 </style>

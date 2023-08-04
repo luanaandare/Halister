@@ -86,17 +86,6 @@ export default {
 </script>
 
 <style scoped>
-@media (width < 1000px) {
-  .desktop {
-    display: none;
-  }
-}
-
-@media (width >= 1000px) {
-  .mobile {
-    display: none;
-  }
-}
 #home {
   position: relative;
 }
@@ -146,5 +135,17 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media (width < 1000px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (width >= 1000px) {
+  .mobile {
+    display: none;
+  }
 }
 </style>

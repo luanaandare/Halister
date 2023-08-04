@@ -105,6 +105,49 @@ export default {
 </script>
 
 <style scoped>
+#tires {
+  position: relative;
+  width: 100vw;
+}
+
+.paragraphContainer {
+  font-family: "SourceSans";
+  color: var(--color-background);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.yellow {
+  color: #f2c60f;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tireContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-family: BebasNeue;
+  color: var(--color-background);
+  text-align: center;
+}
+
+.svgPagePneus {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  z-index: -1;
+}
+
 @media (width < 1000px) {
   #tires {
     scroll-margin-top: 4.5rem;
@@ -257,46 +300,4 @@ export default {
   }
 }
 
-#tires {
-  position: relative;
-  width: 100vw;
-}
-
-.paragraphContainer {
-  font-family: "SourceSans";
-  color: var(--color-background);
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.yellow {
-  color: #f2c60f;
-}
-
-.logoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tireContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h4 {
-  font-family: BebasNeue;
-  color: var(--color-background);
-  text-align: center;
-}
-
-.svgPagePneus {
-  position: absolute;
-  background-color: #fff;
-  top: 0;
-  z-index: -1;
-}
 </style>

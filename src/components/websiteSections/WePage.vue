@@ -120,6 +120,57 @@ export default {
 </script>
 
 <style scoped>
+#we {
+  position: relative;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.biColumn h4,
+.triColumn h4 {
+  font-family: BebasNeue;
+  color: var(--color-text-light);
+
+  cursor: default;
+}
+
+.biColumn p {
+  font-family: "SourceSans", sans-serif;
+  color: var(--color-text-light);
+}
+
+.triColumn {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer p,
+.textContainer span {
+  font-family: "SourceSans", sans-serif;
+  color: var(--color-text-light);
+}
+
+.textContainer span {
+  font-weight: 700;
+}
+
+.svgPageWe {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
 @media (width < 1000px) {
   #we {
     scroll-margin-top: 4.5rem;
@@ -273,54 +324,4 @@ export default {
   }
 }
 
-#we {
-  position: relative;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-}
-
-.biColumn h4,
-.triColumn h4 {
-  font-family: BebasNeue;
-  color: var(--color-text-light);
-
-  cursor: default;
-}
-
-.biColumn p {
-  font-family: "SourceSans", sans-serif;
-  color: var(--color-text-light);
-}
-
-.triColumn {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.textContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.textContainer p,
-.textContainer span {
-  font-family: "SourceSans", sans-serif;
-  color: var(--color-text-light);
-}
-
-.textContainer span {
-  font-weight: 700;
-}
-
-.svgPageWe {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-}
 </style>

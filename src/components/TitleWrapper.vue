@@ -30,6 +30,22 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  position: relative;
+  
+}
+
+svg {
+  position: absolute;
+}
+
+span {
+  font-family: BebasNeue;
+  
+  position: absolute;
+  cursor: default;
+}
+
 @media (width < 1000px) {
   .wrapper {
     top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
@@ -69,20 +85,5 @@ export default {
     padding: 2rem 1rem 1.5rem 3rem;
   }
 
-}
-.wrapper {
-  position: relative;
-  
-}
-
-svg {
-  position: absolute;
-}
-
-span {
-  font-family: BebasNeue;
-  
-  position: absolute;
-  cursor: default;
 }
 </style>

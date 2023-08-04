@@ -67,6 +67,25 @@ export default {
 </script>
 
 <style scoped>
+#rent {
+  position: relative;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SourceSans";
+}
+
+.svgPageRent {
+  background-color: var(--color-text-light);
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+}
+
 @media (width < 1000px) {
   #rent {
     height: 20rem;
@@ -143,25 +162,6 @@ export default {
   .svgPageRent {
     height: 50rem;
   }
-}
-
-#rent {
-  position: relative;
-}
-
-.placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "SourceSans";
-}
-
-.svgPageRent {
-  background-color: var(--color-text-light);
-  position: absolute;
-  width: 100vw;
-  top: 0;
-  z-index: -1;
 }
 
 

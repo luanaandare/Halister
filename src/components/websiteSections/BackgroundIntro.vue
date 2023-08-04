@@ -5,6 +5,19 @@
 </template>
 
 <style scoped>
+.backgroundImage{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  position: relative;
+  color: var(--color-text-light);
+  font-family: BebasNeue;
+  cursor: default;
+}
+
 @media (width < 1000px) {
   .backgroundImage {
     background-image: linear-gradient(
@@ -51,18 +64,6 @@
     line-height: 4.5rem; /* 4.5rem -> 6rem */
     font-size: 4rem; /* 4rem -> 4.75rem */
   }
-}
-.backgroundImage{
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-h1 {
-  position: relative;
-  color: var(--color-text-light);
-  font-family: BebasNeue;
-  cursor: default;
 }
 
 </style>

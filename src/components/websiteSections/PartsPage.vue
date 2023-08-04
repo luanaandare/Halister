@@ -55,6 +55,49 @@ export default {
 </script>
 
 <style scoped>
+#parts {
+  position: relative;
+  background-image: linear-gradient(
+        to right,
+        rgba(45, 45, 45, 0.9) 40%,
+        rgba(45, 45, 45, 0.9)
+      ),
+      url("../../assets/images/bg-parts.png"); 
+  background-size: cover;
+  background-position: right;
+}
+
+.paragraphContainer {
+  font-family: "SourceSans";
+  color: #fff;
+}
+
+.yellow {
+  color: #f2c60f;
+}
+
+.section {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.upper {
+  align-self: flex-start;
+}
+
+.lower {
+  align-self: flex-end;
+}
+
+.svgPageParts {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+
 @media (width < 1000px) {
   #parts {
     height: clamp(30rem, 20.59rem + 47vw, 50rem); /* 30rem -> 50rem */
@@ -114,46 +157,4 @@ export default {
   }
 }
 
-#parts {
-  position: relative;
-  background-image: linear-gradient(
-        to right,
-        rgba(45, 45, 45, 0.9) 40%,
-        rgba(45, 45, 45, 0.9)
-      ),
-      url("../../assets/images/bg-parts.png"); 
-  background-size: cover;
-  background-position: right;
-}
-
-.paragraphContainer {
-  font-family: "SourceSans";
-  color: #fff;
-}
-
-.yellow {
-  color: #f2c60f;
-}
-
-.section {
-  position: absolute;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.upper {
-  align-self: flex-start;
-}
-
-.lower {
-  align-self: flex-end;
-}
-
-.svgPageParts {
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-}
 </style>

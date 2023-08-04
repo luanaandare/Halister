@@ -83,6 +83,62 @@ export default {
 </script>
 
 <style scoped>
+#services {
+  position: relative;
+}
+
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 1rem;
+  position: relative;
+}
+
+.paragraphContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  color: var(--color-background);
+}
+
+.alignRight {
+  text-align: end;
+}
+
+.alignLeft {
+  text-align: start;
+}
+
+.paragraphTitle {
+  font-family: BebasNeue;
+}
+
+.paragraph {
+  font-family: SourceSans;
+}
+
+.imageContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.svgPageServices   {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  background-color: #f2c60f;
+}
+
 @media (width < 1000px) {
   #services {
     scroll-margin-top: 4.5rem;
@@ -153,59 +209,4 @@ export default {
   }
 }
 
-#services {
-  position: relative;
-}
-
-.section {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-}
-
-.row {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 1rem;
-  position: relative;
-}
-
-.paragraphContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  color: var(--color-background);
-}
-
-.alignRight {
-  text-align: end;
-}
-
-.alignLeft {
-  text-align: start;
-}
-
-.paragraphTitle {
-  font-family: BebasNeue;
-}
-
-.paragraph {
-  font-family: SourceSans;
-}
-
-.imageContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-.svgPageServices   {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-
-  background-color: #f2c60f;
-}
 </style>
