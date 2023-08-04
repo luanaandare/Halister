@@ -141,7 +141,7 @@ export default {
 }
 
 #logo {
-  height: 3rem; /* 4.5rem -> 5.5rem */
+  height: 2rem; /* 4.5rem -> 5.5rem */
   padding: 0.75rem 0 0.75rem 1rem; /* 0.75rem 0 0.75rem 3rem -> 0.75rem 0 0.75rem 6rem */
 }
 
