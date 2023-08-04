@@ -121,6 +121,10 @@ export default {
 
 <style scoped>
 @media screen and (width < 1000px) {
+  #we {
+    scroll-margin-top: 4.5rem;
+  }
+  
   .section {
     margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
     position: relative;

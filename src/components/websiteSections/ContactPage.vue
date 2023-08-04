@@ -27,8 +27,10 @@ export default {
 
 <style scoped>
 @media screen and (width < 1000px) {
+  
   #contact {
     height: clamp(20rem, 8.7rem + 56.5vw, 44rem); /* 20rem -> 44rem */
+    scroll-margin-top: 4.5rem;
   }
 
   .inputContainer {

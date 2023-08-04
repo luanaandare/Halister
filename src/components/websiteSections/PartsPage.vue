@@ -58,6 +58,8 @@ export default {
 @media screen and (width < 1000px) {
   #parts {
     height: clamp(30rem, 20.59rem + 47vw, 50rem); /* 30rem -> 50rem */
+    
+    scroll-margin-top: 4.5rem;
   }
 
   .paragraphContainer {

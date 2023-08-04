@@ -37,6 +37,7 @@ export default {
 @media screen and (width < 1000px) {
   #brands {
     height: clamp(28rem, 22.35rem + 28.2vw, 40rem); /* 28rem -> 40rem */
+    scroll-margin-top: 4.5rem;
   }
 
   .section {
@@ -75,6 +76,7 @@ export default {
 }
 
 #brands {
+  position: relative;
   background-color: #fff;
 }
 
@@ -89,5 +91,4 @@ export default {
   align-items: center;
   justify-content: center;
 }
-
 </style>

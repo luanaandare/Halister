@@ -106,6 +106,10 @@ export default {
 
 <style scoped>
 @media screen and (width < 1000px) {
+  #tires {
+    scroll-margin-top: 4.5rem;
+  }
+
   .paragraphContainer {
     position: relative;
     font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */

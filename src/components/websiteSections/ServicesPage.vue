@@ -84,6 +84,9 @@ export default {
 
 <style scoped>
 @media screen and (width < 1000px) {
+  #services {
+    scroll-margin-top: 4.5rem;
+  }
 
   .paragraphContainer {
     width: clamp(10rem, 0.59rem + 47vw, 30rem); /* 10rem -> 30rem */
