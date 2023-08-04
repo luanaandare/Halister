@@ -36,6 +36,7 @@ export default {
 
   .placeholder {
     font-size: 4rem;
+    color: var(--color-text-light);
   }
 }
 #rent {
