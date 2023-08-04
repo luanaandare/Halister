@@ -40,7 +40,7 @@ export default {
   
   .halfColForm {
     height: clamp(1.5rem, 0.8rem + 3.5vw, 3rem); /* 1.5rem -> 3rem */
-    width: clamp(7rem, 1.3rem + 28.2vw, 19rem); /* 7rem -> 19rem */
+    width: clamp(6rem, 0.82rem + 25.8vw, 17rem); /* 6rem -> 17rem */
   }
 
   .fullColForm {
@@ -54,7 +54,7 @@ export default {
     margin:
       clamp(0.125rem, 0.17rem + 1.4vw, 0.75rem)
       clamp(0.25rem, 0.13rem + 0.6vw, 0.5rem); /* 0.125rem 0.25rem -> 0.75rem 0.5rem */
-    padding: clamp(0.5rem, 0.26rem + 1.1vw, 1rem); /* 0.5rem -> 1rem */
+    padding: 0 clamp(0.5rem, 0.26rem + 1.1vw, 1rem); /* 0.5rem -> 1rem */
     border-radius: clamp(0.25rem, 0.13rem + 0.6vw, 0.5rem); /* 0.25rem -> 0.5rem */
     border: 0px;
     
@@ -82,20 +82,20 @@ export default {
   
   .halfColForm {
     height: 3rem;
-    width: 19rem;
+    width: 17rem;
   }
 
   .fullColForm {
     height: 10rem;
-    width: 39rem;
+    width: 37rem;
     resize: none;
   }
   
   .halfColForm,
   .fullColForm {
     margin: 0.75rem 0.5rem;
-    padding: 1rem;
     border-radius: 0.5rem;
+    padding: 0 1rem;
     border: 0px;
     
     font-size: 1rem;
