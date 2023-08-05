@@ -88,14 +88,14 @@ export default {
 
 @media (width < 1000px) {
   #rent {
-    height: 20rem;
+    height: clamp(20rem, 10.58rem + 47vw, 50rem);
     width: 100vw;
     scroll-margin-top: 4.5rem;
   }
   
   .paragraphContainer {
     position: relative;
-    color: var(--color-text-light);
+    color: var(--halister-theme-yellow);
     font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
     line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
     
@@ -104,6 +104,7 @@ export default {
     margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
     text-align: justify;
+    text-shadow: 1px 1px 0 black;
   }
 
   .paragraphContainer p {
@@ -115,17 +116,17 @@ export default {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 8rem;
+    height: 16rem;
     width: 95vw;
   }
   
   .imageContainer img {
-    height: 4rem;
+    height: clamp(4rem, -0.71rem + 23.5vw, 14rem);
     margin: 0.25rem;
   }
 
   .svgPageRent {
-    height: 20rem;
+    height: clamp(20rem, 10.58rem + 47vw, 50rem);
   }
 }
 
@@ -155,7 +156,7 @@ export default {
   }
   
   .imageContainer img {
-    height: 20rem;
+    height: clamp(14rem, 1.4rem + 20vw, 25.4rem); /* 14rem -> 20rem */
     margin: 0.5rem;
   }
 
