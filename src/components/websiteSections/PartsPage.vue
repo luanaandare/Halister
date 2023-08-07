@@ -17,9 +17,45 @@
       </p>
     </div>
     <div class="section">
-      <StylizedFrame class="upper" image="parts1" />
-      <StylizedFrame class="lower" image="parts2" />
-      <StylizedFrameAlt class="middle" image="parts3" />
+      <StylizedFrame 
+        image="banco"
+        string1="Bancos"
+      />
+      <StylizedFrameAlt
+        image="blue_spot"
+        string1="Blue Spot"
+      />
+      <StylizedFrame
+        image="conector"
+        string1="Conectores"
+      />
+      <StylizedFrameAlt
+        image="filtros"
+        string1="Filtros"
+      />
+      <StylizedFrame
+        image="garfo"
+        string1="Garfos"
+      />
+      <StylizedFrameAlt
+        image="manutencao_hyster"
+        string1="Kits de manutenção"
+        string2="Hyster"
+        />
+      <StylizedFrame
+        image="redutor_glp"
+        string1="Redutores GLP"
+      />
+      <StylizedFrameAlt
+        image="roda_combustao"
+        string1="Rodas"
+        string2="(Empilhadeira à combustão)"
+      />
+      <StylizedFrame
+        image="roda_eletrica"
+        string1="Rodas"
+        string2="(Empilhadeira elétrica)"
+      />
     </div>
     <svg
       class="svgPageParts"
@@ -65,6 +101,7 @@ export default {
       url("../../assets/images/bg-parts.png"); 
   background-size: cover;
   background-position: right;
+  width: 100vw;
 }
 
 .paragraphContainer {
@@ -77,9 +114,9 @@ export default {
 }
 
 .section {
-  position: absolute;
+  position: relative;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: flex-start;
 }
@@ -100,7 +137,7 @@ export default {
 
 @media (width < 1000px) {
   #parts {
-    height: clamp(30rem, 20.59rem + 47vw, 50rem); /* 30rem -> 50rem */
+    height: 75rem; /* 30rem -> 50rem */
     
     scroll-margin-top: 4.5rem;
   }
@@ -111,7 +148,7 @@ export default {
     line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
     
     width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
-    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
     margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
     text-align: justify;
@@ -122,9 +159,9 @@ export default {
   }
   
   .section {
-    height: 10rem;
-    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 19rem -> 40rem */
-    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    height: 20rem;
+    width: 17rem; /* 19rem -> 40rem */
+    margin-left: clamp(0.5rem, -5.38rem + 29vw, 13rem);
     margin-top: 2rem;
   }
   .svgPageParts {
@@ -134,7 +171,7 @@ export default {
 
 @media (width >= 1000px) {
   #parts {
-    height: clamp(45rem, 39.57rem + 8.7vw, 50rem); /* 45rem -> 50rem */
+    height: 75rem; /* 45rem -> 50rem */
   }
 
   .paragraphContainer {
@@ -148,8 +185,9 @@ export default {
   }
   
   .section {
-    top: 23rem;
-    height: 15rem;
+    top: 5rem;
+    height: 50rem;
+    width: clamp(50rem, 29rem + 33.6vw, 60rem);
     margin-left: 10rem;
   }
   .svgPageParts {
