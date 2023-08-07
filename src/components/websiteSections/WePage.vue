@@ -137,7 +137,7 @@ export default {
     },
   },
   created() {
-    setInterval(this.photoSwitch, 5000);
+    setInterval(this.photoSwitch, 3000);
   }
 };
 </script>
