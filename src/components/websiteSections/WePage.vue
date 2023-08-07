@@ -19,7 +19,7 @@
           e atualizados com as principais plataformas B2B Business-to-Business.
         </p>
       </div>
-      <div class="biColumn">
+      <div class="biColumn space">
         <h4>{{ photoTitle }}</h4>
         <div
           class="photoContainer"
@@ -207,12 +207,17 @@ export default {
 
   .biColumn,
   .triColumn {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
     margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
   }
   
   .biColumn h4,
   .triColumn h4 {
+    text-align: center;
     font-size: clamp(1rem, 0.53rem + 2.3vw, 2rem); /* 1rem -> 2rem */
     margin: 0 clamp(1rem, 0.76rem + 1.2vw, 1.5rem); /* 0 1rem -> 0 1.5rem */
   }
@@ -247,14 +252,19 @@ export default {
     display: flex;
     flex-flow: row nowrap;
     position: relative;
-    width: 18rem;
-    margin: 1rem;
+    
+    width: clamp(12rem, 3.53rem + 42vw, 30rem);
   }
 
   .photoContainer .photo {
-    width: 5rem;
-    margin: 0.2rem;
-    height: auto;
+    object-fit: cover;
+    position: absolute;
+    width: clamp(12rem, 3.53rem + 42vw, 30rem);
+    height: clamp(12rem, 3.53rem + 42vw, 30rem);
+  }
+
+  .space {
+    margin-bottom: clamp(12rem, 3.53rem + 42vw, 30rem);
   }
 
   .svgPageWe {
