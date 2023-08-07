@@ -20,11 +20,15 @@
         </p>
       </div>
       <div class="biColumn">
-        <h4>Frota própria</h4>
-        <div class="imageDisplay">
-          <img class="front" src="../../assets/images/frota/frota1.jpeg" />
-          <img class="mid" src="../../assets/images/frota/frota2.jpeg" />
-          <img class="rear" src="../../assets/images/frota/frota3.jpeg" />
+        <h4>{{ photoTitle }}</h4>
+        <div
+          class="photoContainer"
+          v-for="(image, index) in photoSrc"
+          :key="index"
+        >
+          <Transition name="fade">
+            <img class="photo" v-if="currentPhoto == index" :src="image" />
+          </Transition>
         </div>
       </div>
     </div>
@@ -104,17 +108,36 @@
 
 <script>
 import TitleWrapper from '../TitleWrapper.vue';
+import { ref } from 'vue';
 
 export default {
   components: {
     TitleWrapper,
+  },
+  data() {
+    const photoTitle = ref("Nossa sede");
+    const photoSrc = Object.values(import.meta.glob('../../assets/images/wePage/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+    const currentPhoto = ref(3);
+    return { photoTitle, photoSrc, currentPhoto }
   },
   methods: {
     currentDate() {
       const current = new Date();
       const date = `${current.getFullYear()}`;
       return date;
-    }
+    },
+    photoSwitch() {
+      if(this.currentPhoto == this.photoSrc.length - 1) this.currentPhoto = 0;
+      else this.currentPhoto++;
+      this.titleSwitch(this.currentPhoto);
+    },
+    titleSwitch(index) {
+      if(index >= 4) this.photoTitle = "Nossa Sede"
+      else this.photoTitle = "Nossa Frota"
+    },
+  },
+  created() {
+    setInterval(this.photoSwitch, 5000);
   }
 };
 </script>
@@ -220,7 +243,7 @@ export default {
     margin: clamp(1.5rem, -0.13rem + 2.6vw, 3rem); /* 1.5rem -> 3rem */
   }
   
-  .imageDisplay {
+  .photoContainer {
     display: flex;
     flex-flow: row nowrap;
     position: relative;
@@ -228,7 +251,7 @@ export default {
     margin: 1rem;
   }
 
-  .imageDisplay img {
+  .photoContainer .photo {
     width: 5rem;
     margin: 0.2rem;
     height: auto;
@@ -286,42 +309,30 @@ export default {
     margin: clamp(1.5rem, -0.13rem + 2.6vw, 3rem); /* 1.5rem -> 3rem */
   }
 
-  .imageDisplay {
+  .photoContainer {
     display: flex;
     position: relative;
   }
 
-  .imageDisplay img {
-    width: 20rem;
-  }
-
-  .front,
-  .mid,
-  .rear {
+  .photoContainer .photo {
+    object-fit: cover;
     position: absolute;
+    width: 20rem;
+    height: 20rem;
   }
-
-  .front {
-    z-index: 100;
-  }
-
-  .mid {
-    top: 1.5rem;
-    left: 2rem;
-    z-index: 99;
-    opacity: 0.6;
-  }
-
-  .rear {
-    top: 3rem;
-    left: 4rem;
-    z-index: 98;
-    opacity: 0.4;
-  }
-  
   .svgPageWe {
     height: clamp(8rem, 4.74rem + 5.2vw, 11rem); /* 8rem -> 11rem */
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 </style>
