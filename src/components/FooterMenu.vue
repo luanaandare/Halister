@@ -119,7 +119,6 @@ h3 {
 @media (width < 1000px) {
   #footer {
     flex-flow: column nowrap;
-    margin: 1rem 0;
   }
 
   .col {

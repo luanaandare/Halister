@@ -85,6 +85,7 @@ export default {
 <style scoped>
 #services {
   position: relative;
+  width: 100vw;
 }
 
 .section {

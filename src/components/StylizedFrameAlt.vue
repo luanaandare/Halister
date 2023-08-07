@@ -2,6 +2,8 @@
   <div class="frame">
     <div class="imageContainer">
       <img :src="getImageUrl(image)" />
+      <p>{{ string1 }}</p>
+      <p>{{ string2 }}</p>
     </div>
     <svg
       class="svgFrame"
@@ -33,10 +35,10 @@
 
 <script>
 export default {
-  props: ['image'],
+  props: ['image', 'string1', 'string2'],
   setup() {
   const getImageUrl = (name) => {
-        return new URL(`../assets/images/parts/${name}.png`, import.meta.url).href
+        return new URL(`../assets/images/parts/${name}.jpeg`, import.meta.url).href
     }
   return { getImageUrl }
 }
@@ -46,15 +48,20 @@ export default {
 <style scoped>
 .imageContainer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   z-index: 100;
 }
 
-.imageContainer img {
-  width: 100%;
+p {
+  max-width: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */
+  font-size: clamp(0.9rem, 0.57rem + 0.5vw, 1.2rem);
+  text-align: end;
+  cursor: default;
+  font-family: "BebasNeue";
+  color: #d49a0e;
 }
 
 .frame {
@@ -69,14 +76,19 @@ export default {
   position: absolute;
 }
 
-@media screen and (width < 1000px) {
-  .imageContainer {
-    width: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
-    height: clamp(3.75rem, 2.22rem + 7.6vw, 7rem); /* 3.75rem -> 10rem */
+@media (width < 1000px) {
+  .imageContainer img {
+    width: clamp(3.25rem, 1.97rem + 7.6vw, 6.5rem); /* 3.75rem -> 10rem */
+    height: clamp(3.25rem, 1.97rem + 7.6vw, 6.5rem); /* 3.75rem -> 10rem */
+  }
+
+  p {
+    max-width: clamp(5.625rem, 3.33rem + 11.4vw, 10.5rem); /* 5.625rem -> 15rem */
+    font-size: 0.6rem;
   }
 
   .frame {
-    width: clamp(7.5rem, 4.44rem + 15.2vw, 14rem); /* 7.5rem -> 20rem */
+    width: clamp(6rem, 2.94rem + 15.2vw, 12.5rem); /* 7.5rem -> 20rem */
   }
 
   .svgFrame {
@@ -85,10 +97,15 @@ export default {
   }
 }
 
-@media screen and (width >= 1000px) {
+@media (width >= 1000px) {
   .imageContainer {
-    width: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
-    height: clamp(7rem, 0.7rem + 10vw, 10rem); /* 7rem -> 10rem */
+    height: clamp(10.5rem, 1.05rem + 15vw, 15rem); /* 10.5rem -> 15rem */ 
+  }
+
+  .imageContainer img {
+    object-fit: contain;
+    width: clamp(6.5rem, 0.2rem + 10vw, 9.5rem); /* 7rem -> 10rem */
+    height: clamp(6.5rem, 0.2rem + 10vw, 9.5rem); /* 7rem -> 10rem */
   }
 
   .frame {

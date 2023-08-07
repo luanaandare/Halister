@@ -68,6 +68,7 @@ export default {
 <style scoped>
 #rent {
   position: relative;
+  width: 100vw;
 }
 
 .placeholder {
@@ -99,7 +100,7 @@ export default {
     line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
     
     width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
-    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
     margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
     text-align: justify;

@@ -145,6 +145,7 @@ export default {
 <style scoped>
 #we {
   position: relative;
+  width: 100vw;
 }
 
 .section {
@@ -212,7 +213,7 @@ export default {
     justify-content: center;
     align-items: center;
     width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
-    margin-left: clamp(0rem, -5.88rem + 29vw, 12.5rem);
+    margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
   }
   
   .biColumn h4,

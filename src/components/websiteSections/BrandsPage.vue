@@ -37,6 +37,7 @@ export default {
 #brands {
   position: relative;
   background-color: #fff;
+  width: 100vw;
 }
 
 .section {
