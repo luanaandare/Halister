@@ -24,7 +24,6 @@ import { RouterView } from 'vue-router'
 
 * {
   margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
   max-width: 100vw;
 }
