@@ -21,45 +21,30 @@
     </div>
     <div class="section">
       <div class="column flip">
-        <div class="logoContainer">
-          <img src="../../assets/images/logos/logo-continental.png" class="logo" />
-        </div>
         <div class="tireContainer">
         <img src="../../assets/images/tires/pneu-continental.png" class="tire" />
         </div>
         <h4>SUPERELÁSTICO PREMIUM</h4>
       </div>
       <div class="column base">
-        <div class="logoContainer">
-          <img src="../../assets/images/logos/logo-haulmax.png" class="logo" />
-        </div>
         <div class="tireContainer">
         <img src="../../assets/images/tires/pneu-haulmax.png" class="tire" />
         </div>
         <h4>DIAGONAL INDUSTRIAL</h4>
       </div>
       <div class="column flip">
-        <div class="logoContainer">
-          <img src="../../assets/images/logos/logo-barum.png" class="logo" />
-        </div>
         <div class="tireContainer">
         <img src="../../assets/images/tires/pneu-barum.png" class="tire" />
         </div>
         <h4>SUPERELÁSTICO INTERMEDIÁRIO</h4>
       </div>
       <div class="column base">
-        <div class="logoContainer">
-          <img src="../../assets/images/logos/logo-gripmaster.png" class="logo" />
-        </div>
         <div class="tireContainer">
         <img src="../../assets/images/tires/pneu-gripmaster.png" class="tire" />
         </div>
         <h4>DIAGONAL</h4>
       </div>
       <div class="column base">
-        <div class="logoContainer">
-          <img src="../../assets/images/logos/logo-unisol.png" class="logo" />
-        </div>
         <div class="tireContainer">
         <img src="../../assets/images/tires/pneu-topflex.png" class="tire" />
         </div>
