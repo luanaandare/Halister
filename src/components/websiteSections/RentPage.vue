@@ -11,8 +11,7 @@
       </p>
       <p>
         Temos disponibilidade para Locações através de contratos para
-        longos período de locação e também para diárias e eventos
-        específicos.
+        longos períodos.
       </p>
     </div>
     <div class="imageContainer">
