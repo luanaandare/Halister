@@ -132,7 +132,7 @@ export default {
       this.titleSwitch(this.currentPhoto);
     },
     titleSwitch(index) {
-      if(index >= 4) this.photoTitle = "Nossa Sede"
+      if(index >= 2) this.photoTitle = "Nossa Sede"
       else this.photoTitle = "Nossa Frota"
     },
   },
