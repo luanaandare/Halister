@@ -137,7 +137,7 @@ export default {
 
 @media (width < 1000px) {
   #parts {
-    height: 75rem; /* 30rem -> 50rem */
+    height: clamp(65rem, 55rem + 47vw, 85rem); /* 65rem -> 85rem */
     
     scroll-margin-top: 4.5rem;
   }
@@ -159,9 +159,9 @@ export default {
   }
   
   .section {
-    height: 20rem;
-    width: 17rem; /* 19rem -> 40rem */
-    margin-left: clamp(0.5rem, -5.38rem + 29vw, 13rem);
+    height: 45rem;
+    width: clamp(20rem, 5.9rem + 70.6vw, 50rem); /* 18rem -> 50rem */
+    margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
     margin-top: 2rem;
   }
   .svgPageParts {

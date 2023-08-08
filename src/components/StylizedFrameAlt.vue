@@ -77,9 +77,14 @@ p {
 }
 
 @media (width < 1000px) {
+  .imageContainer {
+    height: clamp(5rem, 2.4rem + 12.9vw, 10.5rem); /* 5rem -> 10.5rem */
+  }
+
   .imageContainer img {
-    width: clamp(3.25rem, 1.97rem + 7.6vw, 6.5rem); /* 3.75rem -> 10rem */
-    height: clamp(3.25rem, 1.97rem + 7.6vw, 6.5rem); /* 3.75rem -> 10rem */
+    object-fit: contain;
+    width: clamp(5rem, 4.3rem + 3.5vw, 6.5rem); /* 5rem -> 6.5rem */
+    height: clamp(5rem, 4.3rem + 3.5vw, 6.5rem); /* 5rem -> 6.5rem */
   }
 
   p {
@@ -88,12 +93,12 @@ p {
   }
 
   .frame {
-    width: clamp(6rem, 2.94rem + 15.2vw, 12.5rem); /* 7.5rem -> 20rem */
+    width: clamp(10rem, 8.1rem + 9.4vw, 14rem); /* 10rem -> 14rem */
   }
 
   .svgFrame {
-    width: clamp(5.625rem, 3.33rem + 11.4vw, 10.5rem); /* 5.625rem -> 15rem */
-    height: clamp(5.625rem, 3.33rem + 11.4vw, 10.5rem); /* 5.625rem -> 15rem */
+    width: clamp(8rem, 6.8rem + 5.8vw, 10.5rem); /* 8rem -> 10.5rem */
+    height: clamp(8rem, 6.8rem + 5.8vw, 10.5rem); /* 8rem -> 10.5rem */
   }
 }
 
