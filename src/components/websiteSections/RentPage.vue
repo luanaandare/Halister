@@ -14,11 +14,20 @@
         longos períodos.
       </p>
     </div>
-    <div class="imageContainer">
+    <div class="photoContainer">
       <div
-        v-for="(image, index) in rentImages"
+        v-for="(image, index) in rentSrc"
         :key="index"
-      ><img class="photo" :src="image" />
+      >
+        <Transition name="fade">
+          <img class="photo left" v-if="currentRent == index + 1" :src="image" />
+        </Transition>
+        <Transition name="fade">
+          <img class="photo middle" v-if="currentRent == index" :src="image" />
+        </Transition>
+        <Transition name="fade">
+          <img class="photo right" v-if="currentRent == index - 1" :src="image" />
+        </Transition>
       </div>
     </div>
     <svg
@@ -52,16 +61,26 @@
 
 <script>
 import TitleWrapper from "../TitleWrapper.vue";
+import { ref } from 'vue';
+
 export default {
   components: {
     TitleWrapper,
   },
-  setup() {
-    //Get number of images in folder
-    const rentImages = Object.values(import.meta.glob('../../assets/images/rent/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-
-    return { rentImages };
+  data() {
+    const rentSrc = Object.values(import.meta.glob('../../assets/images/rent/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+    const currentRent = ref(1);
+    return { rentSrc, currentRent }
   },
+  methods: {
+    photoSwitch() {
+      if(this.currentRent == this.rentSrc.length - 2) this.currentRent = 1;
+      else this.currentRent++;
+    },
+  },
+  created() {
+    setInterval(this.photoSwitch, 3000);
+  }
 };
 </script>
 
@@ -88,7 +107,7 @@ export default {
 
 @media (width < 1000px) {
   #rent {
-    height: clamp(20rem, 10.58rem + 47vw, 50rem);
+    height: clamp(40rem, 30.6rem + 47vw, 60rem); /* 40rem -> 60rem */
     width: 100vw;
     scroll-margin-top: 4.5rem;
   }
@@ -99,7 +118,7 @@ export default {
     font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
     line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
     
-    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
+    width: clamp(18rem, 8.12rem + 49vw, 39rem); /* 25rem -> 40rem */
     margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
     margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
@@ -108,25 +127,48 @@ export default {
   }
 
   .paragraphContainer p {
-    margin: 0 clamp(1rem, 0.76rem + 1.2vw, 1.5rem); /* 0 1rem -> 0 1.5rem */
-  }
-
-  .imageContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 16rem;
-    width: 95vw;
+    margin: 0 clamp(0.5rem, 0.26rem + 1.2vw, 1rem); /* 0 1rem -> 0 1.5rem */
   }
   
-  .imageContainer img {
-    height: clamp(4rem, -0.71rem + 23.5vw, 14rem);
-    margin: 0.25rem;
+  .photoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    width: 18rem;
   }
 
+  .photoContainer .photo {
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .left {
+    left: clamp(1.5rem, -9rem + 53vw, 24rem);
+    top: clamp(17.5rem, 16.56rem + 4.7vw, 19.5rem); /* 1rem -> 3rem */
+    width: 7.75rem;
+    height: 7.75rem;
+    filter: grayscale(0.5);
+  }
+
+  .middle {
+    top: clamp(1rem, 0.06rem + 4.7vw, 3rem); /* 1rem -> 3rem */
+    left: clamp(1.5rem, -9rem + 53vw, 24rem); /* 1.5rem -> 24rem */
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .right {
+    top: clamp(17.5rem, 16.56rem + 4.7vw, 19.5rem); /* 1rem -> 3rem */
+    left: clamp(9.75rem, -0.84rem + 53vw, 32.25rem); /* 9.75rem -> 32.25rem */
+    width: 7.75rem;
+    height: 7.75rem;
+    filter: grayscale(0.5);
+  
+  }
+
+
   .svgPageRent {
-    height: clamp(20rem, 10.58rem + 47vw, 50rem);
+    height: clamp(40rem, 30.6rem + 47vw, 60rem); /* 40rem -> 60rem */
   }
 }
 
@@ -145,25 +187,56 @@ export default {
 
     width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
   }
-
-  .imageContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    width: 100vw;
-  }
   
-  .imageContainer img {
-    height: clamp(14rem, 1.4rem + 20vw, 25.4rem); /* 14rem -> 20rem */
-    margin: 0.5rem;
+  .photoContainer {
+    display: flex;
+    position: relative;
+    margin-top: 10rem;
+    margin-left: clamp(20rem,-11.5rem + 50vw, 35rem);
+  }
+
+  .photoContainer .photo {
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .left {
+    left: -16rem;
+    top: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+    filter: grayscale(0.5);
+  }
+
+  .middle {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .right {
+    left: 21rem;
+    top: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+    filter: grayscale(0.5);
+  
   }
 
   .svgPageRent {
     height: 50rem;
   }
 }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 
 
 </style>
