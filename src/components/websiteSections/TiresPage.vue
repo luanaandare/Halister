@@ -232,12 +232,14 @@ h4 {
 @media (width >= 1000px) {
   .paragraphContainer {
     position: absolute;
+    text-align: justify;
+    color: var(--color-text-dark);
     top: 6rem;
-    right: clamp(4rem, 1.83rem + 3.5vw, 6rem); /* 4rem -> 6rem */
-    font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.8rem -> 1.25rem */
+    right: clamp(6rem, -27.6rem + 54vw, 37.2rem); /* 6rem -> 22rem */
+    font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.9rem -> 1.25rem */
     line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25 -> 1.5rem */
 
-    width: clamp(30rem, 8.26rem + 35vw, 50rem); /* 30rem -> 50rem */
+    width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
   }
   
   .section {
