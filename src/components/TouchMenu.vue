@@ -17,6 +17,13 @@
     </div>
     <Transition name="fade">
       <nav class="menu" v-if="toggleMenu == true">
+        <a
+            href="#home"
+            title="Voltar ao topo da página"
+            @click="toggleMenu = !toggleMenu"
+          >
+            INÍCIO
+          </a>
           <a
             href="#we"
             title="Quem nós somos"
