@@ -1,8 +1,23 @@
 <template>
   <div class="backgroundImage">
-    <h1>TEMOS A SOLUÇÃO IDEAL EM REPOSIÇÃO DE PNEUS E PEÇAS PARA EMPILHADEIRAS E VEÍCULOS INDUSTRIAIS.</h1>
+    <h1>
+      HÁ <span>{{currentDate() - 2004 }}</span> ANOS OFERECENDO
+      A SOLUÇÃO IDEAL EM REPOSIÇÃO DE PNEUS E PEÇAS PARA
+      <span>EMPILHADEIRAS</span> E <span>VEÍCULOS INDUSTRIAIS</span>.</h1>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    currentDate() {
+      const current = new Date();
+      const date = `${current.getFullYear()}`;
+      return date;
+    },
+  }
+}
+</script>
 
 <style scoped>
 .backgroundImage{
@@ -16,6 +31,10 @@ h1 {
   color: var(--color-text-light);
   font-family: BebasNeue;
   cursor: default;
+}
+
+h1 span {
+  color: var(--halister-theme-yellow);
 }
 
 @media (width < 1000px) {
@@ -41,6 +60,10 @@ h1 {
     line-height: clamp(1.5rem, 0.09rem + 7vw, 4.5rem); /* 1.5rem -> 4.5 rem */
     font-size: clamp(1.2rem, -0.12rem + 6.5vw, 4rem); /* 1.2rem -> 4 rem */
   }
+
+  h1 span {
+    font-size: clamp(1.7rem, 0.38rem + 6.5vw, 4.5rem); /* 1.2rem -> 4 rem */  
+  }
 }
 
 @media (width >= 1000px) {
@@ -63,6 +86,10 @@ h1 {
 
     line-height: 4.5rem; /* 4.5rem -> 6rem */
     font-size: 4rem; /* 4rem -> 4.75rem */
+  }
+  
+  h1 span {
+    font-size: 4.5rem; /* 1.2rem -> 4 rem */  
   }
 }
 

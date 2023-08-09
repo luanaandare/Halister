@@ -5,18 +5,17 @@
       <div class="biColumn">
         <h4>A empresa</h4>
         <p>
-          Nossa empresa foi fundada em 2004 por profissionais com larga
-          experiencia no seguimento de Veículos Industriais, e já atua há
-          {{currentDate() - 2004 }} anos no mercado, inicialmente no
-          seguimento de Locação de Empilhadeiras e Veículos Especiais,
-          mais devido as necessidades dos clientes fechamos parcerias e
-          direcionamos nossa linha principal para o mercado de distribuição
-          e reposição das principais marcas de Pneus, Peças e Serviços
-          para Empilhadeiras e Veículos Industriais.
+          A Halister foi estabelecida em 2004 por especialistas com
+          vasta experiência no setor de Veículos Industriais. Suas 
+          operações tiveram início no segmento de Locação de
+          Empilhadeiras e Veículos Especiais, evoluindo posteriormente
+          para abranger a distribuição e fornecimento de peças,
+          em resposta às demandas de nossos clientes.
         </p>
         <p>
-          Possuímos Equipe de Vendas especializada para atendimento diferenciado
-          e atualizados com as principais plataformas B2B Business-to-Business.
+          Possuímos uma equipe de vendas especializada para atendimento
+          diferenciado, atualizada com as principais plataformas 
+          Business-to-Business.
         </p>
       </div>
       <div class="biColumn space">
@@ -38,9 +37,10 @@
         <h4>Missão</h4>
         <div class="textContainer">
           <p>
-            Oferecer aos nossos clientes um atendimento Humanizado
-            e de qualidade, e oferecer a solução completa em
-            movimentação de cargas, de forma eficiente e dinâmica.
+            Proporcionar aos nossos clientes um atendimento
+            humanizado e de excelência, além de fornecer a
+            solução completa em movimentação de cargas, de
+            maneira eficaz e dinâmica.
           </p>
         </div>
       </div>
@@ -49,11 +49,11 @@
         <h4>Visão</h4>
         <div class="textContainer">
           <p>
-            Ser referência no mercado de Empilhadeiras e
-            Veículos industriais, visando sempre a satisfação
-            de nossos clientes e parceiros. Obter um crescimento
-            rentável por meio de inovação, qualidade e compromisso
-            superior.
+            Almejar ser uma referência no mercado de Empilhadeiras
+            e Veículos Industriais, com foco constante na satisfação
+            de nossos clientes e parceiros. Alcançar um crescimento
+            sustentável através da inovação, qualidade e
+            compromisso exemplar.
           </p>
         </div>
       </div>
@@ -62,18 +62,16 @@
         <h4>Valores</h4>
         <div class="textContainer">
           <span>
-            Os valores essenciais da Halister nos orientam
-            sobre como nos comportarmos, pessoal e
-            profissionalmente.
+            Os valores primordiais da Halister nos guiam na maneira
+            de agir, tanto em âmbito pessoal quanto profissional.
           </span>
           <p>
-            No mundo em constante mudança,
-            nossos valores essenciais são sólidos. Nossos
-            valores fundamentam em nosso trabalho, a forma como
-            interagimos uns com os outros e quais estratégias
-            empregamos para cumprir a nossa missão. Nossos valores
-            ssenciais são as práticas que usamos diariamente em 
-            tudo o que fazemos.
+            Em um mundo em constante transformação, nossos valores 
+            fundamentais permanecem firmes. Esses valores são a base
+            de nosso trabalho, moldam nossas interações e norteiam as
+            estratégias que adotamos para cumprir nossa missão. São as
+            práticas fundamentais que permeiam todas as nossas ações
+            cotidianas.
           </p>
         </div>
       </div>
