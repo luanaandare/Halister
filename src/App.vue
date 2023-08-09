@@ -22,6 +22,17 @@ import { RouterView } from 'vue-router'
   --color-background: var(--halister-theme-darkgray);
 }
 
+
+::-webkit-scrollbar {
+  background-color: #2d2d2d;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #626262;
+  border-radius: 7px;
+}
+
 * {
   margin: 0;
   scroll-behavior: smooth;
