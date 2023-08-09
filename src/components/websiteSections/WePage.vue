@@ -20,7 +20,7 @@
         </p>
       </div>
       <div class="biColumn space">
-        <h4>{{ photoTitle }}</h4>
+        <h4 class="par">{{ photoTitle }}</h4>
         <div
           class="photoContainer"
           v-for="(image, index) in photoSrc"
@@ -289,6 +289,10 @@ export default {
     padding: 0 clamp(0.75rem, -0.065rem + 1.3vw, 1.5rem); /* 0 0.75rem -> 0 1.5rem */
   }
 
+  .par {
+    margin-left: clamp(2rem, -10.6rem + 20vw, 13.4rem);
+  }
+
   .biColumn p {
     font-size: clamp(0.9rem, 0.52rem+ 0.6vw, 1.25rem);
 
@@ -330,6 +334,7 @@ export default {
     position: absolute;
     width: 20rem;
     height: 20rem;
+    left: clamp(4rem, -8.6rem + 20vw, 15.4rem);
   }
   .svgPageWe {
     height: clamp(8rem, 4.74rem + 5.2vw, 11rem); /* 8rem -> 11rem */

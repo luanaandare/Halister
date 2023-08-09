@@ -193,7 +193,7 @@ export default {
     display: flex;
     position: relative;
     margin-top: 10rem;
-    margin-left: clamp(20rem,-11.5rem + 50vw, 35rem);
+    margin-left: clamp(20rem,-11.5rem + 50vw, 48.5rem);
   }
 
   .photoContainer .photo {
@@ -206,7 +206,6 @@ export default {
     top: 2.5rem;
     width: 15rem;
     height: 15rem;
-    filter: grayscale(0.5);
   }
 
   .middle {
@@ -219,7 +218,6 @@ export default {
     top: 2.5rem;
     width: 15rem;
     height: 15rem;
-    filter: grayscale(0.5);
   
   }
 

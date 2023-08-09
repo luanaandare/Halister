@@ -187,11 +187,12 @@ export default {
   }
   
   .section {
-    top: 5rem;
+    top: 1rem;
     height: 50rem;
-    width: clamp(50rem, 29rem + 33.6vw, 60rem);
-    margin-left: 10rem;
+    width: clamp(50rem, 29rem + 33.6vw, 70rem);
+    margin-left: clamp(10rem, -0.5rem + 16.8vw, 19.66rem); /* 10rem -> */
   }
+
   .svgPageParts {
     height: 8rem;
   }
