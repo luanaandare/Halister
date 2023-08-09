@@ -182,9 +182,9 @@ export default {
     text-align: justify;
     color: var(--color-text-light);
     top: 6rem;
-    right: clamp(6rem, -27.6rem + 54vw, 37.2rem); /* 6rem -> 22rem */
+    right: clamp(6rem, -27.6rem + 54vw, 37.2rem); /* 6rem -> 37.2rem */
     font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.9rem -> 1.25rem */
-    line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25 -> 1.5rem */
+    line-height: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.25rem -> 1.5rem */
 
     width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
   }
