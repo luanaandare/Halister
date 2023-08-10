@@ -40,7 +40,6 @@
       <StylizedFrameAlt
         image="manutencao_hyster"
         string1="Kits de manutenção"
-        string2="Hyster"
         />
       <StylizedFrame
         image="redutor_glp"
