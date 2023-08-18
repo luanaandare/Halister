@@ -1,18 +1,23 @@
 <template>
   <div class="backgroundImage">
     <h1>
-      HÁ <span>{{currentDate() - 2004 }}</span> ANOS FORNECENDO
+      HÁ <span>{{currentDate() - 2004}}</span> ANOS FORNECENDO
       A SOLUÇÃO IDEAL EM REPOSIÇÃO DE PNEUS E PEÇAS PARA
       <span>EMPILHADEIRAS</span> E <span>VEÍCULOS INDUSTRIAIS</span>.</h1>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue';
 export default {
   methods: {
     currentDate() {
       const current = new Date();
       const date = `${current.getFullYear()}`;
+      if(current.getDate() >= 6 && current.getMonth() >= 11) {
+        const dateBirth = `${current.getFullYear() + Number(1)}`;
+        return dateBirth;
+      }
       return date;
     },
   }
