@@ -22,8 +22,9 @@
         string1="Bancos"
       />
       <StylizedFrameAlt
-        image="blue_spot"
-        string1="Blue Spot"
+        image="acessorios"
+        string1="Acessórios"
+        string2="de segurança"
       />
       <StylizedFrame
         image="conector"
