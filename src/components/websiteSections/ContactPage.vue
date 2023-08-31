@@ -18,9 +18,28 @@
 
 <script>
 import TitleWrapper from "../TitleWrapper.vue";
+import axios from 'axios';
+
 export default {
   components: {
     TitleWrapper,
+  },
+  methods: {
+    async sendMail() {
+      try {
+        console.log(this.json());
+        axios
+          .post('php/mailer.php', this.json())
+          .then((response) => {
+            if(response.data*1){
+              app.success("Seu e-mail foi enviado com sucesso! Em breve entraremos em contato...")
+              }else app.error("ops! Não foi possível enviar sua mensagem, favor tente contato através do e-mail: <a href='mailto:contato@halister.com.br'>contato@halister.com.br</a>")
+          
+          });
+      } catch (error) {
+        console.error('Error fetching message:', error);
+      }
+    }
   },
 };
 </script>
