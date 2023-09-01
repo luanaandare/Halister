@@ -2,13 +2,13 @@
   <div id="contact">
     <TitleWrapper string="ENTRE EM CONTATO" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#d49a0e" />
     <div class="section">
-      <form class="contactForm">
+      <form class="contactForm" @submit.prevent="sendMail">
         <div class="inputContainer">
-          <input class="halfColForm" type="text" name="name" placeholder="Nome" required="1" />
-          <input class="halfColForm" type="text" name="sname" placeholder="Sobrenome" />
-          <input class="halfColForm" type="mail" name="mail" placeholder="E-mail" required="1" />
-          <input class="halfColForm" type="text" name="enterprise" placeholder="Empresa" />
-          <textarea class="fullColForm" name="message" placeholder="Mensagem" required="1" />
+          <input class="halfColForm" type="text" v-model="name" placeholder="Nome" required="1" />
+          <input class="halfColForm" type="text" v-model="sname" placeholder="Sobrenome" />
+          <input class="halfColForm" type="mail" v-model="mail" placeholder="E-mail" required="1" />
+          <input class="halfColForm" type="text" v-model="enterprise" placeholder="Empresa" />
+          <textarea class="fullColForm" v-model="message" placeholder="Mensagem" required="1" />
         </div>
         <input class="submit" type="submit" value="ENVIAR">
       </form>
@@ -24,17 +24,29 @@ export default {
   components: {
     TitleWrapper,
   },
+  data() {
+    return {
+      name: '',
+      sname: '',
+      mail: '',
+      enterprise: '',
+      message: '',
+    }
+  },
   methods: {
     async sendMail() {
       try {
-        console.log(this.json());
+        const form = JSON.stringify({
+          name: this.name,
+          sname: this.sname,
+          mail: this.mail,
+          enterprise: this.enterprise,
+          message: this.message
+        });
         axios
-          .post('php/mailer.php', this.json())
-          .then((response) => {
-            if(response.data*1){
-              app.success("Seu e-mail foi enviado com sucesso! Em breve entraremos em contato...")
-              }else app.error("ops! Não foi possível enviar sua mensagem, favor tente contato através do e-mail: <a href='mailto:contato@halister.com.br'>contato@halister.com.br</a>")
-          
+          .post('php/mailer.php', form)
+          .then((res) => {
+            if(res.status == 200) console.log("E-mail enviado com sucesso, entraremos em contato em breve!");
           });
       } catch (error) {
         console.error('Error fetching message:', error);
