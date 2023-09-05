@@ -1,5 +1,8 @@
 <template>
   <div id="contact">
+    <Transition name="fade">
+      <AlertMessage v-if="alertVisible == 1" :fechar="fecharModal" />
+    </Transition>
     <TitleWrapper string="ENTRE EM CONTATO" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#d49a0e" />
     <div class="section">
       <form class="contactForm" @submit.prevent="sendMail">
@@ -17,12 +20,15 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import TitleWrapper from "../TitleWrapper.vue";
+import AlertMessage from "../AlertMessage.vue";
 import axios from 'axios';
 
 export default {
   components: {
     TitleWrapper,
+    AlertMessage,
   },
   data() {
     return {
@@ -32,6 +38,14 @@ export default {
       enterprise: '',
       message: '',
     }
+  },
+  setup() {
+    const alertVisible = ref(0);
+    const fecharModal = () => {
+      alertVisible.value = 0;
+    };
+
+    return { fecharModal, alertVisible };
   },
   methods: {
     async sendMail() {
@@ -46,12 +60,19 @@ export default {
         axios
           .post('php/mailer.php', form)
           .then((res) => {
-            if(res.status == 200) console.log("E-mail enviado com sucesso, entraremos em contato em breve!");
+            if(res.status == 200) {
+              this.name = '';
+              this.sname = '';
+              this.mail = '';
+              this.enterprise = '';
+              this.message = '';
+              this.alertVisible = 1;
+            }
           });
       } catch (error) {
         console.error('Error fetching message:', error);
       }
-    }
+    },
   },
 };
 </script>
@@ -195,6 +216,16 @@ export default {
   .submit {
     font-size: 1.25rem;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 
