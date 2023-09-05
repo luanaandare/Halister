@@ -41,6 +41,7 @@ export default {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 img {
