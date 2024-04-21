@@ -20,12 +20,13 @@
       </p>
     </div>
     <div class="section">
-      <div class="column flip">
-        <div class="tireContainer">
-        <img src="../../assets/images/tires/pneu-continental.png" class="tire" />
+      <a class="column flip" @click="catalogPDF">
+        <h4 class="call">Clique para conferir o nosso catálogo</h4>
+        <div class="tireContainer catalog">
+        <img src="../../assets/images/tires/pneu-gri.png" class="tire" />
         </div>
         <h4>SUPERELÁSTICO PREMIUM</h4>
-      </div>
+      </a>
       <div class="column base">
         <div class="tireContainer">
         <img src="../../assets/images/tires/pneu-haulmax.png" class="tire" />
@@ -118,6 +119,26 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.catalog {
+  cursor: pointer;
+}
+
+.call{
+  position: absolute;
+  top: 22.5%;
+  transform: translate(0, -22.5%);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.column:hover .call {
+  opacity: 1;
+}
+
+.column:hover .catalog {
+  opacity: 0.4;
 }
 
 h4 {
@@ -249,10 +270,13 @@ h4 {
   }
 
   .column {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
+    transition: 0.2s;
     height: clamp(30.3rem, 26.28rem + 6vw, 34rem); /* 30.3rem -> 34rem */
     margin: clamp(2rem, -1.26rem + 5vw, 5rem) clamp(1rem, -0.1rem + 1.7vw, 2rem); /* 2rem 1rem -> 5rem 2rem */
   }
@@ -282,7 +306,7 @@ h4 {
     max-width: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
   }
   .svgPagePneus {
-    width: clamp(62.5rem, 100vw, 120rem); /* 62.5rem -> 120rem */
+    width: 100vw;
     height: clamp(50rem, 39.46rem + 16.8vw, 59.7rem); /* 50rem -> 59.7rem */
   }
 }
