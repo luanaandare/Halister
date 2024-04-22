@@ -20,7 +20,7 @@
       </p>
     </div>
     <div class="section">
-      <a class="column flip" @click="catalogPDF">
+      <a class="column flip" href="/catalog-ultimatext.pdf" target="_blank">
         <h4 class="call">Clique para conferir o nosso catálogo</h4>
         <div class="tireContainer catalog">
         <img src="../../assets/images/tires/pneu-gri.png" class="tire" />
