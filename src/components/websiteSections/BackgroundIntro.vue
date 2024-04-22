@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .backgroundImage{
-  background-position: right;
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -48,7 +48,7 @@ h1 span {
         rgba(6, 7, 14, 0.7) 40%,
         rgba(6, 7, 14, 0.2)
       ),
-      url("../../assets/images/bg-home-mob.png");
+      url("../../assets/images/bg-home-mob-alt.jpg");
     width: 100vw;
     height: 75vw;
     
@@ -77,7 +77,7 @@ h1 span {
         rgba(6, 7, 14, 0.7) 40%,
         rgba(6, 7, 14, 0.2)
       ),
-      url("../../assets/images/bg-home.png");
+      url("../../assets/images/bg-home-alt.jpg");
     width: 100vw;
     height: clamp(30.2rem, 13.81rem + 26vw, 45rem); /* 30.2rem -> 38rem */
   }
