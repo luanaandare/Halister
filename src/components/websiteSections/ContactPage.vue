@@ -7,11 +7,11 @@
     <div class="section">
       <form class="contactForm" @submit.prevent="sendMail">
         <div class="inputContainer">
-          <input class="halfColForm" type="text" v-model="name" placeholder="Nome" required="1" />
-          <input class="halfColForm" type="text" v-model="sname" placeholder="Sobrenome" />
-          <input class="halfColForm" type="mail" v-model="mail" placeholder="E-mail" required="1" />
-          <input class="halfColForm" type="text" v-model="enterprise" placeholder="Empresa" />
-          <textarea class="fullColForm" v-model="message" placeholder="Mensagem" required="1" />
+          <input name="Nome" class="halfColForm" type="text" v-model="name" placeholder="Nome" required="1" />
+          <input name="Sobrenome" class="halfColForm" type="text" v-model="sname" placeholder="Sobrenome" />
+          <input name="E-mail" class="halfColForm" type="mail" v-model="mail" placeholder="E-mail" required="1" />
+          <input name="Empresa" class="halfColForm" type="text" v-model="enterprise" placeholder="Empresa" />
+          <textarea name="Mensagem" class="fullColForm" v-model="message" placeholder="Mensagem" required="1" />
         </div>
         <input class="submit" type="submit" value="ENVIAR">
       </form>
