@@ -57,7 +57,8 @@ export default {
 
 p {
   text-align: end;
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
   cursor: default;
   color: #d49a0e;
 }

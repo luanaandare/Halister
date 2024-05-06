@@ -60,7 +60,8 @@ p {
   font-size: clamp(0.9rem, 0.57rem + 0.5vw, 1.2rem);
   text-align: end;
   cursor: default;
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
   color: #d49a0e;
 }
 

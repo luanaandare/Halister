@@ -97,7 +97,7 @@ export default {
 }
 
 .paragraphContainer {
-  font-family: "SourceSans";
+  font-family: "SourceSans", sans-serif;
   color: var(--color-background);
 }
 
@@ -142,7 +142,8 @@ export default {
 }
 
 h4 {
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
+  text-transform: uppercase;
   color: var(--color-background);
   text-align: center;
 }

@@ -40,7 +40,8 @@ svg {
 }
 
 span {
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
+  text-transform: uppercase;
   
   position: absolute;
   cursor: default;

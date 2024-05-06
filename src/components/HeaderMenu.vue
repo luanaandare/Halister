@@ -126,7 +126,8 @@
 
 .contato p,
 .contato a {
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
+  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.64);
   text-decoration: none;
   font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
@@ -151,7 +152,8 @@ a:hover {
 .menu a:visited,
 .menu a:active {
   color: var(--color-background);
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
   font-size: clamp(1.4rem, 0.75rem + 1vw, 2rem); /* 1.4rem -> 2rem */
   text-decoration: none;
 

@@ -153,7 +153,8 @@ export default {
 
 .biColumn h4,
 .triColumn h4 {
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
+  text-transform: uppercase;
   color: var(--color-text-light);
 
   cursor: default;

@@ -105,7 +105,7 @@ export default {
 }
 
 .paragraphContainer {
-  font-family: "SourceSans";
+  font-family: "SourceSans", sans-serif;
   color: #fff;
 }
 

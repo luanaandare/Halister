@@ -105,7 +105,7 @@ export default {
 
 .halfColForm,
 .fullColForm {
-  font-family: "SourceSans";
+  font-family: "SourceSans", sans-serif;
 }
 
 .fullColForm {
@@ -114,12 +114,13 @@ export default {
 
 .halfColForm::placeholder,
 .fullColForm::placeholder {
-  font-family: "SourceSans";
+  font-family: "SourceSans", sans-serif;
   color: rgba(0, 0, 0, 0.4);
 }
 
 .submit {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
   background-color: #f2c60f;
   border: solid 2px black;
 

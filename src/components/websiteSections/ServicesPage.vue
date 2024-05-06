@@ -119,11 +119,12 @@ export default {
 }
 
 .paragraphTitle {
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
+  text-transform: uppercase;
 }
 
 .paragraph {
-  font-family: SourceSans;
+  font-family: SourceSans, sans-serif;
 }
 
 .imageContainer {

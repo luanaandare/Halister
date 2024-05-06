@@ -62,7 +62,8 @@
 }
 
 h4 {
-  font-family:"BebasNeue";
+  font-family:"BebasNeue", sans-serif;
+  text-transform: uppercase;
   color: #f2c60f;
 }
 
@@ -72,7 +73,7 @@ h4 img {
 
 .col p,
 .col span {
-  font-family: "SourceSans";
+  font-family: "SourceSans", sans-serif;
   color: #fff;
 }
 

@@ -32,7 +32,8 @@ export default {
 
 .messageBox {
   position: relative;
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
+  text-transform: uppercase;
   font-size: 2rem;
   background-color: var(--color-background);
   color: var(--color-text-light);
@@ -51,7 +52,8 @@ img {
   width: 5rem;
 }
 .close {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
   background-color: #f2c60f;
   border: solid 2px black;
 

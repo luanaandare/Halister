@@ -15,6 +15,8 @@ import { RouterView } from 'vue-router'
   --halister-theme-darkgray: #2d2d2d;
   --halister-theme-yellow: #f2c60f;
   --halister-theme-darkyellow: #d49a0e;
+  --havi-theme-red: ;
+  --havi-theme-darkred: ;
 
   --color-text-dark: var(--halister-theme-darkgray);
   --color-text-light: var(--halister-theme-white);
@@ -41,12 +43,12 @@ import { RouterView } from 'vue-router'
 
 @font-face {
   font-family: "BebasNeue";
-  src: url("./assets/fonts/BebasNeue.ttf");
+  src: url("assets/fonts/BebasNeue.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "SourceSans";
-  src: url("./assets/fonts/SourceSans.ttf");
+  src: url("./assets/fonts/SourceSans.ttf") format("truetype");
 }
 
 body {

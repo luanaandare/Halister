@@ -130,7 +130,8 @@ export default {
 .menu a,
 .menu a:visited,
 .menu a:hover {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   background-color: var(--color-background);

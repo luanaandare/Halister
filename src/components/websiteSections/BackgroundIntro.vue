@@ -33,7 +33,7 @@ export default {
 h1 {
   position: relative;
   color: var(--color-text-light);
-  font-family: BebasNeue;
+  font-family: BebasNeue, sans-serif;
   cursor: default;
 }
 
