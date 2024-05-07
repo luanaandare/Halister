@@ -11,7 +11,7 @@
         <path
           d="
             M 0,0
-            L 100,0 100,30 12,30 0,15
+            L 100,0 100,30 12,30 0,20
             z
           "
           style="transition: none 0s ease 0s;
@@ -101,7 +101,7 @@
   top: 0;
   right: 0;
   width: clamp(35rem, 24.13rem + 17vw, 45rem); /* 35rem -> 45rem */
-  height: clamp(5.5rem, 4.41rem + 1.7vw, 6.5rem); /*5.5rem -> 6.5rem */
+  height: clamp(5rem, 3.91rem + 1.7vw, 6rem); /*5.5rem -> 6.5rem */
 
   display: flex;
   flex-flow: row nowrap;

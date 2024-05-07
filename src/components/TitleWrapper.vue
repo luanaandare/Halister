@@ -60,7 +60,7 @@ span {
   }
 
   span {
-    font-size: clamp(1rem, 0.06rem + 4.7vw, 3rem);
+    font-size: clamp(0.9rem, 0.28rem + 2.75vw, 2rem);
     padding:
       clamp(0.25rem, -0.57rem + 4vw, 2rem)
       clamp(0rem, -0.47rem + 2vw, 1rem)
