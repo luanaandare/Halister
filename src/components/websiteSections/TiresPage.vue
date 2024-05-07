@@ -147,6 +147,7 @@ h4 {
   text-transform: uppercase;
   color: var(--havi-theme-white);
   text-align: center;
+  text-shadow: 1px 1px 1px var(--havi-theme-darkerred);
 }
 
 .svgPagePneus {
