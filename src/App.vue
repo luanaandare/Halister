@@ -15,8 +15,10 @@ import { RouterView } from 'vue-router'
   --halister-theme-darkgray: #2d2d2d;
   --halister-theme-yellow: #f2c60f;
   --halister-theme-darkyellow: #d49a0e;
-  --havi-theme-red: ;
-  --havi-theme-darkred: ;
+  --havi-theme-white: #ffffff;
+  --havi-theme-red: #bc0000;
+  --havi-theme-darkred: #701710;
+  --havi-theme-darkerred: #330a07;
 
   --color-text-dark: var(--halister-theme-darkgray);
   --color-text-light: var(--halister-theme-white);
@@ -40,15 +42,25 @@ import { RouterView } from 'vue-router'
   scroll-behavior: smooth;
   max-width: 100vw;
 }
-
+/*
 @font-face {
   font-family: "BebasNeue";
   src: url("assets/fonts/BebasNeue.ttf") format("truetype");
 }
-
+/*
 @font-face {
   font-family: "SourceSans";
   src: url("./assets/fonts/SourceSans.ttf") format("truetype");
+}
+*/
+@font-face {
+  font-family: "SourceSans";
+  src: url("assets/fonts/montserrat.ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("assets/fonts/oswald.ttf");
 }
 
 body {
