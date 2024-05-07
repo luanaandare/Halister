@@ -95,7 +95,8 @@ export default {
   bottom: 3rem;
   transition: 0.2s;
   width: 4rem;
-  height: 4rem
+  height: 4rem;
+  color: var(--havi-theme-darkred);
 }
 
 .hoveringButton img {
