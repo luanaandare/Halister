@@ -42,17 +42,42 @@ import { RouterView } from 'vue-router'
   scroll-behavior: smooth;
   max-width: 100vw;
 }
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url('assets/fonts/bebasneue-regular-webfont.eot');
+    src: url('assets/fonts/bebasneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/bebasneue-regular-webfont.woff') format('woff'),
+         url('assets/fonts/bebasneue-regular-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SourceSans';
+    src: url('assets/fonts/sourcesans-webfont.eot');
+    src: url('assets/fonts/sourcesans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/sourcesans-webfont.woff2') format('woff2'),
+         url('assets/fonts/sourcesans-webfont.woff') format('woff'),
+         url('assets/fonts/sourcesans-webfont.svg#source_sans_3regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*
 @font-face {
   font-family: "BebasNeue";
   src: url("assets/fonts/BebasNeue.ttf") format("truetype");
 }
-/*
+
 @font-face {
   font-family: "SourceSans";
   src: url("./assets/fonts/SourceSans.ttf") format("truetype");
 }
 */
+/*
 @font-face {
   font-family: "SourceSans";
   src: url("assets/fonts/montserrat.ttf");
@@ -60,9 +85,9 @@ import { RouterView } from 'vue-router'
 
 @font-face {
   font-family: "BebasNeue";
-  src: url("assets/fonts/oswald.ttf");
+  src: url("assets/fonts/montserrat.ttf");
 }
-
+*/
 body {
   min-height: 100vh;
   overflow-x: hidden;
