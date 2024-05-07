@@ -3,7 +3,7 @@
     <Transition name="fade">
       <AlertMessage v-if="alertVisible == 1" :fechar="fecharModal" />
     </Transition>
-    <TitleWrapper string="ENTRE EM CONTATO" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#d49a0e" />
+    <TitleWrapper string="ENTRE EM CONTATO" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#701710" />
     <div class="section">
       <form class="contactForm" @submit.prevent="sendMail">
         <div class="inputContainer">
@@ -81,7 +81,7 @@ export default {
 #contact {
   position: relative;
   width: 100vw;
-  background-color: #f2c60f;
+  background-color: #bc0000;
 }
 
 .section {
@@ -120,9 +120,10 @@ export default {
 
 .submit {
   font-family: "BebasNeue", sans-serif;
+  color: var(--havi-theme-darkerred);
   text-transform: uppercase;
-  background-color: #f2c60f;
-  border: solid 2px black;
+  background-color: #bc0000;
+  border: solid 2px var(--havi-theme-darkerred);
 
   cursor: pointer;
   transition: 0.2s;
@@ -131,7 +132,8 @@ export default {
 }
 
 .submit:hover {
-  background-color: #d49a0e;
+  background-color: var(--havi-theme-darkred);
+  color: var(--havi-theme-red);
 }
 
 @media (width < 1000px) {

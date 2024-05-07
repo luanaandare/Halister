@@ -32,13 +32,13 @@ export default {
 
 h1 {
   position: relative;
-  color: var(--color-text-light);
+  color: var(--havi-theme-white);
   font-family: BebasNeue, sans-serif;
   cursor: default;
 }
 
 h1 span {
-  color: var(--halister-theme-yellow);
+  color: var(--havi-theme-red);
 }
 
 @media (width < 1000px) {

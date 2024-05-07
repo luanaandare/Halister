@@ -1,6 +1,6 @@
 <template>
   <div id="services">
-    <TitleWrapper string="SERVIÇOS" fontColor="#000000" backColor="#ffffff" shadeColor="#d49a0e" />
+    <TitleWrapper string="SERVIÇOS" fontColor="#000000" backColor="#ffffff" shadeColor="#701710" />
     <div class="section">
       <div class="row">
         <div class="paragraphContainer alignRight">
@@ -138,7 +138,7 @@ export default {
   top: 0;
   z-index: -1;
 
-  background-color: #f2c60f;
+  background-color: var(--havi-theme-red);
 }
 
 @media (width < 1000px) {

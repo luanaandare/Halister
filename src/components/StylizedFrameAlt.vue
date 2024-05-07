@@ -18,7 +18,7 @@
           z
         "
         style="transition: none 0s ease 0s;
-        fill: #f2c60f;"
+        fill: #701710;"
       ></path>
       <path
         d="
@@ -62,7 +62,7 @@ p {
   cursor: default;
   font-family: "BebasNeue", sans-serif;
   text-transform: uppercase;
-  color: #d49a0e;
+  color: var(--havi-theme-darkred);
 }
 
 .frame {

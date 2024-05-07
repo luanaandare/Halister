@@ -1,6 +1,6 @@
 <template>
   <div id="parts">
-    <TitleWrapper string="PEÇAS" fontColor="#ffffff" backColor="#626262" shadeColor="#f2c60f" />
+    <TitleWrapper string="Peças e acessórios" fontColor="#ffffff" backColor="#701710" shadeColor="#330a07" />
     <div class="paragraphContainer">
       <p>
         Trabalhamos com peças de Qualidade <span class="yellow">OEM
@@ -70,7 +70,7 @@
           z
         "
         style="transition: none 0s ease 0s;
-        fill: #f2c60f;"
+        fill: #bc0000;"
       ></path>
     </svg>
   </div>
@@ -95,7 +95,7 @@ export default {
   position: relative;
   background-image: linear-gradient(
         to right,
-        rgba(45, 45, 45, 0.9) 40%,
+        rgba(45, 45, 45, 0.7) 40%,
         rgba(45, 45, 45, 0.9)
       ),
       url("../../assets/images/bg-parts.png"); 

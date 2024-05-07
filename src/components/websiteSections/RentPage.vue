@@ -1,6 +1,6 @@
 <template>
   <div id="rent">
-    <TitleWrapper string="LOCAÇÃO" fontColor="#ffffff" backColor="#626262" shadeColor="#f2c60f" />
+    <TitleWrapper string="LOCAÇÃO" fontColor="#ffffff" backColor="#626262" shadeColor="#701710" />
     <div class="paragraphContainer">
       <p>
         Locação e Venda de empilhadeiras, carrinhos hidráulicos,
@@ -43,7 +43,7 @@
           z
         "
         style="transition: none 0s ease 0s;
-        fill: #d49a0e;"
+        fill: #701710;"
       ></path>
     <path
         d="

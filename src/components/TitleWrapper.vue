@@ -82,7 +82,7 @@ span {
   }
 
   span {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2rem 1rem 1.5rem 3rem;
   }
 

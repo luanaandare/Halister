@@ -4,7 +4,7 @@
       string="TRABALHAMOS COM"
       fontColor="#ffffff"
       backColor="#2d2d2d"
-      shadeColor="#f2c60f"
+      shadeColor="#bc0000"
     />
     <div class="section">
       <div

@@ -64,7 +64,7 @@
 h4 {
   font-family:"BebasNeue", sans-serif;
   text-transform: uppercase;
-  color: #f2c60f;
+  color: var(--havi-theme-red);
 }
 
 h4 img {
@@ -91,7 +91,7 @@ h4 img {
 
 .row .icon {
   margin-right: 0.5rem;
-  color: #f2c60f;
+  color: var(--havi-theme-red);
 }
 
 .logoCol {

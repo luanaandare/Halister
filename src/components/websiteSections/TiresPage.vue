@@ -1,10 +1,10 @@
 <template>
   <div id="tires">
-    <TitleWrapper string="PNEUS" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#f2c60f" />
+    <TitleWrapper string="PNEUS" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#bc0000" />
     <div class="paragraphContainer">
       <p>
-        A <span class="bold">HALISTER</span> é a sua solução em pneus especiais
-        (<span class="yellow">super-elásticos, pneumáticos INDUSTRIAIS e press-on-band</span>)
+        A <span class="bold">HAVI</span> é a sua solução em pneus especiais
+        (<span class="red">super-elásticos, pneumáticos INDUSTRIAIS e press-on-band</span>)
         para empilhadeiras, rebocadores, guindastes, carretas, trailers Ro-Ro,
         tratores agrícolas, terraplanagem, mineração, implementos e diversas
         outras aplicações.
@@ -60,17 +60,17 @@
     >
       <path
           d="
-            M 0,75
+            M 0,63
             L 70,50 100,25 100,100 0,100
             z
           "
           style="transition: none 0s ease 0s;
-          fill: #f2c60f;"
+          fill: #bc0000;"
         ></path>
         <path
           d="
             M 0,0
-            L 0,75 70,50, 100,25 100,0
+            L 0,63 70,50, 100,25 100,0
             z
           "
           style="transition: none 0s ease 0s;
@@ -105,8 +105,8 @@ export default {
   font-weight: 700;
 }
 
-.yellow {
-  color: #f2c60f;
+.red {
+  color: #bc0000;
 }
 
 .logoContainer {
@@ -131,6 +131,7 @@ export default {
   transform: translate(0, -22.5%);
   opacity: 0;
   transition: 0.2s;
+  color: var(--havi-theme-darkred);
 }
 
 .column:hover .call {
@@ -144,7 +145,7 @@ export default {
 h4 {
   font-family: BebasNeue, sans-serif;
   text-transform: uppercase;
-  color: var(--color-background);
+  color: var(--havi-theme-white);
   text-align: center;
 }
 

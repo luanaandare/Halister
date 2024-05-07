@@ -1,11 +1,11 @@
 <template>
   <div id="we">
-    <TitleWrapper string="QUEM SOMOS" fontColor="#ffffff" backColor="#626262" shadeColor="#F2C60F" />
+    <TitleWrapper string="QUEM SOMOS" fontColor="#ffffff" backColor="#626262" shadeColor="#701710" />
     <div class="section">
       <div class="biColumn">
         <h4>A empresa</h4>
         <p>
-          A Halister foi estabelecida em 2004 por especialistas com
+          A Havi foi estabelecida em 2004 por especialistas com
           vasta experiência no setor de Veículos Industriais. Suas 
           operações tiveram início no segmento de Locação de
           Empilhadeiras e Veículos Especiais, evoluindo posteriormente
@@ -62,7 +62,7 @@
         <h4>Valores</h4>
         <div class="textContainer">
           <span>
-            Os valores primordiais da Halister nos guiam na maneira
+            Os valores primordiais da Havi nos guiam na maneira
             de agir, tanto em âmbito pessoal quanto profissional.
           </span>
           <p>
@@ -89,7 +89,7 @@
             z
           "
           style="transition: none 0s ease 0s;
-          fill: rgb(242, 198, 15);"
+          fill: rgb(188, 0, 0);"
         ></path>
         <path
           d="

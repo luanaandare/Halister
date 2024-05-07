@@ -15,7 +15,7 @@
             z
           "
           style="transition: none 0s ease 0s;
-          fill: rgb(242, 198, 15);"
+          fill: rgb(188, 0, 0);"
         ></path>
       </svg>
     </div>
@@ -135,7 +135,7 @@
 
 p .icon,
 a .icon {
-  color: #f2c60f;
+  color: var(--havi-theme-red);
 }
 
 .contatoIcon {
@@ -151,10 +151,10 @@ a:hover {
 .menu a,
 .menu a:visited,
 .menu a:active {
-  color: var(--color-background);
+  color: var(--havi-theme-white);
   font-family: "BebasNeue", sans-serif;
   text-transform: uppercase;
-  font-size: clamp(1.4rem, 0.75rem + 1vw, 2rem); /* 1.4rem -> 2rem */
+  font-size: clamp(1.05rem, 0.5625rem + 0.75vw, 1.5rem); /* 1.4rem -> 2rem -25% */
   text-decoration: none;
 
   cursor: pointer;
@@ -163,7 +163,7 @@ a:hover {
 
 .menu a:hover {
   transform: scale(1.05);
-  color: black;
+  color: var(--havi-theme-darkerred);
 }
 
 #logo {
