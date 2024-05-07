@@ -94,7 +94,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
 }
 
 .svgPageRent {

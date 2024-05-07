@@ -105,7 +105,7 @@ export default {
 
 .halfColForm,
 .fullColForm {
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
 }
 
 .fullColForm {
@@ -114,7 +114,7 @@ export default {
 
 .halfColForm::placeholder,
 .fullColForm::placeholder {
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
   color: rgba(0, 0, 0, 0.4);
 }
 

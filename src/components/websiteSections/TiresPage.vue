@@ -97,7 +97,7 @@ export default {
 }
 
 .paragraphContainer {
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
   color: var(--color-background);
 }
 

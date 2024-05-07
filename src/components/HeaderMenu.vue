@@ -101,7 +101,7 @@
   top: 0;
   right: 0;
   width: clamp(35rem, 24.13rem + 17vw, 45rem); /* 35rem -> 45rem */
-  height: clamp(5rem, 3.91rem + 1.7vw, 6rem); /*5.5rem -> 6.5rem */
+  height: clamp(5.5rem, 4.41rem + 1.7vw, 6.5rem); /*5.5rem -> 6.5rem */
 
   display: flex;
   flex-flow: row nowrap;
@@ -154,7 +154,7 @@ a:hover {
   color: var(--havi-theme-white);
   font-family: "BebasNeue", sans-serif;
   text-transform: uppercase;
-  font-size: clamp(1.05rem, 0.5625rem + 0.75vw, 1.5rem); /* 1.4rem -> 2rem -25% */
+  font-size: clamp(1.4rem, 0.75rem + 1vw, 2rem); /* 1.4rem -> 2rem -25% */
   text-decoration: none;
 
   cursor: pointer;

@@ -73,7 +73,7 @@ h4 img {
 
 .col p,
 .col span {
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
   color: #fff;
 }
 

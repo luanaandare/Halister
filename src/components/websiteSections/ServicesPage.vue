@@ -124,7 +124,7 @@ export default {
 }
 
 .paragraph {
-  font-family: SourceSans, sans-serif;
+  font-family: MontSerrat, sans-serif;
 }
 
 .imageContainer {

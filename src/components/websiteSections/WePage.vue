@@ -161,7 +161,7 @@ export default {
 }
 
 .biColumn p {
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
   color: var(--color-text-light);
 }
 
@@ -180,7 +180,7 @@ export default {
 
 .textContainer p,
 .textContainer span {
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
   color: var(--color-text-light);
 }
 
