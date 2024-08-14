@@ -1,6 +1,6 @@
 <template>
   <div id="we">
-    <TitleWrapper string="QUEM SOMOS" fontColor="#ffffff" backColor="#626262" shadeColor="#701710" />
+    <TitleWrapper string="QUEM SOMOS" fontColor="#ffffff" backColor="#ba0101" shadeColor="#701710" />
     <div class="section">
       <div class="biColumn">
         <h4>A empresa</h4>
@@ -76,31 +76,7 @@
         </div>
       </div>
     </div>
-    <svg
-      class="svgPageWe"
-      preserveAspectRatio=none
-      viewBox="0 0 100 100"
-      style="transition: none 0s ease 0s;"
-    >
-      <path
-          d="
-            M 0,0
-            L 0,14.16 6.21,100 100,100 100,88.5 6.59,88.5
-            z
-          "
-          style="transition: none 0s ease 0s;
-          fill: rgb(188, 0, 0);"
-        ></path>
-        <path
-          d="
-            M 0,14.16
-            L 6.21,100 0,100
-            z
-          "
-          style="transition: none 0s ease 0s;
-          fill: #ffffff;"
-        ></path>
-    </svg>
+    
   </div>
 </template>
 

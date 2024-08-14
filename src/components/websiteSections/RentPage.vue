@@ -1,6 +1,6 @@
 <template>
   <div id="rent">
-    <TitleWrapper string="LOCAÇÃO" fontColor="#ffffff" backColor="#626262" shadeColor="#701710" />
+    <TitleWrapper string="LOCAÇÃO" fontColor="#ffffff" backColor="#626262" shadeColor="#2d2d2d" />
     <div class="paragraphContainer">
       <p>
         Locação e Venda de empilhadeiras, carrinhos hidráulicos,
@@ -30,32 +30,6 @@
         </Transition>
       </div>
     </div>
-    <svg
-      class="svgPageRent"
-      preserveAspectRatio=none
-      viewBox="0 0 100 100"
-      style="transition: none 0s ease 0s;"
-    >
-    <path
-        d="
-          M 0,2
-          L 100,2 100,57 0,87
-          z
-        "
-        style="transition: none 0s ease 0s;
-        fill: #701710;"
-      ></path>
-    <path
-        d="
-          M 0,0
-          L 98,0 98,55 0,85
-          z
-        "
-        style="transition: none 0s ease 0s;
-        fill: #2d2d2d;"
-      ></path>
-      
-    </svg>
   </div>
 </template>
 
@@ -87,6 +61,7 @@ export default {
 <style scoped>
 #rent {
   position: relative;
+  background-color: #fff;
   width: 100vw;
 }
 
@@ -114,7 +89,7 @@ export default {
   
   .paragraphContainer {
     position: relative;
-    color: var(--halister-theme-yellow);
+    color: #000;
     font-size: clamp(0.7rem, 0.37rem + 1.6vw, 1.4rem); /* 0.7rem -> 0.9rem */
     line-height: clamp(0.9rem, 0.57rem + 1.6vw, 1.6rem); /* 0.9rem -> 1.25rem  */
     
@@ -123,7 +98,6 @@ export default {
     margin-top: clamp(1rem, -0.88rem + 9.4vw, 5rem);
 
     text-align: justify;
-    text-shadow: 1px 1px 0 black;
   }
 
   .paragraphContainer p {
@@ -181,6 +155,7 @@ export default {
     position: absolute;
     text-align: justify;
     color: var(--color-text-light);
+    font-family: "MontSerrat", sans-serif;
     top: 6rem;
     right: clamp(6rem, -27.6rem + 54vw, 37.2rem); /* 6rem -> 37.2rem */
     font-size: clamp(0.9rem, 0.52rem + 0.6vw, 1.25rem); /* 0.9rem -> 1.25rem */

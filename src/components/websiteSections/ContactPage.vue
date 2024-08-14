@@ -3,7 +3,7 @@
     <Transition name="fade">
       <AlertMessage v-if="alertVisible == 1" :fechar="fecharModal" />
     </Transition>
-    <TitleWrapper string="ENTRE EM CONTATO" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#701710" />
+    <h3 id="formTitle">ENTRE EM CONTATO</h3>
     <div class="section">
       <form class="contactForm" @submit.prevent="sendMail">
         <div class="inputContainer">
@@ -21,13 +21,11 @@
 
 <script>
 import { ref } from 'vue';
-import TitleWrapper from "../TitleWrapper.vue";
 import AlertMessage from "../AlertMessage.vue";
 import axios from 'axios';
 
 export default {
   components: {
-    TitleWrapper,
     AlertMessage,
   },
   data() {
@@ -137,6 +135,17 @@ export default {
 }
 
 @media (width < 1000px) {
+
+  #formTitle {
+    font-size: clamp(0.9rem, 0.28rem + 2.75vw, 2rem);
+    color: #fff;
+    font-family: "BebasNeue";
+    position: relative;
+    text-align: center;
+    padding-top: 1rem;
+    width: 100vw;
+  }
+  
   
   #contact {
     height: clamp(20rem, 8.7rem + 56.5vw, 44rem); /* 20rem -> 44rem */
@@ -182,6 +191,16 @@ export default {
 }
 
 @media (width >= 1000px) {
+  #formTitle {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "BebasNeue";
+    position: relative;
+    text-align: center;
+    padding: 2rem 0rem;
+    width: 100vw;
+  }
+
   #contact {
     height: 44rem;
   }

@@ -20,6 +20,49 @@
       </p>
     </div>
     <div class="section">
+      <a class="column flip" href="/catalogo-ultimatext.pdf" target="_blank">
+        <div class="tireContainer catalog">
+          <img src="../../assets/images/tires/pneu-ultimatext.png" class="tire" />
+        </div>
+        <h4>catálogo</h4>
+        <h4>ULTIMATE XT</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+      <a class="column base" href="/catalogo-peakmaster.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-peakmaster.png" class="tire" />
+        </div>
+        <h4>catálogo</h4>
+        <h4>PEAKMASTER</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+      <a class="column flip" href="/catalogo-globestarwt.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-globestar.png" class="tire" />
+        </div>
+        <h4>catálogo</h4>
+        <h4>GLOBESTAR WT</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+      <a class="column base" href="/catalogo-ultimategreenxt.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-ultimategreen.png" class="tire" />
+        </div>
+        <h4>catálogo</h4>
+        <h4>ULTIMATE GREEN XT</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+      <a class="column flip" href="/catalogo-liftex.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-lift-ex.png" class="tire" />
+        </div>
+        <h4>catálogo</h4>
+        <h4>LIFT EX</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+    </div>
+    <!--
+    <div class="section">
       <a class="column flip" href="/catalog-ultimatext.pdf" target="_blank">
         <h4 class="call">Clique para conferir o nosso catálogo</h4>
         <div class="tireContainer catalog">
@@ -51,32 +94,7 @@
         </div>
         <h4>MACIÇO</h4>
       </div>
-    </div>
-    <svg
-      class="svgPagePneus"
-      preserveAspectRatio=none
-      viewBox="0 0 100 100"
-      style="transition: none 0s ease 0s;"
-    >
-      <path
-          d="
-            M 0,63
-            L 70,50 100,25 100,100 0,100
-            z
-          "
-          style="transition: none 0s ease 0s;
-          fill: #bc0000;"
-        ></path>
-        <path
-          d="
-            M 0,0
-            L 0,63 70,50, 100,25 100,0
-            z
-          "
-          style="transition: none 0s ease 0s;
-          fill: #ffffff;"
-        ></path>
-    </svg>
+    </div>-->
   </div>
 </template>
 
@@ -91,8 +109,17 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
+
+.faIcon {
+  color: #2d2d2d;
+}
+
 #tires {
   position: relative;
+  background-color: #fff;
   width: 100vw;
 }
 
@@ -107,12 +134,6 @@ export default {
 
 .red {
   color: #bc0000;
-}
-
-.logoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .tireContainer {
@@ -134,20 +155,11 @@ export default {
   color: var(--havi-theme-darkred);
 }
 
-.column:hover .call {
-  opacity: 1;
-}
-
-.column:hover .catalog {
-  opacity: 0.4;
-}
-
 h4 {
   font-family: BebasNeue, sans-serif;
   text-transform: uppercase;
-  color: var(--havi-theme-white);
+  color: #2d2d2d;
   text-align: center;
-  text-shadow: 1px 1px 1px var(--havi-theme-darkerred);
 }
 
 .svgPagePneus {
@@ -182,31 +194,18 @@ h4 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
     margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
   }
 
   .column {
   position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   width: clamp(8rem, 3.68rem + 20vw, 16.8rem); /* 8rem -> 16.8rem */
-  height: clamp(5rem, 2.41rem + 13vw, 10.5rem); /* 5rem -> 10.5rem */
   margin: 0.5rem 0;
-  }
-
-  .logoContainer {
-    position: absolute;
-    top: clamp(0.5rem, 0.24rem + 1.3vw, 1.05rem); /* 0.5rem -> 1.05rem */
-    width: clamp(4rem, 1.93rem + 10vw, 8.4rem); /* 4rem -> 8.4rem */
-    height: clamp(2rem, 0.96rem + 5vw, 4.2rem); /* 2rem -> 4.2rem */
-  }
-
-  .base .logoContainer{
-    right: 0;
-  }
-
-  .flip .logoContainer {
-    left: 0;
   }
 
   .logo {
@@ -214,39 +213,26 @@ h4 {
   }
 
   .tireContainer {
-    position: absolute;
-    width: clamp(4rem, 1.93rem + 10vw, 8.4rem); /* 4rem -> 8.4rem */
+    position: relative;
     height: clamp(5rem, 2.41rem + 13vw, 10.5rem); /* 5rem -> 10.5rem */
   }
 
-  .base .tireContainer {
-    left: 0;
-  }
-
-  .flip .tireContainer {
-    right: 0;
-  }
   .tire {
     height: clamp(5rem, 2.41rem + 13vw, 10.5rem); /* 5rem -> 10.5rem */
+  }
+
+  .tireContainer img {
+    position: relative;
   }
   
   h4 {
     text-align: center;
-    position: absolute;
-    bottom: clamp(0.5rem, 0.24rem + 1.3vw, 1.05rem); /* 0.5rem -> 1.05rem */
     font-size: clamp(0.7rem, 0.34rem + 1.8vw, 1.47rem); /* 0.7rem -> 1.47rem */
     line-height: clamp(0.9rem, 0.44rem + 2.3vw, 1.89rem); /* 0.9rem -> 1.89rem */
     
-    width: clamp(4rem, 1.93rem + 10vw, 8.4rem); /* 4rem -> 8.4rem */
+    width: clamp(5rem, 2.93rem + 10vw, 9.4rem); /* 4rem -> 8.4rem */
   }
 
-  .base h4 {
-    right: 0;
-  }
-
-  .flip h4 {
-    left: 0;
-  }
   .svgPagePneus {
     width: 100vw; /* 62.5rem -> 120rem */
     height: clamp(38rem, 22.94rem + 75vw, 70rem); /* 38rem -> 65rem */
@@ -284,17 +270,12 @@ h4 {
     margin: clamp(2rem, -1.26rem + 5vw, 5rem) clamp(1rem, -0.1rem + 1.7vw, 2rem); /* 2rem 1rem -> 5rem 2rem */
   }
 
-  .logoContainer {
-    width: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
-    height: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
-  }
-
   .logo {
     width: 8rem;
   }
 
   .tireContainer {
-    width: 8rem; /* 5rem -> 10rem */
+    width: 10rem; /* 5rem -> 10rem */
     height: 16rem; /* 16rem -> 20rem */
   }
 

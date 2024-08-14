@@ -1,9 +1,9 @@
 <template>
   <div id="brands">
     <TitleWrapper
-      string="TRABALHAMOS COM"
+      string="PORTFÓLIO"
       fontColor="#ffffff"
-      backColor="#2d2d2d"
+      backColor="#BA0101"
       shadeColor="#bc0000"
     />
     <div class="section">

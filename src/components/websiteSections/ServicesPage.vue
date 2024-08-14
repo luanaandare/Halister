@@ -1,6 +1,6 @@
 <template>
   <div id="services">
-    <TitleWrapper string="SERVIÇOS" fontColor="#000000" backColor="#ffffff" shadeColor="#701710" />
+    <TitleWrapper string="SERVIÇOS" fontColor="#fff" backColor="#2d2d2d" shadeColor="#2d2d2d" />
     <div class="section">
       <div class="row">
         <div class="paragraphContainer alignRight">
@@ -53,22 +53,6 @@
         </div>
       </div>
     </div>
-    <svg
-      class="svgPageServices"
-      preserveAspectRatio=none
-      viewBox="0 0 100 100"
-      style="transition: none 0s ease 0s;"
-    >
-      <path
-        d="
-          M 0,50
-          L 100,85 100,100 0,100
-          z
-        "
-        style="transition: none 0s ease 0s;
-        fill: #ffffff;"
-      ></path>
-    </svg>
   </div>
 </template>
 
@@ -85,6 +69,7 @@ export default {
 <style scoped>
 #services {
   position: relative;
+  background-color: #fff;
   width: 100vw;
 }
 

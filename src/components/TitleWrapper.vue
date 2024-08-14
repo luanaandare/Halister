@@ -4,13 +4,6 @@
       preserveAspectRatio=none
       viewBox="0 0 100 100"
     >
-      <path 
-        :fill=shadeColor
-        d="
-          M 3.15,4.69 
-          L 96.43,4.69 99.58,23.94 93.28,64.31 3.15,98.59
-          z"
-      />
       <path
         :fill=backColor
         d="

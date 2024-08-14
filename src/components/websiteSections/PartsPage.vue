@@ -1,6 +1,6 @@
 <template>
   <div id="parts">
-    <TitleWrapper string="Peças e acessórios" fontColor="#ffffff" backColor="#701710" shadeColor="#330a07" />
+    <TitleWrapper string="Peças e acessórios" fontColor="#ffffff" backColor="#606060" shadeColor="#330a07" />
     <div class="paragraphContainer">
       <p>
         Trabalhamos com peças de Qualidade <span class="yellow">OEM
@@ -57,22 +57,6 @@
         string2="(Empilhadeira elétrica)"
       />
     </div>
-    <svg
-      class="svgPageParts"
-      preserveAspectRatio=none
-      viewBox="0 0 100 100"
-      style="transition: none 0s ease 0s;"
-    >
-      <path
-        d="
-          M 40,100
-          L 100,0 100,100
-          z
-        "
-        style="transition: none 0s ease 0s;
-        fill: #bc0000;"
-      ></path>
-    </svg>
   </div>
 </template>
 
@@ -93,14 +77,7 @@ export default {
 <style scoped>
 #parts {
   position: relative;
-  background-image: linear-gradient(
-        to right,
-        rgba(45, 45, 45, 0.7) 40%,
-        rgba(45, 45, 45, 0.9)
-      ),
-      url("../../assets/images/bg-parts.png"); 
-  background-size: cover;
-  background-position: right;
+  
   width: 100vw;
 }
 
