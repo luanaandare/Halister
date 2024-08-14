@@ -7,7 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faChevronUp, faLocationDot, faPhone, faEnvelope, faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp, faLocationDot, faPhone, faEnvelope, faBars, faXmark, faFileArrowDown} from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 /* add icons to the library */
 library.add(faChevronUp)
@@ -17,6 +17,7 @@ library.add(faPhone)
 library.add(faEnvelope)
 library.add(faBars)
 library.add(faXmark)
+library.add(faFileArrowDown)
 
 
 
