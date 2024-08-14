@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="tMenu">
-      <img id="logo" src="../assets/images/logo_havi_prov.png" />
+      <img id="logo" src="../assets/havi-logos/logo_negativo_horizontal.png" />
       <div class="toggleContainer" @click="toggleMenu = !toggleMenu">
         <font-awesome-icon
           class="toggle"

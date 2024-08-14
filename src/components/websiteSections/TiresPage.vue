@@ -20,44 +20,52 @@
       </p>
     </div>
     <div class="section">
-      <a class="column flip" href="/catalogo-ultimatext.pdf" target="_blank">
+      <a class="column flip" href="/Apresentacao Pneu Industrial Ultimate XT.pdf" target="_blank">
         <div class="tireContainer catalog">
           <img src="../../assets/images/tires/pneu-ultimatext.png" class="tire" />
         </div>
-        <h4>catálogo</h4>
-        <h4>ULTIMATE XT</h4>
+        <h5>Superelástico premium</h5>
+        <h4>24 horas - ULTIMATE XT</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column base" href="/catalogo-peakmaster.pdf" target="_blank">
+      <a class="column base" href="/Apresentacao Pneu Industrial Peakmaster.pdf" target="_blank">
         <div class="tireContainer">
           <img src="../../assets/images/tires/pneu-peakmaster.png" class="tire" />
         </div>
-        <h4>catálogo</h4>
-        <h4>PEAKMASTER</h4>
+        <h5>Superelástico premium</h5>
+        <h4> 16 horas - PEAKMASTER</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column flip" href="/catalogo-globestarwt.pdf" target="_blank">
+      <a class="column flip" href="/Apresentacao Pneu Industrial  GlobeStar WT.pdf" target="_blank">
         <div class="tireContainer">
           <img src="../../assets/images/tires/pneu-globestar.png" class="tire" />
         </div>
-        <h4>catálogo</h4>
-        <h4>GLOBESTAR WT</h4>
+        <h5>Superelástico premium</h5>
+        <h4>12 horas - GLOBESTAR WT</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column base" href="/catalogo-ultimategreenxt.pdf" target="_blank">
+      <a class="column base" href="/Apresentacao Pneu Industrial Ultimate Green XT.pdf" target="_blank">
         <div class="tireContainer">
           <img src="../../assets/images/tires/pneu-ultimategreen.png" class="tire" />
         </div>
-        <h4>catálogo</h4>
-        <h4>ULTIMATE GREEN XT</h4>
+        <h5>Superelástico premium</h5>
+        <h4>24 horas - ULTIMATE GREEN XT</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column flip" href="/catalogo-liftex.pdf" target="_blank">
+      <a class="column flip" href="/Apresentacao Pneu Industrial Lift EX.pdf" target="_blank">
         <div class="tireContainer">
           <img src="../../assets/images/tires/pneu-lift-ex.png" class="tire" />
         </div>
-        <h4>catálogo</h4>
+        <h5>Pneumático diagonal industrial</h5>
         <h4>LIFT EX</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+      <a class="column base" href="/Apresentacao Pneu Industrial GlobeStar POB.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-globestarpob.png" class="tire" />
+        </div>
+        <h5>Pneus Press on cushion</h5>
+        <h4>12 horas - GLOBESTAR POB</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
     </div>
@@ -155,7 +163,7 @@ a {
   color: var(--havi-theme-darkred);
 }
 
-h4 {
+h4, h5 {
   font-family: BebasNeue, sans-serif;
   text-transform: uppercase;
   color: #2d2d2d;
@@ -225,6 +233,7 @@ h4 {
     position: relative;
   }
   
+  h5,
   h4 {
     text-align: center;
     font-size: clamp(0.7rem, 0.34rem + 1.8vw, 1.47rem); /* 0.7rem -> 1.47rem */
@@ -254,8 +263,9 @@ h4 {
   
   .section {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
+    padding-bottom: 10rem;
   }
 
   .column {
@@ -266,7 +276,7 @@ h4 {
     align-items: center;
     text-decoration: none;
     transition: 0.2s;
-    height: clamp(30.3rem, 26.28rem + 6vw, 34rem); /* 30.3rem -> 34rem */
+    height: clamp(18.3rem, 14.28rem + 6vw, 22rem); /* 30.3rem -> 34rem */
     margin: clamp(2rem, -1.26rem + 5vw, 5rem) clamp(1rem, -0.1rem + 1.7vw, 2rem); /* 2rem 1rem -> 5rem 2rem */
   }
 
@@ -283,11 +293,14 @@ h4 {
     height: 12rem; /* 12rem -> 15rem*/
   }
 
+  h5 {
+    font-size: clamp(1rem, 0.73rem + 0.4vw, 1.25rem); /* 1.2rem -> 2rem */
+    line-height: 1.5rem; /* 1.5rem -> 2rem */
+  }
+
   h4 {
     font-size: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.2rem -> 2rem */
     line-height: 1.5rem; /* 1.5rem -> 2rem */
-    
-    max-width: clamp(8rem, 5.83rem + 3.5vw, 10rem); /* 8rem -> 10rem */
   }
   .svgPagePneus {
     width: 100vw;
