@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <img id="logo" src="../assets/images/h-light.png" />
+    <img id="logo" src="../assets/images/logo_havi_prov.png" />
     <div class="menuStyling">
       <svg
         class="svgMenu"

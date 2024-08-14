@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="logoCol">
-      <img src="../assets/images/h-light-vert.png" />
+      <img src="../assets/images/logo_havi_prov.png" />
       <h3>Empilhadeiras e veículos industriais</h3>
     </div>
   </div>

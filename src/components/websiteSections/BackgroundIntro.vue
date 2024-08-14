@@ -3,7 +3,8 @@
     <h1>
       HÁ <span>{{currentDate() - 2004}}</span> ANOS FORNECENDO
       A SOLUÇÃO IDEAL EM REPOSIÇÃO DE PNEUS E PEÇAS PARA
-      <span>EMPILHADEIRAS</span> E <span>VEÍCULOS INDUSTRIAIS</span>.</h1>
+      <span>EMPILHADEIRAS</span> E <span>VEÍCULOS INDUSTRIAIS</span>.
+    </h1>
   </div>
 </template>
 
