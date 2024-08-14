@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <img id="logo" src="../assets/images/logo_havi_prov.png" />
+    <img id="logo" src="../assets/havi-logos/logo_negativo_horizontal.png" />
     <div class="menuStyling">
       <svg
         class="svgMenu"
@@ -167,7 +167,7 @@ a:hover {
 }
 
 #logo {
-  height: clamp(2.5rem, 1.41rem + 1.7vw, 3.5rem); /* 4.5rem -> 5.5rem */
+  height: clamp(3rem, 1.91rem + 1.7vw, 4rem); /* 4.5rem -> 5.5rem */
   padding: 0.75rem 0 0.75rem clamp(3rem, 0.26rem + 5.2vw, 6rem); /* 0.75rem 0 0.75rem 3rem -> 0.75rem 0 0.75rem 6rem */
 }
 </style>
