@@ -91,7 +91,7 @@ export default {
   data() {
     const photoTitle = ref("Nossa sede");
     const photoSrc = Object.values(import.meta.glob('../../assets/images/wePage/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-    const currentPhoto = ref(3);
+    const currentPhoto = ref(6);
     return { photoTitle, photoSrc, currentPhoto }
   },
   methods: {
@@ -106,7 +106,7 @@ export default {
       this.titleSwitch(this.currentPhoto);
     },
     titleSwitch(index) {
-      if(index >= 2) this.photoTitle = "Nossa Sede"
+      if(index >= 5) this.photoTitle = "Nossa Sede"
       else this.photoTitle = "Nossa Frota"
     },
   },
