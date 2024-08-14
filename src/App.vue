@@ -95,7 +95,7 @@ body {
   background: var(--halister-theme-darkgray);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: "SourceSans", sans-serif;
+  font-family: "MontSerrat", sans-serif;
   font-size: 1rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
