@@ -26,7 +26,7 @@
         </span>
         <span class="row">
           <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
-          contato@halister.com.br
+          contato@haviveiculosindustriais.com.br
         </span>
       </div>
     </div>

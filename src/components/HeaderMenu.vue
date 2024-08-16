@@ -70,7 +70,7 @@
       </p>
       <a href="mailto:contato@halister.com.br">
         <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
-        contato@halister.com.br
+        contato@haviveiculosindustriais.com.br
       </a>
     </div>
   </div>
