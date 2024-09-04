@@ -36,7 +36,7 @@
         <h4> 16 horas - PEAKMASTER</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column flip" href="/Apresentacao Pneu Industrial  GlobeStar WT.pdf" target="_blank">
+      <a class="column flip" href="/Apresentacao Pneu Industrial GlobeStar WT.pdf" target="_blank">
         <div class="tireContainer">
           <img src="../../assets/images/tires/pneu-globestar.png" class="tire" />
         </div>
