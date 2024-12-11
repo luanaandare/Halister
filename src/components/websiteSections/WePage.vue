@@ -89,9 +89,9 @@ export default {
     TitleWrapper,
   },
   data() {
-    const photoTitle = ref("Nossa sede");
+    const photoTitle = ref("Unidade de Serviço");
     const photoSrc = Object.values(import.meta.glob('../../assets/images/wePage/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-    const currentPhoto = ref(6);
+    const currentPhoto = ref(0);
     return { photoTitle, photoSrc, currentPhoto }
   },
   methods: {
@@ -106,8 +106,9 @@ export default {
       this.titleSwitch(this.currentPhoto);
     },
     titleSwitch(index) {
-      if(index >= 5) this.photoTitle = "Nossa Sede"
-      else this.photoTitle = "Nossa Frota"
+      if (index > 1 && index <= 6) this.photoTitle = "Nossa Frota"
+      else if (index > 6 && index <= 12) this.photoTitle = "Nossa Sede"
+      else this.photoTitle = "Unidade de Serviço"
     },
   },
   created() {
