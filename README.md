@@ -48,10 +48,10 @@ OBS: Fazer commits atômicos, ou seja, uma mudança por commit.
 OBS2: O "Sync Changes" pode ter vários commits.
 
 ## Colocar a pasta dist no FileZilla
-1. Copiar pasta "dist".
-2. Abrir FileZilla.
-3. Clicar em Arquivo > Gerenciador de Sites.
-4. Configurar blablabla
-5. Clicar em Conectar.
-6. Colar pasta "dist" em blablabla 
-
+1. Abrir FileZilla.
+2. Clicar em Arquivo > Gerenciador de Sites.
+3. Configurar host, usuário e senha.
+4. Clicar em Conectar.
+5. Copiar todo o conteúdo da pasta: Documentos/repositories/Halister/dist
+6. No FileZilla, colar (ou arrastar) esse conteúdo na pasta "public_html". 
+7. E é isso...
