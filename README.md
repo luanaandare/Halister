@@ -42,6 +42,10 @@ npm run lint
 2. Escrever uma mensagem sobre o que foi alterado.
 3. Adicionar todas as alterações que deseja commitar (clicar no +).
 4. Clicar em "Commit".
+5. Clicar em "Sync Changes".
+
+OBS: Fazer commits atômicos, ou seja, uma mudança por commit. 
+OBS2: O "Sync Changes" pode ter vários commits.
 
 ## Colocar a pasta dist no FileZilla
 1. Copiar pasta "dist".
