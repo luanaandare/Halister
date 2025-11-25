@@ -5,18 +5,30 @@
       <div class="biColumn">
         <h4>A empresa</h4>
         <p>
-          A Havi foi estabelecida em 2004 por especialistas com
-          vasta experiência no setor de Veículos Industriais. Suas 
-          operações tiveram início no segmento de Locação de
-          Empilhadeiras e Veículos Especiais, evoluindo posteriormente
-          para abranger a distribuição e fornecimento de peças,
-          em resposta às demandas de nossos clientes.
-        </p>
-        <p>
-          Possuímos uma equipe de vendas especializada para atendimento
-          diferenciado, atualizada com as principais plataformas 
-          Business-to-Business.
-        </p>
+        A HAVI foi fundada em 2004 por especialistas com ampla experiência no setor de Veículos Industriais. 
+        Desde o início, os fundadores tinham um propósito claro: 
+        <strong>oferecer ao mercado uma solução completa, prática e confiável</strong>, capaz de atender todas as 
+        necessidades do cliente em um único lugar.
+    </p>
+
+    <p>
+        Começamos atuando no segmento de 
+        <strong>locação de empilhadeiras e veículos especiais</strong>, sempre com foco em atendimento próximo, 
+        transparente e eficiente. Com o tempo — e ouvindo atentamente nossos clientes — expandimos nossas operações 
+        para incluir a <strong>distribuição e fornecimento de peças, pneus e acessórios</strong>, além de serviços 
+        técnicos especializados.
+    </p>
+
+    <p>
+        Essa evolução natural nos permitiu entregar ainda mais conveniência e agilidade, fortalecendo nosso compromisso 
+        de ser um parceiro completo para cada operação.
+    </p>
+
+    <p>
+        Contamos com uma <strong>equipe de vendas altamente capacitada</strong>, preparada para oferecer um atendimento 
+        diferenciado e alinhado às principais plataformas Business-to-Business do mercado. Nosso objetivo é garantir 
+        que cada cliente encontre, na HAVI, soluções personalizadas e uma parceria duradoura.
+    </p>
       </div>
       <div class="biColumn space">
         <h4 class="par">{{ photoTitle }}</h4>
@@ -37,10 +49,9 @@
         <h4>Missão</h4>
         <div class="textContainer">
           <p>
-            Proporcionar aos nossos clientes um atendimento
-            humanizado e de excelência, além de fornecer a
-            solução completa em movimentação de cargas, de
-            maneira eficaz e dinâmica.
+            Oferecer soluções completas e confiáveis para o setor de Veículos Industriais, unindo locação, 
+            peças, pneus e serviços em um único lugar. Nosso compromisso é facilitar a operação dos clientes 
+            com atendimento humano, ágil e de qualidade.
           </p>
         </div>
       </div>
@@ -49,11 +60,8 @@
         <h4>Visão</h4>
         <div class="textContainer">
           <p>
-            Almejar ser uma referência no mercado de Empilhadeiras
-            e Veículos Industriais, com foco constante na satisfação
-            de nossos clientes e parceiros. Alcançar um crescimento
-            sustentável através da inovação, qualidade e
-            compromisso exemplar.
+            Ser referência nacional em conveniência e eficiência no segmento de Veículos Industriais, 
+            expandindo continuamente nosso portfólio e tecnologia para entregar a melhor experiência ao cliente.
           </p>
         </div>
       </div>
@@ -61,18 +69,13 @@
         <img src="../../assets/images/icons/values.svg">
         <h4>Valores</h4>
         <div class="textContainer">
-          <span>
-            Os valores primordiais da Havi nos guiam na maneira
-            de agir, tanto em âmbito pessoal quanto profissional.
-          </span>
-          <p>
-            Em um mundo em constante transformação, nossos valores 
-            fundamentais permanecem firmes. Esses valores são a base
-            de nosso trabalho, moldam nossas interações e norteiam as
-            estratégias que adotamos para cumprir nossa missão. São as
-            práticas fundamentais que permeiam todas as nossas ações
-            cotidianas.
-          </p>
+            <ul>
+            <li><strong>Compromisso com o cliente:</strong> atendimento próximo, transparente e orientado a resultados.</li>
+            <li><strong>Qualidade e confiabilidade:</strong> produtos e serviços que elevam a segurança e o desempenho das operações.</li>
+            <li><strong>Ética e respeito:</strong> relações sólidas, responsáveis e verdadeiras.</li>
+            <li><strong>Inovação e melhoria contínua:</strong> evolução constante para oferecer soluções modernas e completas.</li>
+            <li><strong>Trabalho em equipe:</strong> união e colaboração para entregar sempre o melhor.</li>
+        </ul>
         </div>
       </div>
     </div>
