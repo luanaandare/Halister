@@ -3,20 +3,21 @@
     <TitleWrapper string="PNEUS" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#bc0000" />
     <div class="paragraphContainer">
       <p>
-        A <span class="bold">HAVI</span> é a sua solução em pneus especiais
-        (<span class="red">super-elásticos, pneumáticos INDUSTRIAIS e press-on-band</span>)
-        para empilhadeiras, rebocadores, guindastes, carretas, trailers Ro-Ro,
-        tratores agrícolas, terraplanagem, mineração, implementos e diversas
-        outras aplicações.
+         Somos a solução completa em pneus especiais 
+        (<span class="red">super-elásticos, pneumáticos industriais e press-on-band</span>) 
+        para empilhadeiras, rebocadores, guindastes, carretas, trailers Ro-Ro, 
+        tratores agrícolas, máquinas de terraplanagem, mineração, implementos e 
+        diversas outras aplicações.
       </p>
       <p>
-        Trabalhamos com distribuição, revenda e representação das principais
-        marcas e fabricantes de <span class="bold">Pneus Industriais e OTR</span>:
+        Atuamos na distribuição, revenda e representação da GRI TIRES, 
+        uma das principais fabricantes globais de 
+        <span class="bold">pneus industriais e OTR</span>, além de trabalharmos 
+        com outras marcas de alta performance reconhecidas no mercado.
       </p>  
       <p>
-        Com isso, podemos oferecer soluções diferenciadas em pneus para aumentar
-        seu desempenho com melhor custo benefício, consequentemente impactando de
-        forma positiva no seu custo operacional.
+        Conheça nossas soluções diferenciadas em pneus e maximize o desempenho da sua operação, 
+        com excelente custo-benefício e impacto direto na redução do custo operacional.
       </p>
     </div>
     <div class="section">
