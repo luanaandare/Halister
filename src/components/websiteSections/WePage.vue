@@ -109,7 +109,7 @@ export default {
     },
     titleSwitch(index) {
       if (index > 1 && index <= 7) this.photoTitle = "Nossa Frota"
-      else if (index > 6 && index <= 13) this.photoTitle = "Nossos Sede"
+      else if (index > 6 && index <= 13) this.photoTitle = "Nossa Sede"
       else this.photoTitle = "Unidade de Serviço"
     },
   },

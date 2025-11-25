@@ -64,7 +64,7 @@ export default {
 
     return { scrollpx, iw }
   },
-  destroyed() {
+  unmounted() {
     window.removeEventListener('scroll', this.actionScroll);
     window.removeEventListener("resize", this.resizeCheck);
   },
