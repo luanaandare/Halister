@@ -226,21 +226,24 @@ export default {
     margin: clamp(1.5rem, -0.13rem + 2.6vw, 3rem); /* 1.5rem -> 3rem */
   }
   
-  .photoContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    position: relative;
-    
-    width: clamp(12rem, 3.53rem + 42vw, 30rem);
-  }
+ .photoContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
 
-  .photoContainer .photo {
-    object-fit: cover;
-    position: absolute;
-    width: clamp(12rem, 3.53rem + 42vw, 30rem);
-    height: clamp(12rem, 3.53rem + 42vw, 30rem);
-  }
+  /* Mantém o container maior */
+  width: clamp(20rem, 10rem + 55vw, 55rem);
+  height: clamp(20rem, 10rem + 55vw, 55rem);
+}
 
+.photoContainer .photo {
+  object-fit: cover;
+  position: absolute;
+
+  /* Quadrado grande e proporcional */
+  width: clamp(18rem, 8rem + 50vw, 50rem);
+  height: clamp(18rem, 8rem + 50vw, 50rem);
+}
   .space {
     margin-bottom: clamp(12rem, 3.53rem + 42vw, 30rem);
   }
