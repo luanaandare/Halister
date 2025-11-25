@@ -69,13 +69,12 @@
         <img src="../../assets/images/icons/values.svg">
         <h4>Valores</h4>
         <div class="textContainer">
-            <ul>
-            <li><strong>Compromisso com o cliente:</strong> atendimento próximo, transparente e orientado a resultados.</li>
-            <li><strong>Qualidade e confiabilidade:</strong> produtos e serviços que elevam a segurança e o desempenho das operações.</li>
-            <li><strong>Ética e respeito:</strong> relações sólidas, responsáveis e verdadeiras.</li>
-            <li><strong>Inovação e melhoria contínua:</strong> evolução constante para oferecer soluções modernas e completas.</li>
-            <li><strong>Trabalho em equipe:</strong> união e colaboração para entregar sempre o melhor.</li>
-        </ul>
+            <p>
+            <span>Compromisso:</span>  Atendimento próximo, transparente e orientado a resultados.
+            <span>Qualidade e confiabilidade:</span> produtos e serviços de qualidade.<br>
+            <span>Ética e respeito:</span> relações sólidas, responsáveis e verdadeiras.<br>
+            <span>Trabalho em equipe:</span> união e colaboração para entregar sempre o melhor.
+            </p>
         </div>
       </div>
     </div>
