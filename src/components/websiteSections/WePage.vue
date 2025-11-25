@@ -6,7 +6,7 @@
         <h4>A empresa</h4>
         <p>
         A HAVI foi fundada em 2004 por especialistas com ampla experiência no setor de Veículos Industriais. 
-        Desde o início, os fundadores tinham um propósito claro: 
+        Desde o início, tinhamos um propósito claro: 
         <strong>oferecer ao mercado uma solução completa, prática e confiável</strong>, capaz de atender todas as 
         necessidades do cliente em um único lugar.
     </p>
@@ -26,8 +26,7 @@
 
     <p>
         Contamos com uma <strong>equipe de vendas altamente capacitada</strong>, preparada para oferecer um atendimento 
-        diferenciado e alinhado às principais plataformas Business-to-Business do mercado. Nosso objetivo é garantir 
-        que cada cliente encontre, na HAVI, soluções personalizadas e uma parceria duradoura.
+        diferenciado. Nosso objetivo é garantir que cada cliente encontre, na HAVI, soluções personalizadas e uma parceria duradoura.
     </p>
       </div>
       <div class="biColumn space">
