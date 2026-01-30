@@ -7,13 +7,13 @@
         (<span class="red">super-elásticos, pneumáticos industriais e press-on-band</span>) 
         para empilhadeiras, rebocadores, guindastes, carretas, trailers Ro-Ro, 
         tratores agrícolas, máquinas de terraplanagem, mineração, implementos e 
-        diversas outras aplicações.
+        diversas outras aplicações.<br>
       </p>
       <p>
         Atuamos na distribuição, revenda e representação da GRI TIRES, 
         uma das principais fabricantes globais de 
         <span class="bold">pneus industriais e OTR</span>, além de trabalharmos 
-        com outras marcas de alta performance reconhecidas no mercado.
+        com outras marcas de alta performance reconhecidas no mercado.<br>
       </p>  
       <p>
         Conheça nossas soluções diferenciadas em pneus e maximize o desempenho da sua operação, 
@@ -21,6 +21,14 @@
       </p>
     </div>
     <div class="section">
+      <!--<a class="column base" href="/Apresentacao Pneu Industrial GlobeStar POB.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-globestarpob.png" class="tire" />
+        </div>
+        <h5>Superelástico premium</h5>
+        <h4>10 horas - PERFORMER</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>-->
       <a class="column flip" href="/Apresentacao Pneu Industrial Ultimate XT.pdf" target="_blank">
         <div class="tireContainer catalog">
           <img src="../../assets/images/tires/pneu-ultimatext.png" class="tire" />
