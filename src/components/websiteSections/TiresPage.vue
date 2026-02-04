@@ -21,20 +21,28 @@
       </p>
     </div>
     <div class="section">
-      <!--<a class="column base" href="/Apresentacao Pneu Industrial GlobeStar POB.pdf" target="_blank">
+      <a class="column base" href="/Apresentacao Pneu Industrial Performer.pdf" target="_blank">
         <div class="tireContainer">
-          <img src="../../assets/images/tires/pneu-globestarpob.png" class="tire" />
+          <img src="../../assets/images/tires/pneu-performer.png" class="tire" />
         </div>
         <h5>Superelástico premium</h5>
         <h4>10 horas - PERFORMER</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
-      </a>-->
-      <a class="column flip" href="/Apresentacao Pneu Industrial Ultimate XT.pdf" target="_blank">
-        <div class="tireContainer catalog">
-          <img src="../../assets/images/tires/pneu-ultimatext.png" class="tire" />
+      </a>
+      <a class="column flip" href="/Apresentacao Pneu Industrial GlobeStar WT.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-globestar.png" class="tire" />
         </div>
         <h5>Superelástico premium</h5>
-        <h4>24 horas - ULTIMATE XT</h4>
+        <h4>12 horas - GLOBESTAR WT</h4>
+        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
+      </a>
+      <a class="column base" href="/Apresentacao Pneu Industrial GlobeStar POB.pdf" target="_blank">
+        <div class="tireContainer">
+          <img src="../../assets/images/tires/pneu-globestarpob.png" class="tire" />
+        </div>
+        <h5>Pneus Press on cushion</h5>
+        <h4>12 horas - GLOBESTAR POB</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
       <a class="column base" href="/Apresentacao Pneu Industrial Peakmaster.pdf" target="_blank">
@@ -45,12 +53,12 @@
         <h4> 16 horas - PEAKMASTER</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column flip" href="/Apresentacao Pneu Industrial GlobeStar WT.pdf" target="_blank">
-        <div class="tireContainer">
-          <img src="../../assets/images/tires/pneu-globestar.png" class="tire" />
+      <a class="column flip" href="/Apresentacao Pneu Industrial Ultimate XT.pdf" target="_blank">
+        <div class="tireContainer catalog">
+          <img src="../../assets/images/tires/pneu-ultimatext.png" class="tire" />
         </div>
         <h5>Superelástico premium</h5>
-        <h4>12 horas - GLOBESTAR WT</h4>
+        <h4>24 horas - ULTIMATE XT</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
       <a class="column base" href="/Apresentacao Pneu Industrial Ultimate Green XT.pdf" target="_blank">
@@ -69,14 +77,7 @@
         <h4>LIFT EX</h4>
         <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
       </a>
-      <a class="column base" href="/Apresentacao Pneu Industrial GlobeStar POB.pdf" target="_blank">
-        <div class="tireContainer">
-          <img src="../../assets/images/tires/pneu-globestarpob.png" class="tire" />
-        </div>
-        <h5>Pneus Press on cushion</h5>
-        <h4>12 horas - GLOBESTAR POB</h4>
-        <font-awesome-icon class="faIcon" :icon="['fas', 'file-arrow-down']" />
-      </a>
+      
     </div>
     <!--
     <div class="section">
