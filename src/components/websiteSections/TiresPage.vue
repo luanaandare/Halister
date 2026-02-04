@@ -3,17 +3,17 @@
     <TitleWrapper string="PNEUS" fontColor="#ffffff" backColor="#2d2d2d" shadeColor="#bc0000" />
     <div class="paragraphContainer">
       <p>
-         Somos a solução completa em pneus especiais 
-        (<span class="red">super-elásticos, pneumáticos industriais e press-on-band</span>) 
+         Temos a solução completa em pneus especiais 
+        (<span class="bold">super-elásticos, pneumáticos industriais e press-on-band</span>) 
         para empilhadeiras, rebocadores, guindastes, carretas, trailers Ro-Ro, 
         tratores agrícolas, máquinas de terraplanagem, mineração, implementos e 
-        diversas outras aplicações.<br>
+        diversas outras aplicações.<br><br>
       </p>
       <p>
         Atuamos na distribuição, revenda e representação da GRI TIRES, 
         uma das principais fabricantes globais de 
         <span class="bold">pneus industriais e OTR</span>, além de trabalharmos 
-        com outras marcas de alta performance reconhecidas no mercado.<br>
+        com outras marcas de alta performance reconhecidas no mercado.<br><br>
       </p>  
       <p>
         Conheça nossas soluções diferenciadas em pneus e maximize o desempenho da sua operação, 
@@ -210,11 +210,15 @@ h4, h5 {
 
   .section {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: clamp(19rem, 9.12rem + 49vw, 40rem); /* 25rem -> 40rem */
-    margin-left: clamp(1rem, -4.88rem + 29vw, 13.5rem);
+
+    width: 100%; /* 25rem -> 40rem */
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 3rem 1rem;
   }
 
   .column {
