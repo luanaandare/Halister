@@ -19,7 +19,7 @@
       </div>
       <div class="row">
         <div class="imageContainer">
-          <img src="../../assets/images/services/services2.jpeg" />
+          <img src="../../assets/images/services/services2.png" />
         </div>
         <div class="paragraphContainer alignLeft">
           <h5 class="paragraphTitle">
@@ -49,7 +49,7 @@
           </p>
         </div>
         <div class="imageContainer">
-          <img src="../../assets/images/services/services3.jpg" />
+          <img src="../../assets/images/services/services3.jpeg" />
         </div>
       </div>
     </div>
@@ -73,27 +73,17 @@ export default {
   width: 100vw;
 }
 
-.section {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-}
+ .section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 
-.row {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 1rem;
-  position: relative;
-}
-
-.paragraphContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  color: var(--color-background);
-}
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 0 auto;
+    padding: 0 2rem;
+  }
 
 .alignRight {
   text-align: end;
@@ -106,23 +96,52 @@ export default {
 .paragraphTitle {
   font-family: BebasNeue, sans-serif;
   text-transform: uppercase;
+  font-size: clamp(1.8rem, 1.2rem + 2vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: 0.05em;
 }
 
 .paragraph {
   font-family: MontSerrat, sans-serif;
+  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.2rem);
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .imageContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 1.5rem;
+  
+  z-index: 2;
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff3c3c, #b30000);
+  border-radius: 1.5rem;
+  top: 1.2rem;
+  left: -1.2rem;
+  z-index: -1;
 }
 
 .svgPageServices   {
   position: absolute;
   top: 0;
   z-index: -1;
-
+  
   background-color: var(--havi-theme-red);
 }
 
@@ -131,29 +150,27 @@ export default {
     scroll-margin-top: 4.5rem;
   }
 
-  .paragraphContainer {
-    width: clamp(10rem, 0.59rem + 47vw, 30rem); /* 10rem -> 30rem */
-    height: clamp(8rem, 7.06rem + 4.7vw, 10rem); /* 8rem -> 10rem */
-  }
-  
-  .paragraphTitle {
-    font-size: clamp(0.8rem, 0.59rem + 1.1vw, 1.25rem); /* 0.8rem -> 1.25rem */
-  }
+ .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 
-  .paragraph {
-    font-size: clamp(0.5rem, 0.36rem + 0.7vw, 0.8rem); /* 0.5rem -> 0.8rem */
-  }
+.imageContainer {
+  width: clamp(16rem, 70vw, 24rem);
+  aspect-ratio: 1 / 1;
+}
 
-  
-  .imageContainer {
-    margin: 0 clamp(0.5rem, -0.21rem + 3.5vw, 2rem); /* 0 0.5rem -> 0 2rem */
-    height: clamp(8rem, 7.06rem + 4.7vw, 10rem); /* 8rem -> 10rem */
-  }
-  
-  .imageContainer img {
-    width: auto;
-    height: clamp(5rem, 3.12rem + 9.4vw, 9rem); /* 5rem -> 9rem */
-  }
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;  /* 👈 AQUI */
+  display: block;
+  position: relative;
+  z-index: 2;
+}
 
   .svgPageServices   {
     width: 100vw;
@@ -166,34 +183,32 @@ export default {
   .section {
     margin-left: clamp(3rem, -0,26rem + 5.2vw, 6rem); /* 3rem -> 6rem */
   }
-
-  .paragraphContainer {
-    width: clamp(30rem, 8.26rem + 34.8vw, 50rem); /* 30rem -> 50rem */
-    height: clamp(10rem, 4.57rem + 8.7vw, 15rem); /* 10rem -> 15rem */
-  }
-  .paragraphTitle {
-    font-size: clamp(1.25rem, 0.98rem + 0.4vw, 1.5rem); /* 1.2rem -> 1.5rem */
-  }
-
-  .paragraph {
-    font-size: clamp(0.8rem, 0.58rem + 0.3vw, 1rem); /* 0.8rem -> 1rem */
-  }
-
   
-  .imageContainer {
-    margin: 0 clamp(2rem, -1.26rem + 5.2vw, 5rem); /* 0 2rem -> 0 5rem */
-    height: clamp(10rem, 4.57rem + 8.7vw, 15rem); /* 10rem -> 15rem */
-  }
-  
-  .imageContainer img {
-    width: auto;
-    height: clamp(9rem, 5.2rem + 6vw, 12.5rem); /* 9rem -> 12.5rem */
+   .row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* texto um pouco maior */
+    align-items: center;
+    gap: 4rem;
+
+    max-width: 1200px;
+    margin: 6rem auto 0 auto;
   }
 
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;  /* 👈 AQUI */
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+
+}
   .svgPageServices   {
     width: 100vw;
     height: clamp(55rem, 38.70rem + 26vw, 70rem); /* 55rem -> 70rem */
   }
-}
 
 </style>

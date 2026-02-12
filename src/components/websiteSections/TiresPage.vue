@@ -18,7 +18,7 @@
       <p>
         Conheça nossas soluções diferenciadas em pneus e maximize o desempenho da sua operação, 
         com excelente custo-benefício e impacto direto na redução do custo operacional.
-      </p>
+      </p><br><br>
     </div>
     <div class="section">
       <a class="column base" href="/Apresentacao Pneu Industrial Performer.pdf" target="_blank">
@@ -210,15 +210,13 @@ h4, h5 {
 
   .section {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
-    width: 100%; /* 25rem -> 40rem */
-    max-width: 1200px;
-
-    margin: 0 auto;
-    padding: 3rem 1rem;
+    width: 100%;
+    max-width: 40rem;
+    margin: 2rem auto 0 auto;
   }
 
   .column {
@@ -279,6 +277,14 @@ h4, h5 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    width: 100%;
+    max-width: 1200px;
+    
+    margin-top: clamp(22rem, 28vw, 34rem);
+    margin-left: auto;
+    margin-right: auto;
+
     padding-bottom: 10rem;
   }
 
