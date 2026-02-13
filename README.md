@@ -52,6 +52,6 @@ OBS2: O "Sync Changes" pode ter vários commits.
 2. Clicar em Arquivo > Gerenciador de Sites.
 3. Configurar host, usuário e senha.
 4. Clicar em Conectar.
-5. Copiar todo o conteúdo da pasta: c
+5. Copiar todo o conteúdo da pasta: OneDrive\Documentos\repositories\Halister/dist
 6. No FileZilla, colar (ou arrastar) esse conteúdo na pasta "public_html". 
 7. E é isso...
