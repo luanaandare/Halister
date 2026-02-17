@@ -31,15 +31,16 @@
       </div>
       <div class="biColumn space">
         <h4 class="par">{{ photoTitle }}</h4>
-        <div
-          class="photoContainer"
-          v-for="(image, index) in photoSrc"
-          :key="index"
-        >
-          <Transition name="fade">
-            <img class="photo" v-if="currentPhoto == index" :src="image" />
+        <div class="photoContainer">
+          <Transition name="fade" mode="out-in">
+            <img
+              class="photo"
+              :key="currentPhoto"
+              :src="photoSrc[currentPhoto]"
+            />
           </Transition>
         </div>
+
       </div>
     </div>
     <div class="section">
@@ -90,11 +91,17 @@ export default {
     TitleWrapper,
   },
   data() {
-    const photoTitle = ref("Unidade de Serviço");
-    const photoSrc = Object.values(import.meta.glob('../../assets/images/wePage/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-    const currentPhoto = ref(0);
-    return { photoTitle, photoSrc, currentPhoto }
-  },
+     return {
+    photoTitle: "Unidade de Serviço",
+    currentPhoto: 0,
+    photoSrc: Object.values(
+      import.meta.glob('../../assets/images/wePage/*.{png,jpg,jpeg,PNG,JPEG}', {
+        eager: true,
+        as: 'url'
+      })
+    )
+  }
+},
   methods: {
     currentDate() {
       const current = new Date();
@@ -113,15 +120,18 @@ export default {
     },
   },
   created() {
-    setInterval(this.photoSwitch, 3000);
-  }
+  this.interval = setInterval(this.photoSwitch, 3000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
+}
 };
 </script>
 
 <style scoped>
 #we {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .section {
@@ -172,7 +182,7 @@ export default {
   width: 100vw;
 }
 
-@media (width < 1000px) {
+@media (max-width: 999px) {
   #we {
     scroll-margin-top: 4.5rem;
   }
@@ -227,22 +237,19 @@ export default {
   }
   
  .photoContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
-
-  /* Mantém o container maior */
-  width: clamp(20rem, 10rem + 55vw, 55rem);
-  height: clamp(20rem, 10rem + 55vw, 55rem);
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1; /* mantém quadrado proporcional */
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .photoContainer .photo {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
-
-  /* Quadrado grande e proporcional */
-  width: clamp(18rem, 8rem + 50vw, 50rem);
-  height: clamp(18rem, 8rem + 50vw, 50rem);
+  position: relative; /* REMOVE absolute */
 }
   .space {
     margin-bottom: clamp(12rem, 3.53rem + 42vw, 30rem);
@@ -253,7 +260,7 @@ export default {
   }
 }
 
-@media (width >= 1000px) {
+@media (min-width: 1000px) {
   .section {
     flex-flow: row nowrap;
   }
